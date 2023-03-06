@@ -1,0 +1,64 @@
+// sizes
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1400px;
+
+.title-size {
+    &--sm {
+        font-size: 22px;
+    }
+    &--md {
+        font-size: 30px;
+    }
+    @media (min-width: $sm) {
+        &--sm {
+            font-size: 30px;
+        }
+        &--md {
+            font-size: 36px;
+        }
+    }
+    @media (min-width: $md) {
+        &--sm {
+            font-size: 30px;
+        }
+        &--md {
+            font-size: 40px;
+        }
+    }
+    @media (min-width: $lg) {
+          &--sm {
+              font-size: 34px;
+          }
+          &--md {
+              font-size: 44px;
+          }
+  }  
+    @media (min-width: $lg) {
+          &--sm {
+              font-size: 44px;
+          }
+  }  
+}
+
+
+
+// text-sizes
+.text-size {
+    &--sm {
+      font-size: 16px;
+    }
+    &--md {
+      font-size: 18px;
+    }
+    @media (min-width: $md) {
+        &--sm {
+          font-size: 17px;
+        }
+        &--md {
+          font-size: 18px;
+        }
+    }
+}
