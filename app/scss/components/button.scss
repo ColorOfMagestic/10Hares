@@ -7,20 +7,51 @@
     border: none;
 }
 
-.btn_defailt {
-    
+.btn_default {
+    padding: 22px 36px;
+    font-size: 12px;
+    font-weight: 800;
+    background-color: $beige;
+    color:$white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: $transition;
+    &:hover {
+        background-color: $beigeHover;
+    }
 }
 
-// .btn_secondary {
-    
-// }
+.btn_red {
+    padding: 22px 36px;
+    font-size: 12px;
+    font-weight: 800;
+    background-color: $red;
+    color:$white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: $transition;
+    &:hover {
+        background-color: $redHover;
+    }
+}
 
-.btn_size {
-    // &--sm {
+.btn_white {
+    padding: 24px 36px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $white;
+    color:$gray;
+    border-radius: 10px;
+    border: 2px solid $lineGray;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: $transition;
+    &:hover {
+        background-color: $beigeHover;
+        color: $white;
+        border: 2px solid $beigeHover;
 
-    // }
-    // &--md {
-    // }
-    // &--xl {
-    // }
+    }
 }

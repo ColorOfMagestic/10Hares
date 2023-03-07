@@ -5,6 +5,9 @@ $md: 768px;
 $lg: 992px;
 $xl: 1400px;
 
+// other
+$transition: 0.5s;
+
 .title-size {
     &--sm {
         font-size: 22px;
@@ -42,7 +45,6 @@ $xl: 1400px;
           }
   }  
 }
-
 
 
 // text-sizes
