@@ -50,7 +50,7 @@ function browsersync() {
 const clear = () => deleteAsync('dist');
 
 function transformImages() {
-  return src("app/img/*.{png,jpg,jpeg}")
+  return src("app/img/*/*.{png,jpg,jpeg}")
     .pipe(
       imagemin([
         mozjpeg({ quality: 75, progressive: true }),
@@ -88,7 +88,7 @@ function sprite() {
 }
 
 function webp() {
-  return src('app/img/*.{png,jpg,jpeg}')
+  return src('app/img/*/*.{png,jpg,jpeg}')
   .pipe(webpImages())
   .pipe(dest('app/img/webp'))
 }
