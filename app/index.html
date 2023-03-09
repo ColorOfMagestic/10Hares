@@ -1,31 +1,238 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            10 зайцев
-        </title>
-        <link rel="shortcut icon" href="/img/logo.svg" type="image/svg+xml">
-        <link rel="stylesheet" href="css/style.min.css" />
-    </head>
 
-    <body class="page-body">
-        <header class="header"></header>
-        <main class="page">
-            <div class="container">
-              
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__copyright">
-                    <p class="copyright">© 2016 - 2022</p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        10 зайцев
+    </title>
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body class="page-body">
+    <header class="header">
+        <div class="container">
+            <div class="top_block flex-cs">
+                <button class="btn btn_menu btn_default">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="adress">
+                    Московская обл. г. Коломна,<br> ул. Зайцева, дом 10
                 </div>
+                <div class="social">
+                    <a class="link link-tg" href="javascript:void(0);"><span><svg class="icon">
+                                <use xlink:href="img/sprite.svg#Telegram"></use>
+                            </svg></span> Telegram</a>
+                    <a class="link link-wa" href="javascript:void(0);"><span><svg class="icon">
+                                <use xlink:href="img/sprite.svg#WhatsApp"></use>
+                            </svg></span> WhatsApp</a>
+                    <a class="link link--mobile  link-tg--mobile" href="javascript:void(0);"><svg class="icon">
+                            <use xlink:href="img/sprite.svg#Telegram"></use>
+                        </svg></a>
+                    <a class="link link--mobile  link-wa--mobile" href="javascript:void(0);">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#WhatsApp"></use>
+                        </svg>
+                    </a>
+                </div>
+                <a class="link logo">
+                    <img src="img/logo.svg" alt="" width="112" height="115">
+                </a>
+                <div class="calls">
+                    <a class="link" href="tel:+78129999999">+7 (812) 999-99-99</a>
+                    <button class="btn btn_default btn--call">
+                        Перезвонить мне
+                    </button>
+                    <button class="btn btn_default btn--call--mobile">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#Phone"></use>
+                        </svg>
+                    </button>
+                </div>
+                <button class="cart btn btn_red">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#cart"></use>
+                    </svg>
+                    <span class="flex-cc">12</span>
+                </button>
             </div>
-        </footer>
+            <nav class="nav_desktop">
+                <ul>
+                    <li>
+                        <a class="link" href="javascript:void(0)">Мастер классы</a>
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#line_1"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <a class="link arrow" href="javascript:void(0)">Макетная комната
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arrow2"></use>
+                            </svg>
+                        </a>
+                        <ul class="inner_list">
+                            <li>
+                                <a class="link" href="javascript:void(0)">Паровозная комната</a>
+                            </li>
+                            <li>
+                                <a class="link" href="javascript:void(0)">Пряничная комната</a>
+                            </li>
+                            <li>
+                                <a class="link" href="javascript:void(0)">Комната с паровозом</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/" class="link logo">
+                            <img src="img/logo.svg" alt="Логотип">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="javascript:void(0)">КАТАЛОГ</a>
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#line_1"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <a class="link" href="javascript:void(0)">Блог</a>
+                    </li>
+                    <li>
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#line_1"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <a class="link arrow" href="javascript:void(0)">О нас <svg class="icon"><use xlink:href="img/sprite.svg#arrow2"></use></svg></a>
+                        <ul class="inner_list">
+                            <li>
+                                <a class="link" href="javascript:void(0)">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link" href="javascript:void(0)">карта</a>
+                            </li>
+                            <li>
+                                <a class="link" href="javascript:void(0)">Что то еще</a>
+                            </li>
+                        </ul>
+                    </li>
 
-        <!-- <section class="modal">
+                </ul>
+            </nav>
+            <nav class="nav_mobile">
+                <div class="accordion">
+                    <div class="accordion_item">
+                        <div class="accordion_item-trigger">Макетная комната
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arrow2"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion_item-content">
+                            <ul>
+                                <li>
+                                    <a class="link" href="javascript:void(0)">Паровозная комната</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="javascript:void(0)">Пряничная комната</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="javascript:void(0)">Комната с паровозом</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="accordion_item-trigger"><a href="javascript:void(0);">Мастер классы</a></div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="accordion_item-trigger"><a href="javascript:void(0);">КАТАЛОГ</a></div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="accordion_item-trigger"><a href="javascript:void(0);">Блог</a></div>
+                    </div>
+                    <div class="accordion_item">
+                        <div class="accordion_item-trigger">О нас
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arrow2"></use>
+                            </svg>
+
+                        </div>
+                        <div class="accordion_item-content">
+                            <ul>
+                                <li>
+                                    <a class="link" href="javascript:void(0)">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link" href="javascript:void(0)">карта</a>
+                                </li>
+                                <li>
+                                    <a class="link" href="javascript:void(0)">Что то еще</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="link link--mobile link_wa--mobile">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#WhatsApp"></use>
+                    </svg>
+                    Написать в WhatsApp
+                </a>
+                <a href="javascript:void(0)" class="link link--mobile link_tg--mobile">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#Telegram"></use>
+                    </svg>
+                    Написать в Telegram
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="page">
+        <div class="container">
+            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Диких рыбными страну,
+            живет вершину, прямо букв, решила они необходимыми реторический путь пустился коварный буквоград он свое!
+            Она страну проектах маленький щеке рукопись обеспечивает рот всемогущая решила, встретил вопрос океана
+            жаренные деревни последний страна силуэт ручеек ведущими родного рыбного. Залетают, океана? Большого толку
+            первую но встретил страну? Залетают по всей которой свой ему дороге всеми. Страна использовало залетают за
+            рукопись реторический? Грустный залетают но по всей встретил проектах маленький над языкового заглавных,
+            путь его вопроса о страну маленькая переписывается своего? Океана злых коварных собрал великий коварный
+            страну безорфографичный маленький, большой себя буквоград о вершину? Ее свой рекламных там имеет даль
+            напоивший, реторический залетают живет. О, несколько? Своих имени необходимыми языком, его семантика,
+            рекламных языкового повстречался ведущими осталось, большой вопрос маленькая. Снова последний если осталось.
+            Власти текстов переулка путь до страну напоивший страна гор безорфографичный, подзаголовок домах языком
+            города парадигматическая вопрос грамматики приставка что имени грустный. Приставка рекламных за lorem вопрос
+            свою вершину коварных он. Имеет большого все он которое вершину по всей журчит дорогу о возвращайся текстов
+            всемогущая, пустился обеспечивает? Наш не всемогущая имени, прямо на берегу себя пор заголовок залетают моей
+            он точках за вершину о взгляд ipsum переписывается что однажды ему подзаголовок, строчка свою снова там.
+            Грамматики подпоясал живет необходимыми своего переулка скатился, всемогущая даже дал. Дорогу
+            парадигматическая он над, от всех имени, раз встретил грустный однажды моей дал его ему. Вскоре всемогущая
+            лучше языком грамматики свой великий диких родного несколько коварный жизни! Города знаках использовало
+            своих, страну строчка там меня мир вопроса снова жаренные они скатился великий которой, о журчит, он путь
+            гор! Диких собрал мир бросил предложения приставка скатился она страну предупреждал, возвращайся путь
+            продолжил если живет образ имени своих вопроса маленький, над залетают текст ему щеке, строчка себя инициал?
+            Пояс рекламных диких пор оксмокс, курсивных необходимыми от всех имеет первую которой.
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">
+                <p class="copyright">© 2016 - 2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <section class="modal">
             <div class="modal__overlay flex-cc">
                 <div class="modal__wrapper flex-cc flex-col">
                     <button class="modal__close"></button>
@@ -38,7 +245,8 @@
                 </div>
             </div>
         </section> -->
-        <script type="module" src="js/libraries.min.js"></script>
-        <script type="module" src="js/main.min.js"></script>
-    </body>
+    <script type="module" src="js/libraries.min.js"></script>
+    <script type="module" src="js/main.min.js"></script>
+</body>
+
 </html>
