@@ -17,9 +17,7 @@ body {
 
 .body--hidden {
   overflow: hidden;
-  margin-right: 1rem;
 }
-
 
 .header {
   flex: 0 0 auto;
@@ -35,31 +33,33 @@ body {
  
 
 .container {
-  max-width: 340px;
+  max-width: 89.5%;
   margin: 0 auto;
 }
 
 @media(min-width: $sm) {
   .container {
-    max-width: 510px;
+    max-width: 88.5%;
   }
 }
 @media(min-width: $md) {
   .container {
-    max-width: 690px;
+    max-width: 89.9%;
 
   }
 }
 
 @media(min-width: $lg) {
+  .body--hidden {
+    margin-right: 1rem;
+  }
   .container {
-    max-width: 930px;
-
+    max-width: 91.5%;
   }
 }
 @media(min-width: $xl) {
   .container {
-    max-width: 1340px;
+    max-width: 70%;
 
   }
 }

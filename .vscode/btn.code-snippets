@@ -10,4 +10,12 @@
   	  ],
   	  "description": "button"
   	},
+		"link": {
+			"prefix": "link",
+			"body": [
+				"<a href=\"javascript:void(0)\" class=\"link\">",
+				"</a>",
+			],
+			"description": "link"
+		},
 }
