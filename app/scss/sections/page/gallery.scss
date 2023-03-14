@@ -1,0 +1,362 @@
+.gallery {
+  position: relative;
+  margin-top: 56px;
+
+  .gallery_mobile__wrapper {
+    padding: 56px 0 50px;
+    padding-left: 20px;
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .gallery_mobile-swiper {
+      margin-top: 40px;
+
+      .gallery_slide {
+        max-height: 200px;
+        overflow: hidden;
+        border-radius: 20px;
+
+        img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .gallery_desktop-swiper {
+      display: none;
+    }
+
+    .gallery_mobile-swiper_buttons,
+    .gallery_desktop-swiper_buttons {
+      display: none;
+    }
+  }
+  .gallery_desktop__wrapper {
+    display: none;
+  }
+}
+
+@media(min-width: $sm) {
+  .gallery {
+    margin-top: 70px;
+
+    .gallery_mobile__wrapper {
+      padding: 65px 0 80px;
+      padding-left: 33px;
+
+      .gallery_mobile-swiper {
+
+        .gallery_slide {
+          max-height: 240px;
+
+          img {
+            height: 240px;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+@media(min-width: $md) {
+  .gallery {
+    margin-top: 80px;
+
+    .gallery_mobile__wrapper {
+      padding: 60px 0 120px;
+      padding-left: 40px;
+
+      .gallery_mobile-swiper {
+        margin-top: 60px;
+
+        .gallery_slide {
+          max-height: 200px;
+
+          img {
+            height: 200px;
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+@media(min-width: $lg) {
+  .gallery {
+    margin-top: 120px;
+
+    .gallery_mobile__wrapper {
+      padding: 80px 30px 120px;
+
+      h2 {
+        text-align: left;
+      }
+
+      .gallery_mobile-swiper {
+        margin-top: 70px;
+
+        .gallery_slide {
+          max-height: 220px;
+
+          img {
+            height: 220px;
+          }
+
+        }
+      }
+
+      .gallery_mobile-swiper_buttons {
+        position: absolute;
+        top: 100px;
+        right: 30px;
+        display: flex;
+
+        button {
+          width: 44px;
+          height: 26px;
+
+          .icon {
+            width: 100%;
+            height: 100%;
+            fill: $lightGray;
+          }
+
+          &:hover {
+            .icon {
+              fill: $redHover;
+            }
+          }
+        }
+
+        [data-role="gallery_mobile-next"] {
+          margin-left: 20px;
+          transform: rotate(180deg);
+        }
+      }
+
+    }
+
+
+  }
+
+}
+
+@media(min-width: $xl) {
+  .gallery {
+    margin-top: 140px;
+
+    .gallery_mobile__wrapper {
+      display: none;
+    }
+
+    .gallery_desktop__wrapper {
+      display: block;
+      padding: 200px 0  230px;
+
+      h2 {
+        text-align: left;
+      }
+
+      .gallery_desktop-swiper {
+        display: block;
+        padding-top: 100px;
+
+        .gallery_slide {
+          display: grid;
+          grid-template-areas:
+            "img1 img3 img4 img6"
+            "img1 img3 img4 img6"
+            "img2 img3 img5 img7"
+            "img2 img3 img5 img7"
+          ;
+          gap: 30px;
+
+          .img_1,
+          .img_2,
+          .img_3,
+          .img_4,
+          .img_5,
+          .img_6,
+          .img_7 {
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          .img_1 {
+            grid-area: img1;
+            min-width: 205px;
+          }
+
+          .img_2 {
+            grid-area: img2;
+            min-width: 205px;
+          }
+
+          .img_3 {
+            grid-area: img3;
+            min-width: 278px;
+
+          }
+
+          .img_4 {
+            grid-area: img4;
+            min-width: 130px;
+          }
+
+          .img_5 {
+            grid-area: img5;
+            min-width: 130px;
+
+          }
+
+          .img_6 {
+            grid-area: img6;
+            min-width: 205px;
+
+          }
+
+          .img_7 {
+            grid-area: img7;
+            min-width: 205px;
+
+          }
+        }
+
+
+      }
+
+      .gallery_mobile-swiper {
+        display: none;
+      }
+
+      .gallery_mobile-swiper_buttons {
+        display: none;
+      }
+
+      .gallery_desktop-swiper_buttons {
+        position: absolute;
+        width: 100%;
+        top: 55%;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        button {
+          width: 44px;
+          height: 26px;
+
+          .icon {
+            width: 100%;
+            height: 100%;
+            fill: $lightGray;
+          }
+
+          &:hover {
+            .icon {
+              fill: $redHover;
+            }
+          }
+        }
+
+        [data-role="gallery_desktop-next"] {
+          right: 8%;
+          margin-left: 20px;
+          transform: rotate(180deg);
+        }
+        [data-role="gallery_desktop-prev"] {
+          left: 8%;
+        }
+
+      }
+
+    }
+
+
+  }
+
+}
+@media(min-width: $xxl) {
+  .gallery {
+    margin-top: 140px;
+
+    .gallery_desktop__wrapper {
+
+      .gallery_desktop-swiper {
+
+        .gallery_slide {
+          display: grid;
+          grid-template-areas:
+            "img1 img3 img4 img6"
+            "img1 img3 img4 img6"
+            "img2 img3 img5 img7"
+            "img2 img3 img5 img7"
+          ;
+          gap: 40px;
+
+          .img_1 {
+            grid-area: img1;
+            min-width: 305px;
+          }
+
+          .img_2 {
+            grid-area: img2;
+            min-width: 305px;
+          }
+
+          .img_3 {
+            grid-area: img3;
+            min-width: 403px;
+
+          }
+
+          .img_4 {
+            grid-area: img4;
+            min-width: 190px;
+          }
+
+          .img_5 {
+            grid-area: img5;
+            min-width: 190px;
+
+          }
+
+          .img_6 {
+            grid-area: img6;
+            min-width: 305px;
+
+          }
+
+          .img_7 {
+            grid-area: img7;
+            min-width: 305px;
+
+          }
+        }
+
+
+      }
+
+      .gallery_desktop-swiper_buttons {
+        top: 55%;
+      }
+
+    }
+
+
+  }
+
+}

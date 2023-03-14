@@ -12,9 +12,11 @@ $transition: 0.5s;
 .title-size {
     &--sm {
         font-size: 22px;
+        font-weight: 700;
     }
     &--md {
         font-size: 30px;
+        font-weight: 700;
     }
     @media (min-width: $sm) {
         &--sm {
