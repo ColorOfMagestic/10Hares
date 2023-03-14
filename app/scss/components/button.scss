@@ -55,3 +55,27 @@
 
     }
 }
+
+.btn_video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+
+    padding: 0;
+    border-radius: 50%;
+    background-color: rgba(221, 188, 151, 0.5);
+    &:hover {
+        background-color: rgba(214, 55, 62, 0.5);
+    }
+    &::before {
+    transform: translateX(2px);
+      display: block;
+      content: '';
+      width: 15px;
+      height:21px;
+      background: url("data:image/svg+xml,%3Csvg width='15' height='21' viewBox='0 0 15 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 2.90051C0 1.27106 1.84414 0.325474 3.16727 1.27648L13.7405 8.87597C14.8508 9.674 14.8508 11.326 13.7405 12.124L3.16728 19.7235C1.84414 20.6745 0 19.7289 0 18.0995V2.90051Z' fill='white' fill-opacity='0.8'/%3E%3C/svg%3E%0A") no-repeat 50%/cover;
+    }
+}
