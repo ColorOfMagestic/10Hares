@@ -55,3 +55,16 @@ const main_gallery_desk = new Swiper('.gallery_desktop-swiper', {
         el: '.swiper-scrollbar',
     },
 });
+const feedback = new Swiper('.feedback-swiper', {
+    loop: true,
+    // spaceBetween: 30,
+    navigation: {
+        nextEl: `[data-role="feedback-next"]`,
+        prevEl: `[data-role="feedback-prev"]`,
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
