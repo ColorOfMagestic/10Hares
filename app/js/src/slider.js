@@ -55,16 +55,44 @@ const main_gallery_desk = new Swiper('.gallery_desktop-swiper', {
         el: '.swiper-scrollbar',
     },
 });
-const feedback = new Swiper('.feedback-swiper', {
+
+const feed = new Swiper('.feedback-swiper', {
     loop: true,
-    // spaceBetween: 30,
+    spaceBetween: 20,
+    breakpoints: {
+        375: {
+            slidesPerView: 1.2,
+        },
+        576: {
+            slidesPerView: 1.7,
+        },
+        768: {
+            slidesPerView: 2.2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 1.7,
+            spaceBetween: 30,
+        },
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    // Navigation arrows
     navigation: {
         nextEl: `[data-role="feedback-next"]`,
         prevEl: `[data-role="feedback-prev"]`,
     },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
+});
+const feedDesk = new Swiper('.feedback_desktop-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: `[data-role="feedback_desktop-next"]`,
+        prevEl: `[data-role="feedback_desktop-prev"]`,
     },
 });
