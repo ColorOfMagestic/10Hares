@@ -1,5 +1,15 @@
 .header {
     position: relative;
+    .top_block__wrapper{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        height: 130px;
+        background-color: $white;
+        z-index: 5;
+    }
 
     .top_block {
         position: fixed;
@@ -339,6 +349,9 @@
 
 @media(min-width: $lg) {
     .header {
+        .top_block__wrapper{
+            height: 105px;
+        }
         .top_block {
             width: 91.5%;
 

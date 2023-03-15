@@ -15,51 +15,53 @@
     <!-- ========== Start header ========== -->
     <header class="header">
         <div class="container">
-            <div class="top_block flex-cs">
-                <button class="btn btn_menu btn_default">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <div class="adress">
-                    Московская обл. г. Коломна,<br> ул. Зайцева, дом 10
-                </div>
-                <div class="social">
-                    <a class="link link-tg" href="javascript:void(0);"><span><svg class="icon">
+            <div class="top_block__wrapper">
+                <div class="top_block flex-cs">
+                    <button class="btn btn_menu btn_default">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="adress">
+                        Московская обл. г. Коломна,<br> ул. Зайцева, дом 10
+                    </div>
+                    <div class="social">
+                        <a class="link link-tg" href="javascript:void(0);"><span><svg class="icon">
+                                    <use xlink:href="img/sprite.svg#Telegram"></use>
+                                </svg></span> Telegram</a>
+                        <a class="link link-wa" href="javascript:void(0);"><span><svg class="icon">
+                                    <use xlink:href="img/sprite.svg#WhatsApp"></use>
+                                </svg></span> WhatsApp</a>
+                        <a class="link link--mobile  link-tg--mobile" href="javascript:void(0);"><svg class="icon">
                                 <use xlink:href="img/sprite.svg#Telegram"></use>
-                            </svg></span> Telegram</a>
-                    <a class="link link-wa" href="javascript:void(0);"><span><svg class="icon">
+                            </svg></a>
+                        <a class="link link--mobile  link-wa--mobile" href="javascript:void(0);">
+                            <svg class="icon">
                                 <use xlink:href="img/sprite.svg#WhatsApp"></use>
-                            </svg></span> WhatsApp</a>
-                    <a class="link link--mobile  link-tg--mobile" href="javascript:void(0);"><svg class="icon">
-                            <use xlink:href="img/sprite.svg#Telegram"></use>
-                        </svg></a>
-                    <a class="link link--mobile  link-wa--mobile" href="javascript:void(0);">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#WhatsApp"></use>
-                        </svg>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="link logo">
+                        <img src="img/logo.svg" alt="" width="112" height="115">
                     </a>
-                </div>
-                <a class="link logo">
-                    <img src="img/logo.svg" alt="" width="112" height="115">
-                </a>
-                <div class="calls">
-                    <a class="link" href="tel:+78129999999">+7 (812) 999-99-99</a>
-                    <button class="btn btn_default btn--call">
-                        Перезвонить мне
-                    </button>
-                    <button class="btn btn_default btn--call--mobile">
+                    <div class="calls">
+                        <a class="link" href="tel:+78129999999">+7 (812) 999-99-99</a>
+                        <button class="btn btn_default btn--call">
+                            Перезвонить мне
+                        </button>
+                        <button class="btn btn_default btn--call--mobile">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#Phone"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <button class="cart btn btn_red">
                         <svg class="icon">
-                            <use xlink:href="img/sprite.svg#Phone"></use>
+                            <use xlink:href="img/sprite.svg#cart"></use>
                         </svg>
+                        <span class="flex-cc">12</span>
                     </button>
                 </div>
-                <button class="cart btn btn_red">
-                    <svg class="icon">
-                        <use xlink:href="img/sprite.svg#cart"></use>
-                    </svg>
-                    <span class="flex-cc">12</span>
-                </button>
             </div>
             <nav class="nav_desktop">
                 <ul>
@@ -550,54 +552,59 @@
             <div class="container">
                 <h2 class="title-size--md">Отзывы о мастер классе</h2>
             </div>
-            <div class="feedback-swiper swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide feedback_slide slide_text">
-                        <div class="slide_text__content">
-                            <img class="" src="img/feedback/text_img_1.jpg" alt="Изображение">
-                            <div class="content_preview">
-                                <div class="content_preview__autor">
-                                    <div class="preview_autor__wrapper flex">
-                                        <img class="" src="img/feedback/avatar_wom.png" alt="Аватар">
-                                        <div class="autor_data">
-                                            <p>Настя Елова</p>
-                                            <p class="date">30 дек. 2022</p>
+            <div class="feedback__wrapper">
+                <div class="feedback-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide feedback_slide slide_text">
+                            <div class="slide_text__content">
+                                <img class="" src="img/feedback/text_img_1.jpg" alt="Изображение">
+                                <div class="content_preview">
+                                    <div class="content_preview__autor">
+                                        <div class="preview_autor__wrapper flex">
+                                            <img class="" src="img/feedback/avatar_wom.png" alt="Аватар">
+                                            <div class="autor_data">
+                                                <p>Настя Елова</p>
+                                                <p class="date">30 дек. 2022</p>
+                                            </div>
                                         </div>
+                                        <p>Очень крутой мастер класс! Дети довольны, получили хороший опыт по изготовлению вкусных пряников с начинкой. Рекомендую!</p>
+                                        <button class="btn link_default">
+                                            Раскрыть
+                                        </button>
                                     </div>
-                                    <p>Очень крутой мастер класс! Дети довольны, получили хороший опыт по изготовлению вкусных пряников с начинкой. Рекомендую!</p>
-                                    <button class="btn link_default">
-                                        Раскрыть
-                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide feedback_slide slide_video">
+                            <img class="" src="img/feedback/video_m_img_1.jpg" alt="">
+                            <div class="slide_video__info">
+                                <button class="btn btn_video"></button>
+                                <div class="video__info_autor flex">
+                                    <img class="" src="img/feedback/avatar.png" alt="Аватар">
+                                    <div class="autor_data">
+                                        <p>Константин Круглов</p>
+                                        <p class="date">30 дек. 2022</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide feedback_slide slide_video">
-                        <img class="" src="img/feedback/video_m_img_1.jpg" alt="">
-                        <div class="slide_video__info">
-                            <button class="btn btn_video"></button>
-                            <div class="video__info_autor flex">
-                                <img class="" src="img/feedback/avatar.png" alt="Аватар">
-                                <div class="autor_data">
-                                    <p>Константин Круглов</p>
-                                    <p class="date">30 дек. 2022</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="swiper_buttons feedback-swiper_buttons">
+                        <button data-role="feedback-prev" class="btn">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arrowSliderBig"></use>
+                            </svg>
+                        </button>
+                        <button data-role="feedback-next" class="btn">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#arrowSliderBig"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
-                <div class="swiper_buttons feedback-swiper_buttons">
-                    <button data-role="feedback-prev" class="btn">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#arrowSliderBig"></use>
-                        </svg>
-                    </button>
-                    <button data-role="feedback-next" class="btn">
-                        <svg class="icon">
-                            <use xlink:href="img/sprite.svg#arrowSliderBig"></use>
-                        </svg>
-                    </button>
-                </div>
+                <!-- .feedback_desktop-swiper  -->
+                <button class="btn_white">Оставить отзыв</button>
+                <!-- slider-request -->
             </div>
         </section>
 
