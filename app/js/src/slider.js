@@ -84,6 +84,7 @@ const feed = new Swiper('.feedback-swiper', {
         prevEl: `[data-role="feedback-prev"]`,
     },
 });
+
 const feedDesk = new Swiper('.feedback_desktop-swiper', {
     loop: true,
     spaceBetween: 20,
@@ -94,5 +95,18 @@ const feedDesk = new Swiper('.feedback_desktop-swiper', {
     navigation: {
         nextEl: `[data-role="feedback_desktop-next"]`,
         prevEl: `[data-role="feedback_desktop-prev"]`,
+    },
+});
+
+const request = new Swiper('.request-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: `[data-role="request-swiper-next"]`,
+        prevEl: `[data-role="request-swiper-prev"]`,
     },
 });

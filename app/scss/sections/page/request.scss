@@ -1,0 +1,238 @@
+.request {
+  margin-top: 40px;
+
+  .request_wrapper {
+    position: relative;
+    padding: 40px 30px;
+    padding-bottom: 0;
+    background: url(../../img/request/bg_xs.png) no-repeat 50%/cover;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column;
+
+    .request-swiper_wrapper {
+      width: 100%;
+
+      .request-swiper {
+        margin-bottom: 10px;
+
+        .request_slide {
+          color: $white;
+          text-align: center;
+
+          h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    picture {
+      display: flex;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    &>button {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .request-swiper_buttons {
+    left: 0;
+    bottom: 75px;
+    width: 100%;
+    justify-content: space-between;
+
+    button {
+      width: 2em;
+      height: 2em;
+
+      .icon {
+        width: 100%;
+        height: 100%;
+        fill: $lightGray;
+        opacity: 0.5;
+      }
+    }
+
+    [data-role="request-swiper-prev"] {
+      left: 30px;
+    }
+
+    [data-role="request-swiper-next"] {
+      right: 30px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media(min-width: $sm) {
+  .request {
+    margin-top: 50px;
+
+    .request_wrapper {
+      padding: 40px;
+      padding-bottom: 0;
+      background: url(../../img/request/bg_sm.png) no-repeat 50%/cover;
+
+      .request-swiper_wrapper {}
+    }
+
+    .request-swiper_buttons {
+      [data-role="request-swiper-prev"] {
+        left: 65px;
+      }
+
+      [data-role="request-swiper-next"] {
+        right: 65px;
+      }
+    }
+  }
+}
+
+@media(min-width: $md) {
+  .request {
+    margin-top: 0;
+
+    .request_wrapper {
+      padding: 0;
+      padding-left: 30px;
+      display: grid;
+      grid-template: auto/55% 45%;
+      padding-bottom: 0;
+      background: url(../../img/request/bg_md.png) no-repeat 0% bottom/cover;
+      border-radius: 20px;
+
+
+      .request-swiper_wrapper {
+        width: 100%;
+        align-self: center;
+        padding-bottom: 30px;
+
+        .request-swiper {
+          margin-bottom: 0;
+          text-align: left;
+
+          .request_slide {
+            text-align: left;
+
+            p {
+              max-height: 70px;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+
+      &>button {
+        position: absolute;
+        z-index: 3;
+        bottom: 40px;
+        left: 30px;
+        transform: translateX(0);
+      }
+    }
+
+    .request-swiper_buttons {
+      left: 240px;
+      bottom: 55px;
+      width: auto;
+      justify-content: center;
+
+      button {
+        width: 2em;
+        height: 2em;
+
+        .icon {
+          width: 100%;
+          height: 100%;
+          fill: $lightGray;
+          opacity: 0.5;
+        }
+      }
+
+      [data-role="request-swiper-prev"] {
+        left: 0;
+      }
+
+      [data-role="request-swiper-next"] {
+        right: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+
+}
+
+@media(min-width: $lg) {
+  .request {
+    .request_wrapper {
+      grid-template: auto/50% 50%;
+      padding-bottom: 0;
+      background: url(../../img/request/bg_lg.png) no-repeat 0% bottom/100%;
+
+      .request-swiper_wrapper {
+        padding-bottom: 0;
+
+        .request-swiper {
+          margin-bottom: 0;
+          text-align: left;
+
+          .request_slide {
+            text-align: left;
+
+            h3 {
+              font-size: 30px;
+            }
+
+            p {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media(min-width: $xxl) {
+  .request {
+    .request_wrapper {
+      padding-left: 60px;
+      background: url(../../img/request/bg_xxl.png) no-repeat 0% bottom/100%;
+
+      .request-swiper_wrapper {
+        padding-bottom: 0;
+
+        .request-swiper {
+          margin-top: 100px;
+          margin-bottom: 0;
+          text-align: left;
+
+          .request_slide {
+            text-align: left;
+            h3 {
+              font-size: 36px;
+            }
+          }
+        }
+      }
+
+      &>button {
+        bottom: 40px;
+        left: 60px;
+      }
+
+      .request-swiper_buttons {
+        left: 280px;
+      }
+    }
+  }
+}
