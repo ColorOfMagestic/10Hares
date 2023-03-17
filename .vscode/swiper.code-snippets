@@ -30,17 +30,24 @@
     	],
     	"description": "swiper-lazy"
   	},
-  	"swiper-buttons": {
-  	  	"prefix": "swiper-btns",
-  	  	"scope": "html,php",
-  	  	"body": [
-  	  	  "<div class=\"swiper-buttons\">",
-  	  	  "    <button data-role=\"\" class=\"btn swiper-button-prev\"><svg class=\"icon\"><use xlink:href=\"svg-sprite/sprite.svg#arrow\"></use></svg></button>",
-  	  	  "    <button data-role=\"\" class=\"btn swiper-button-next\"><svg class=\"icon\"><use xlink:href=\"svg-sprite/sprite.svg#arrow\"></use></svg></button>",
-  	  	  "</div>"
-  	  	],
-  	  	"description": "swiper btn group"
-  	},
+  	"swiper_buttons": {
+			"prefix": "sw_btn",
+			"body": [
+				"<div class=\"swiper_buttons ${1:slider_name}_buttons\">",
+				"    <button data-role=\"${1:slider_name}-prev\" class=\"btn\">",
+				"      <svg class=\"icon\">",
+				"        <use xlink:href=\"img/sprite.svg#${1:iconName}\"></use>",
+				"      </svg>",
+				"    </button>",
+				"    <button data-role=\"${1:slider_name}-next\" class=\"btn\">",
+				"      <svg class=\"icon\">",
+				"        <use xlink:href=\"img/sprite.svg#${1:icon_name}\"></use>",
+				"      </svg>",
+				"    </button>",
+				"</div>"
+			],
+			"description": "swiper_buttons"
+		},
 	"swiper pagination": {
 		"prefix": "swiper-pagination",
 		"scope": "html,php",
