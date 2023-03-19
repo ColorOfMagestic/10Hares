@@ -110,3 +110,38 @@ const request = new Swiper('.request-swiper', {
         prevEl: `[data-role="request-swiper-prev"]`,
     },
 });
+const product = new Swiper('.product-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+        375: {
+            slidesPerView: 1.4,
+        },
+        576: {
+            slidesPerView: 2.2,
+        },
+        768: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1900: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: false,
+        }
+    },
+
+    
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: `[data-role="product-swiper-next"]`,
+        prevEl: `[data-role="product-swiper-prev"]`,
+    },
+});
