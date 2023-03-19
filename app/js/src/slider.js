@@ -2,9 +2,7 @@ const intro = new Swiper('.intro_banner-swiper', {
     loop: true,
     spaceBetween: 10,
     autoHeight: true,
-    pagination: {
-        el: '.swiper-pagination',
-    },
+    
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="intro_banner-next"]`,
@@ -32,9 +30,7 @@ const main_gallery = new Swiper('.gallery_mobile-swiper', {
             spaceBetween: 30,
         },
     },
-    pagination: {
-        el: '.swiper-pagination',
-    },
+    
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="gallery_mobile-next"]`,
@@ -75,9 +71,7 @@ const feed = new Swiper('.feedback-swiper', {
             spaceBetween: 30,
         },
     },
-    pagination: {
-        el: '.swiper-pagination',
-    },
+    
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="feedback-next"]`,
@@ -88,9 +82,7 @@ const feed = new Swiper('.feedback-swiper', {
 const feedDesk = new Swiper('.feedback_desktop-swiper', {
     loop: true,
     spaceBetween: 20,
-    pagination: {
-        el: '.swiper-pagination',
-    },
+    
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="feedback_desktop-next"]`,
@@ -101,9 +93,7 @@ const feedDesk = new Swiper('.feedback_desktop-swiper', {
 const request = new Swiper('.request-swiper', {
     loop: true,
     spaceBetween: 20,
-    pagination: {
-        el: '.swiper-pagination',
-    },
+    
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="request-swiper-next"]`,
@@ -136,12 +126,36 @@ const product = new Swiper('.product-swiper', {
     },
 
     
-    pagination: {
-        el: '.swiper-pagination',
-    },
+    
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="product-swiper-next"]`,
         prevEl: `[data-role="product-swiper-prev"]`,
+    },
+});
+const blog = new Swiper('.blog-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+        375: {
+            slidesPerView: 1.3,
+        },
+        576: {
+            slidesPerView: 1.6,
+        },
+        768: {
+            slidesPerView: 2.2,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: `[data-role="blog-swiper-next"]`,
+        prevEl: `[data-role="blog-swiper-prev"]`,
     },
 });
