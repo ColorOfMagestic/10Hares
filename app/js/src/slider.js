@@ -8,6 +8,14 @@ const intro = new Swiper('.intro_banner-swiper', {
         nextEl: `[data-role="intro_banner-next"]`,
         prevEl: `[data-role="intro_banner-prev"]`,
     },
+
+    breakpoints: {
+        navigation: {
+            nextEl: `[data-role="intro_banner-next_d"]`,
+            prevEl: `[data-role="intro_banner-prev"]`,
+        },
+    
+    }
 });
 
 const main_gallery = new Swiper('.gallery_mobile-swiper', {
