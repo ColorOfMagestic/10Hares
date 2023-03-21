@@ -1,18 +1,17 @@
 const body = document.querySelector('.page-body'),
 btn_menu = document.querySelector('.btn_menu'),
-nav_mobile = document.querySelector('.nav_mobile');
+nav_mobile = document.querySelector('.nav_mobile'),
+map_button =document.querySelector('.footer_map button'),
+map_info =document.querySelector('.map_info');
+
+console.log(map_button);
 
 const toggleMenu =()=> {
   body.classList.toggle('body--hidden');
   btn_menu.classList.toggle('open');
   nav_mobile.classList.toggle('nav_mobile--open');
 }
-
-
 btn_menu.addEventListener('click', toggleMenu);
-
-
-
 
 const accordionSlide = ()=> {
   var acc = document.getElementsByClassName('accordion_item-trigger');
@@ -31,5 +30,9 @@ const accordionSlide = ()=> {
     });
   }
 }
+
+map_button.addEventListener('click', ()=> {
+  map_info.classList.toggle('map_info--visible');
+})
 
 accordionSlide();
