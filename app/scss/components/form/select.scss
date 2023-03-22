@@ -1,0 +1,97 @@
+.select {
+  position: relative;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+
+  select {
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 22px 30px 20px;
+    color: $gray;
+    background-color: $white;
+    background-image: none;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  select:focus {
+    color: $dark;
+  }
+
+  select:focus~.icon {
+    fill: $dark;
+    transform: translateY(-50%) rotate(-180deg);
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    width: 20px;
+    height: 22px;
+    fill: $gray;
+    pointer-events: none;
+    transition: $transition;
+  }
+}
+@media(min-width: $sm) {
+  .select {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+
+    select {
+      appearance: none;
+      outline: 0;
+      border: 0;
+      box-shadow: none;
+      /* Personalize */
+      flex: 1;
+      padding: 22px 30px 20px;
+      color: $gray;
+      background-color: $white;
+      background-image: none;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    select::-ms-expand {
+      display: none;
+    }
+
+    select:focus {
+      color: $dark;
+    }
+
+    select:focus~.icon {
+      fill: $dark;
+      transform: translateY(-50%) rotate(-180deg);
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 30px;
+      width: 20px;
+      height: 22px;
+      fill: $gray;
+      pointer-events: none;
+      transition: $transition;
+    }
+  }
+
+}
