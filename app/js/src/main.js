@@ -1,10 +1,10 @@
 const body = document.querySelector('.page-body'),
 btn_menu = document.querySelector('.btn_menu'),
 nav_mobile = document.querySelector('.nav_mobile'),
-map_button =document.querySelector('.footer_map button'),
-map_info =document.querySelector('.map_info');
-
-console.log(map_button);
+map_button = document.querySelector('.footer_map button'),
+map_info = document.querySelector('.map_info'),
+add_file = document.querySelector('.add-file'),
+add_file_input = document.querySelector('.add-file__input');
 
 const toggleMenu =()=> {
   body.classList.toggle('body--hidden');
@@ -34,5 +34,13 @@ const accordionSlide = ()=> {
 map_button.addEventListener('click', ()=> {
   map_info.classList.toggle('map_info--visible');
 })
+
+add_file.addEventListener("click", () => add_file_input.click());
+add_file_input.addEventListener("change", loadImage);
+function loadImage() {
+  let file = add_file_input.files[0];
+  if (!file) return;
+  console.log(file);
+}
 
 accordionSlide();

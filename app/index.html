@@ -1440,8 +1440,8 @@
 
         </div>
     </footer>
-
-    <div class="modal modal_mk modal--active">
+    <!-- ========== Start modal_mk ========== -->
+    <div class="modal modal_mk">
         <div class="modal__overlay flex-sc">
             <div class="modal__wrapper flex-cc flex-col">
                 <button class="modal__close btn">
@@ -1456,7 +1456,7 @@
                     </p>
                     <div class="row_md">
                         <label class="label">
-                            <input type="text" placeholder=" Ваше имя и фамилия" />
+                            <input type="text" placeholder="Ваше имя и фамилия" />
                         </label>
                         <label class="label">
                             <input type="text" placeholder="Ваш телефон" />
@@ -1501,7 +1501,216 @@
             </div>
         </div>
     </div>
-
+    <!-- ========== End modal_mk ========== -->
+    <!-- ========== Start modal_feedback========== -->
+    <div class="modal modal_feedback">
+        <div class="modal__overlay flex-sc">
+            <div class="modal__wrapper flex-cc flex-col">
+                <button class="modal__close btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <form class="modal__form flex-cc flex-col">
+                    <h2>Оставить отзыв</h2>
+                    <div class="grid_wrapper">
+                        <label class="label label_name">
+                            <input type="text" placeholder="Ваше имя и фамилия" />
+                        </label>
+                        <label class="label label_tel">
+                            <input type="text" placeholder="Ваш телефон" />
+                        </label>
+                        <label class="label label_feedback">
+                            <textarea placeholder="Отзыв"></textarea>
+                        </label>
+                    </div>
+                    <div class="buttons">
+                        <button class="add-file flex-cc">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite.svg#photo"></use>
+                            </svg>
+                            <p>Добавить фото</p>
+                            <input class="add-file__input" type="file" name="file" hidden>
+                        </button>
+                        <button class="btn btn_default grid_button" type="submit">Оставить отзыв</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End modal_feedback========== -->
+    <!-- ========== Start modal_call ========== -->
+    <div class="modal modal_call ">
+        <div class="modal__overlay flex-cc">
+            <div class="modal__wrapper flex-cc flex-col">
+                <button class="modal__close btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <form class="modal__form flex-cc flex-col">
+                    <h2>Заказать звонок</h2>
+                    <div class="grid_wrapper">
+                        <label class="label">
+                            <input type="text" placeholder="Ваше имя и фамилия" />
+                        </label>
+                        <label class="label">
+                            <input type="text" placeholder="Ваш телефон" />
+                        </label>
+                          <label class="check_label">
+                            <input class="check-box" type="checkbox">
+                            <span class="check-style"></span>
+                            Нажимая кнопку Вы даете согласие на обработку персональный данных
+                          </label>
+                    </div>
+                    <button class="btn btn_default grid_button" type="submit">Оставить отзыв</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End modal_call ========== -->
+    <!-- ========== Start modal_connection ========== -->
+    <div class="modal modal_connection">
+        <div class="modal__overlay flex-sc">
+            <div class="modal__wrapper flex-cc flex-col">
+                <button class="modal__close btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <form class="modal__form flex-cc flex-col">
+                    <h2>Заполните поля для связи</h2>
+                    <div class="grid_wrapper">
+                        <div class="grid_info">
+                            <div class="info">
+                                <p><span>Дата: </span>31 декабря</p>
+                            </div>
+                            <div class="info">
+                                <p><span>Время:</span> с 10:00 до 12:00</p>
+                            </div>
+                        </div>
+                        <label class="label">
+                            <input type="text" placeholder="Ваше имя и фамилия" />
+                        </label>
+                        <label class="label">
+                            <input type="text" placeholder="Ваш телефон" />
+                        </label>
+                          <label class="check_label">
+                            <input class="check-box" type="checkbox">
+                            <span class="check-style"></span>
+                            Нажимая кнопку Вы даете согласие на обработку персональный данных
+                          </label>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="btn btn_back">
+                            <svg class="icon"><use xlink:href="img/sprite.svg#arrowSlider"></use></svg>
+                            Назад
+                        </button>
+                        <button class="btn btn_default" type="submit">Записаться и<br> перезвонить мне</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End modal_connection ========== -->
+    <!-- ========== Start modal_success ========== -->
+    <div class="modal modal_feedback_thanks  modal_success">
+        <div class="modal__overlay flex-cc">
+            <div class="modal__wrapper flex-cc flex-col">
+                <button class="modal__close btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <div class="modal__form flex-cc flex-col">
+                    <h3>Вы успешно записались на мастер класс!</h3>
+                    <p>Наши специалисты свяжутся с Вами в течении 20 минут! Спасибо, что выбрали нас!</p>
+                    <div class="grid_info">
+                        <div class="info">
+                            <p><span>Дата: </span>31 декабря</p>
+                        </div>
+                        <div class="info">
+                            <p><span>Время:</span> с 10:00 до 12:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End modal_success ========== -->
+    <!-- ========== Start modal_thanks ========== -->
+    <div class="modal modal_feedback_thanks  modal_thanks">
+        <div class="modal__overlay flex-cc">
+            <div class="modal__wrapper flex-cc flex-col">
+                <button class="modal__close btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <form class="modal__form flex-cc flex-col">
+                    <h3>Спасибо!</h3>
+                    <p>Наши специалисты свяжутся с Вам в течении 30 минут.</p>
+                    <button class="btn btn_default" type="submit">В каталог пряников</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End modal_thanks ========== -->
+    <!-- ========== Start modal_feedback_thanks ========== -->
+    <div class="modal modal_feedback_thanks">
+        <div class="modal__overlay flex-cc">
+            <div class="modal__wrapper flex-cc flex-col">
+                <button class="modal__close btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <form class="modal__form flex-cc flex-col">
+                    <h3>Спасибо за отзыв!</h3>
+                    <p>Наши специалисты проверят отзыв и оповестят Вас о его добавлении на сайт!</p>
+                    <button class="btn btn_default" type="submit">В каталог пряников</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End modal_feedback_thanks ========== -->
+    <!-- ========== Start modal_feedback_full ========== -->
+    <div class="modal modal_feedback_full">
+        <div class="modal__overlay flex-sc">
+            <div class="modal__wrapper flex-sc flex-col">
+                <div class="feedback_autor">
+                    <button class="modal__close btn">
+                        <svg class="icon">
+                            <use xlink:href="img/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+    
+                    <img  src="img/feedback/avatar_wom.png" alt="Автор отзыва">
+                    <div class="autor-info">
+                        <p>Настя Елова</p>
+                        <p>30 дек. 2022</p>
+                    </div>
+                </div>
+                <div class="feedback_content__wrapper">
+                    <div class="feedback_content">
+                        <p>Очень крутой мастер класс! Дети довольны, получили хороший опыт по изготовлению вкусных пряников с начинкой. Рекомендую!</p>
+                        <p>Изначально было несколько задумок, но мы сразу отказались от банальных вариантов вроде обычного общепита. Для нас «10 зайцев» – это дело для души. Идея интерактивной площадки родилась на стыке детской мечты и желания сделать что-то уникальное и интересное, куда люди будут приходить и получать положительные эмоции.</p>
+                        <p>Прежде всего, мы устроили вокзал с железной дорогой. Нас вдохновил пример одной сувенирной лавки, которую мы посетили как-то в Европе. Там была маленькая железная дорога с поездом, в вагончиках которого сидели пряничные зайчики. Звук игрушечного поезда, который ездил по кругу, запах имбирных пряников – эту атмосферу мы попытались повторить и переложить в нашем проекте. Кроме того, железная дорога всегда вызывает детскую радость, веселье и удивление у гостей.</p>
+                        <div class="content_images">
+                            <img  src="img/feedback_full/img_1.png" alt="">
+                            <img  src="img/feedback_full/img_2.png" alt="">
+                            <img  src="img/feedback_full/img_3.png" alt="">
+                            <img  src="img/feedback_full/img_1.png" alt="">
+                        </div>
+                        <p>Потом мы вспомнили, что в Коломне неоправданно подзабыта история коломенского пряника, и решили сделать коллаборацию темы пряника и игрушечного поезда. К этой теме мы привязали историю строительства Московско-Рязанской железной дороги, возникновения станции Голутвин и Коломенского паровозостроительного завода. Так получился концепт первой комнаты «ВокЗала».</p>
+                        <p>В этом зале проходит интерактивная театрализованная программа с мастер-классом по приготовлению пряника. Мы планируем делать четыре сезона, как в театре. Следующий сезон, например, посвятим теме почтовых поездов. Дети и взрослые будут делать пряники, как и в первой нашей программе, но мы добавим мастер-класс по работе с почтовыми конвертами, сургучной печатью. Всех секретов раскрывать не буду, чтобы конкуренты этим не воспользовались, но уверен, что программа будет интересной. Мы готовы обновляться каждые три месяца для того, чтобы проект постоянно генерил туристический поток.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========== End modal_feedback_full ========== -->
     <script type="module" src="js/libraries.min.js"></script>
     <script type="module" src="js/main.min.js"></script>
 </body>
