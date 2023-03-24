@@ -167,3 +167,40 @@ const blog = new Swiper('.blog-swiper', {
         prevEl: `[data-role="blog-swiper-prev"]`,
     },
 });
+
+const MKM = new Swiper('.master_classes__mobile-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+        375: {
+            slidesPerView: 1.2,
+        },
+        576: {
+            slidesPerView: 1.6,
+        },
+        768: {
+            slidesPerView: 2.6,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+    
+    // Navigation arrows
+    navigation: {
+        nextEl: `[data-role="master_classes__mobile-swiper-next"]`,
+        prevEl: `[data-role="master_classes__mobile-swiper-prev"]`,
+    },
+});
+const MKD = new Swiper('.master_classes__desktop-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    // Navigation arrows
+    navigation: {
+        nextEl: `[data-role="master_classes__desktop-swiper-next"]`,
+        prevEl: `[data-role="master_classes__desktop-swiper-prev"]`,
+    },
+});
+
