@@ -204,3 +204,30 @@ const MKD = new Swiper('.master_classes__desktop-swiper', {
     },
 });
 
+const about_mc__gallery = new Swiper('.about_mc__gallery-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1.7,
+    breakpoints: {
+        576: {
+            slidesPerView: 2.2,
+        },
+        768: {
+            slidesPerView: 2.6,
+            spaceBetween: 30,
+
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        },
+    }
+});
+const about_mc__gallery_d = new Swiper('.about_mc__gallery_desk-swiper', {
+    loop: true,
+    spaceBetween: 40,
+});
+
