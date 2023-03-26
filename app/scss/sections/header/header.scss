@@ -350,7 +350,7 @@
 @media(min-width: $lg) {
     .header {
         .top_block__wrapper{
-            height: 105px;
+            height: 125px;
         }
         .top_block {
             width: 91.5%;
@@ -478,16 +478,10 @@
                 justify-content: center;
                 align-items: center;
 
-                a,
                 .btn--call {
                     display: block;
                 }
 
-                a {
-                    font-size: 20px;
-                    font-weight: 700;
-                    margin-right: 20px;
-                }
 
                 .btn--call--mobile {
                     display: none;
@@ -514,7 +508,7 @@
 
         .nav_desktop {
             display: flex;
-            padding-top: 104px;
+            padding-top: 124px;
 
             ul {
                 display: flex;
@@ -640,9 +634,13 @@
             }
 
             .calls {
-                a {
+
+                a { display: block;
+                    font-size: 20px;
+                    font-weight: 700;
                     margin-right: 30px;
                 }
+
             }
 
             .cart {
