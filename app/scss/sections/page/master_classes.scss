@@ -283,8 +283,8 @@
 
       .master_classes__desktop-swiper_buttons {
         position: absolute;
-        width: 80%;
-        bottom: 46%;
+        width: 70%;
+        top: calc(50% + 20px);
         left: 50%;
         transform: translateX(-50%);
         display: flex;
@@ -307,11 +307,11 @@
         }
 
         [data-role="master_classes__desktop-swiper-next"] {
-          right: -1%;
+          right: -124px;
           transform: rotate(180deg);
         }
         [data-role="master_classes__desktop-swiper-prev"] {
-          left: -1%;
+          left: -124px;
         }
 
       }

@@ -513,9 +513,11 @@
 
     .feedback_desktop-swiper_buttons {
       position: absolute;
-      width: 100%;
+      width: 70%;
       top: 31%;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
       display: flex;
       justify-content: space-between;
       button {
@@ -536,12 +538,12 @@
       }
 
       [data-role="feedback_desktop-next"] {
-        right: 8%;
-        margin-left: 20px;
+        right: -124px;
+        margin-left: 0;
         transform: rotate(180deg);
       }
       [data-role="feedback_desktop-prev"] {
-        left: 8%;
+        left: -124px;
       }
 
 

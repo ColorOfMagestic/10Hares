@@ -231,19 +231,18 @@
     }
   
     .blog-swiper_buttons {
-      position: absolute;
-      top: 65%;
-      left: 0;
-      right: auto;
+      top: calc(50% + 70px);
+      left: 50%;
+      transform: translateX(-50%);
       width: 100%;
       justify-content: space-between;
 
       [data-role="blog-swiper-next"] {
-        right: -10%;
+        right: -124px;
         margin-left: 0;
       }
       [data-role="blog-swiper-prev"] {
-        left: -10%;
+        left: -124px;
       }
 
     }
