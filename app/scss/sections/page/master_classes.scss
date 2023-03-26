@@ -106,7 +106,7 @@
     }
   
     .sliders {
-      max-width: 91.5%;
+      max-width: 93.75%;
       margin: 0 auto;
       margin-top: 70px;
       padding: 0;
@@ -150,7 +150,7 @@
 }
 
 // xl
-@media(min-width: $lg) {
+@media(min-width: $xl) {
   .master_classes {
     margin-top: 80px;
     h2 {
