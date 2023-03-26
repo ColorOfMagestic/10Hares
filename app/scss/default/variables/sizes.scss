@@ -15,6 +15,7 @@ $transition: 0.5s;
         font-weight: 700;
     }
     &--md {
+        text-align: center;
         font-size: 30px;
         font-weight: 700;
     }
@@ -39,6 +40,7 @@ $transition: 0.5s;
               font-size: 34px;
           }
           &--md {
+            text-align: left;
               font-size: 44px;
           }
   }  

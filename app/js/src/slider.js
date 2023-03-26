@@ -231,3 +231,38 @@ const about_mc__gallery_d = new Swiper('.about_mc__gallery_desk-swiper', {
     spaceBetween: 40,
 });
 
+const actors_swiper = new Swiper('.actors-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1.2,
+    breakpoints: {
+        576: {
+            slidesPerView: 2.2,
+        },
+        768: {
+            slidesPerView: 2.6,
+            spaceBetween: 30,
+
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+    },
+    navigation: {
+        nextEl: `[data-role="actors-swiper-next"]`,
+        prevEl: `[data-role="actors-swiper-prev"]`,
+    },
+
+
+
+});
+
