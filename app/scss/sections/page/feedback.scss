@@ -138,6 +138,12 @@
 
 }
 
+.feedback__inner {
+   h2 {
+    margin-top: 50px;
+   }
+}
+
 @media(min-width: $sm) {
   .feedback {
     margin-top: 50px;
@@ -206,6 +212,7 @@
       }
     }
   }
+  
 }
 
 @media(min-width: $md) {
@@ -221,6 +228,12 @@
     }
 
   }
+  .feedback__inner {
+    h2 {
+     margin-top: 70px;
+    }
+ }
+ 
 }
 
 @media(min-width: $lg) {
@@ -343,6 +356,19 @@
     }
 
   }
+
+  .feedback__inner {
+    h2 {
+     margin-top: 80px;
+    }
+
+    .feedback-swiper_buttons {
+      top: 50%;
+      right: 30px;
+    }
+
+ }
+ 
 
 }
 @media(min-width: $xl) {
