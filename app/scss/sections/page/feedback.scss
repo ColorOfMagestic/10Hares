@@ -28,7 +28,8 @@
         display: flex;
         flex-flow: column nowrap;
         padding: 20px;
-
+        background-color: $white;
+        
         &>img {
           border-radius: 20px;
         }
