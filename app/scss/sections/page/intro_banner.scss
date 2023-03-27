@@ -102,6 +102,27 @@
 
 }
 
+.intro_banner--excursions {
+  .intro_banner__wrapper {
+    height: 410px;
+    background: url(../../img/intro_banner/intro_2_xs_bg.png)no-repeat 50%/contain;
+  }
+
+  .intro_banner-swiper {
+    .swiper-slide {
+      .swiper-slide__content {
+        height: 330px;
+      }
+    }
+  }
+
+  picture {
+    left: -15px;
+    bottom: 3px;
+  }
+
+}
+
 @media(min-width: 400px) {
   .intro_banner {
 
@@ -116,6 +137,7 @@
     }
   }
 }
+
 // sm
 @media(min-width: $sm) {
   .intro_banner {
@@ -169,6 +191,16 @@
   
   
   }
+
+  .intro_banner--excursions {
+    
+    picture {
+      left: -25px;
+      bottom: 0px;
+    }
+  
+  }
+  
 
 }
 // md
@@ -239,6 +271,17 @@
   }
 
   }
+
+  .intro_banner--excursions {
+    picture {
+      img {
+        top: -42px;
+        right: 25px;
+      }
+  }
+
+  }
+
 }
 // lg
 @media(min-width: $lg) {
@@ -305,7 +348,17 @@
   }
 
   }
-  
+
+  .intro_banner--excursions {
+    picture {
+      img {
+        top: -74px;
+        right: 50px;
+      }
+  }
+
+  }
+
 }
 // xl
 @media(min-width: $xl) {
@@ -370,6 +423,15 @@
 }
 
 }
+
+.intro_banner--excursions {
+  picture {
+    img {
+      top: -74px;
+    }
+}
+}
+
 }
 // xxl
 @media(min-width: $xxl) {
@@ -407,7 +469,6 @@
         right: 100px;
         top: -140px;
         transform: rotate(0);
-
       }
   }
   
@@ -466,7 +527,7 @@
       background: url(../../img/intro_banner/intro_2_xl_bg.png)no-repeat 50%/contain;
     }
     
-    picture {
+  picture {
       img {
         width: 60%;
         right: 40px;
@@ -477,5 +538,15 @@
   }
 
   } 
+  
+  .intro_banner--excursions {
+    picture {
+      img {
+        width: 48%;
+        top: -127px;
+      }
+  }
+  }
+  
   
 }
