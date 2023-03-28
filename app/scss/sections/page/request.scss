@@ -13,7 +13,7 @@
     .request-swiper_wrapper {
       width: 100%;
 
-      .request-swiper {
+      .request-swiper, .request_double-swiper {
         margin-bottom: 10px;
 
         .request_slide {
@@ -61,14 +61,20 @@
       }
     }
 
-    [data-role="request-swiper-prev"] {
+    [data-role="request-swiper-prev"], [data-role="request_double-swiper-prev"] {
       left: 30px;
     }
 
-    [data-role="request-swiper-next"] {
+    [data-role="request-swiper-next"],[data-role="request_double-swiper-next"] {
       right: 30px;
       transform: rotate(180deg);
     }
+  }
+}
+
+.request_double_wrapper {
+  .request_double {
+    display: none;
   }
 }
 
@@ -81,15 +87,14 @@
       padding-bottom: 0;
       background: url(../../img/request/bg_sm.png) no-repeat 50%/cover;
 
-      .request-swiper_wrapper {}
     }
 
     .request-swiper_buttons {
-      [data-role="request-swiper-prev"] {
+      [data-role="request-swiper-prev"],[data-role="request_double-swiper-prev"] {
         left: 65px;
       }
 
-      [data-role="request-swiper-next"] {
+      [data-role="request-swiper-next"],[data-role="request_double-swiper-next"] {
         right: 65px;
       }
     }
@@ -115,7 +120,7 @@
         align-self: center;
         padding-bottom: 30px;
 
-        .request-swiper {
+        .request-swiper, .request_double-swiper {
           margin-bottom: 0;
           text-align: left;
 
@@ -157,17 +162,61 @@
         }
       }
 
-      [data-role="request-swiper-prev"] {
+      [data-role="request-swiper-prev"],[data-role="request_double-swiper-prev"] {
         left: 0;
       }
 
-      [data-role="request-swiper-next"] {
+      [data-role="request-swiper-next"],[data-role="request_double-swiper-next"] {
         right: 0;
         margin-left: 10px;
       }
     }
   }
+}
 
+@media(min-width: 1200px) {
+  .request_double_wrapper {
+    margin-top: 50px;
+    display: flex;
+
+    .request {
+      width: 49%;
+      margin-top: 0;
+  
+      .request_wrapper {
+        background: url(../../img/request/bg_md_d.png) no-repeat 0% bottom/contain;
+  
+  
+        .request-swiper_wrapper {  
+          .request-swiper, .request_double-swiper {  
+            .request_slide {
+              h3 {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+  
+        &>button {
+          bottom: 30px;
+        }
+      }
+  
+      .request-swiper_buttons {
+        bottom: 45px;
+      }
+    }
+    
+    .request_double {
+      margin-left: auto;
+      display: block;
+      .request_wrapper {
+        background: url(../../img/request/bg_md_d_2.png) no-repeat 0% bottom/contain;
+        }
+
+    }
+  
+  }
 }
 
 @media(min-width: $lg) {
@@ -180,7 +229,7 @@
       .request-swiper_wrapper {
         padding-bottom: 0;
 
-        .request-swiper {
+        .request-swiper, .request_double-swiper {
           margin-bottom: 0;
           text-align: left;
 
@@ -200,6 +249,17 @@
     }
   }
 
+  .request_double_wrapper {
+    .request {
+      width: 100%;
+      .request_wrapper {
+        background: url(../../img/request/bg_lg.png) no-repeat 0% bottom/100%;
+      }
+    }
+    .request_double {
+      display: none;
+    }
+  }
 }
 
 @media(min-width: $xxl) {
@@ -211,7 +271,7 @@
       .request-swiper_wrapper {
         padding-bottom: 0;
 
-        .request-swiper {
+        .request-swiper, .request_double-swiper {
           margin-top: 100px;
           margin-bottom: 0;
           text-align: left;
@@ -235,4 +295,44 @@
       }
     }
   }
+
+  .request_double_wrapper {
+    margin-top: 70px;
+    .request {
+      width: 49%;
+      .request_wrapper {
+        padding-left: 40px;
+        background: url(../../img/request/bg_md_d.png) no-repeat 0% bottom/contain;
+        .request-swiper_wrapper {  
+          .request-swiper, .request_double-swiper {
+            margin-top: -30px;
+            .request_slide {
+              h3 {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+  
+        &>button {
+          left: 40px;
+          bottom: 40px;
+        }
+      }
+  
+      .request-swiper_buttons {
+        left: 260px;
+        bottom: 55px;
+      }
+    }
+
+    .request_double {
+      display: block;
+      .request_wrapper {
+        background: url(../../img/request/bg_md_d_2.png) no-repeat 0% bottom/contain;
+
+      }
+    }
+  }
+
 }
