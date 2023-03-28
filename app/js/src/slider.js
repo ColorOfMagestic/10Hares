@@ -144,6 +144,19 @@ const product = new Swiper('.product-swiper', {
         prevEl: `[data-role="product-swiper-prev"]`,
     },
 });
+
+const product_desk = new Swiper('.product_desk-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: `[data-role="product-swiper-next"]`,
+        prevEl: `[data-role="product-swiper-prev"]`,
+    },
+});
+
 const product_similar = new Swiper('.product_similar-swiper', {
     loop: true,
     spaceBetween: 20,
