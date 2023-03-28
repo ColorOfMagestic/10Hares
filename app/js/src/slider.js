@@ -108,6 +108,17 @@ const request = new Swiper('.request-swiper', {
         prevEl: `[data-role="request-swiper-prev"]`,
     },
 });
+
+const request_double = new Swiper('.request_double-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    
+    // Navigation arrows
+    navigation: {
+        nextEl: `[data-role="request_double-swiper-next"]`,
+        prevEl: `[data-role="request_double-swiper-prev"]`,
+    },
+});
 const product = new Swiper('.product-swiper', {
     loop: true,
     spaceBetween: 20,
@@ -126,11 +137,40 @@ const product = new Swiper('.product-swiper', {
             slidesPerView: 3,
             spaceBetween: 30,
         },
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: `[data-role="product-swiper-next"]`,
+        prevEl: `[data-role="product-swiper-prev"]`,
+    },
+});
+const product_similar = new Swiper('.product_similar-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    breakpoints: {
+        375: {
+            slidesPerView: 1.4,
+        },
+        576: {
+            slidesPerView: 2.2,
+        },
+        768: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
         1900: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: false,
-        }
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
     },
 
     
@@ -265,4 +305,42 @@ const actors_swiper = new Swiper('.actors-swiper', {
 
 
 });
+
+const detail_small = new Swiper(".detail_small-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        576: {
+            slidesPerView: 4.4,
+        },
+        768: {
+            slidesPerView: 5.6,
+            spaceBetween: 20,
+        },
+        992: {
+            slidesPerView: 3.4,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 4.6,
+            spaceBetween: 30,
+        },
+        1400: {
+            slidesPerView: 3.6,
+            spaceBetween: 40,
+        },
+    },
+
+  });
+  const detail = new Swiper(".detail-swiper", {
+    loop: true,
+    spaceBetween: 20,
+    thumbs: {
+      swiper: detail_small,
+    },
+  });
+
 
