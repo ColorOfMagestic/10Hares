@@ -578,4 +578,11 @@
 
   }
 
+  .feedback--inner {
+    .feedback_desktop-swiper_buttons {
+      top: 50%;
+      transform: translate(-50%, -70%);
+    }
+  }
+
 }
