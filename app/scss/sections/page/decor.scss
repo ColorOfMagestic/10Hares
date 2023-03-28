@@ -2,63 +2,90 @@
   position: relative;
 }
 
-.decor--top  {
+.decor--top {
   background: url(../../img/decor/main_xs_top.svg)no-repeat 50%/cover;
 }
-.decor--mid  {
+
+.decor--mid {
   background: url(../../img/decor/main_xs_mid.svg)no-repeat 50%/cover;
 }
-.decor--bot  {
+
+.decor--bot {
   background: url(../../img/decor/main_xs_bot.svg)no-repeat 50%/cover;
 }
 
+.decor--card {
+  background: url(../../img/decor/card_xs.svg)no-repeat 50%/cover;
+}
+
 @media(min-width: $sm) {
-  .decor--top  {
+  .decor--top {
     background: url(../../img/decor/main_sm_top.svg)no-repeat 50%/cover;
   }
-  .decor--mid  {
+
+  .decor--mid {
     background: url(../../img/decor/main_sm_mid.svg)no-repeat 50%/cover;
   }
-  .decor--bot  {
+
+  .decor--bot {
     background: url(../../img/decor/main_sm_bot.svg)no-repeat 50%/cover;
   }
-  
+
+  .decor--card {
+    background: url(../../img/decor/card_sm.svg)no-repeat 50%/cover;
+  }
 }
+
 @media(min-width: $md) {
-  .decor--top  {
+  .decor--top {
     background: url(../../img/decor/main_md_top.svg)no-repeat 50%/cover;
   }
-  .decor--mid  {
+
+  .decor--mid {
     background: url(../../img/decor/main_md_mid.svg)no-repeat 50%/cover;
   }
-  .decor--bot  {
+
+  .decor--bot {
     background: url(../../img/decor/main_md_bot.svg)no-repeat 50%/cover;
   }
-  
+
+  .decor--card {
+    background: url(../../img/decor/card_md.svg)no-repeat 50%/cover;
+  }
 }
 
 @media(min-width: $lg) {
-  .decor--top  {
+  .decor--top {
     background: url(../../img/decor/main_lg_top.svg)no-repeat 50%/cover;
   }
-  .decor--mid  {
+
+  .decor--mid {
     background: url(../../img/decor/main_lg_mid.svg)no-repeat 50%/cover;
   }
-  .decor--bot  {
+
+  .decor--bot {
     background: url(../../img/decor/main_lg_bot.svg)no-repeat 50%/cover;
   }
-  
+
+  .decor--card {
+    background: url(../../img/decor/card_lg.svg)no-repeat 50%/cover;
+  }
 }
 
 @media(min-width: $xl) {
-  .decor--top  {
+  .decor--top {
     background: url(../../img/decor/main_xl_top.svg)no-repeat 50%/cover;
   }
-  .decor--mid  {
+
+  .decor--mid {
     background: url(../../img/decor/main_xl_mid.svg)no-repeat 50%/cover;
   }
-  .decor--bot  {
+
+  .decor--bot {
     background: url(../../img/decor/main_xl_bot.svg)no-repeat 50%/cover;
   }
-  
+
+  .decor--card {
+    background: url(../../img/decor/card_xl.svg)no-repeat 50%/cover;
+  }
 }
