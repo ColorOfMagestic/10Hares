@@ -275,7 +275,6 @@
     .product-swiper_buttons {
       right: 0;
     }
-
   }
 }
 
@@ -439,4 +438,48 @@
 
 
   }
+
+  .product_similar {
+    .product-swiper_buttons {
+      position: absolute;
+      top: 50%;
+      transform: translateY(100%);
+      left: 0;
+      right: auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        width: 44px;
+        height: 26px;
+
+        .icon {
+          width: 100%;
+          height: 100%;
+          fill: $lightGray;
+        }
+
+        &:hover {
+          .icon {
+            fill: $redHover;
+          }
+        }
+      }
+
+      [data-role="product-swiper-next"] {
+        right: -124px;
+        margin-left: 0;
+        transform: rotate(180deg);
+
+      }
+
+      [data-role="product-swiper-prev"] {
+        left: -124px;
+      }
+
+    }
+
+
+}
 }
