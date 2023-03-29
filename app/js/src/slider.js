@@ -2,7 +2,7 @@ const intro = new Swiper('.intro_banner-swiper', {
     loop: true,
     spaceBetween: 10,
     autoHeight: true,
-    
+
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="intro_banner-next"]`,
@@ -14,8 +14,7 @@ const intro = new Swiper('.intro_banner-swiper', {
             nextEl: `[data-role="intro_banner-next_d"]`,
             prevEl: `[data-role="intro_banner-prev"]`,
         },
-    
-    }
+    },
 });
 
 const main_gallery = new Swiper('.gallery_mobile-swiper', {
@@ -38,7 +37,7 @@ const main_gallery = new Swiper('.gallery_mobile-swiper', {
             spaceBetween: 30,
         },
     },
-    
+
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="gallery_mobile-next"]`,
@@ -79,7 +78,7 @@ const feed = new Swiper('.feedback-swiper', {
             spaceBetween: 30,
         },
     },
-    
+
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="feedback-next"]`,
@@ -90,7 +89,7 @@ const feed = new Swiper('.feedback-swiper', {
 const feedDesk = new Swiper('.feedback_desktop-swiper', {
     loop: true,
     spaceBetween: 20,
-    
+
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="feedback_desktop-next"]`,
@@ -101,7 +100,7 @@ const feedDesk = new Swiper('.feedback_desktop-swiper', {
 const request = new Swiper('.request-swiper', {
     loop: true,
     spaceBetween: 20,
-    
+
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="request-swiper-next"]`,
@@ -112,7 +111,7 @@ const request = new Swiper('.request-swiper', {
 const request_double = new Swiper('.request_double-swiper', {
     loop: true,
     spaceBetween: 20,
-    
+
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="request_double-swiper-next"]`,
@@ -148,8 +147,7 @@ const product = new Swiper('.product-swiper', {
 const product_desk = new Swiper('.product_desk-swiper', {
     loop: true,
     spaceBetween: 20,
-    breakpoints: {
-    },
+    breakpoints: {},
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="product-swiper-next"]`,
@@ -186,8 +184,6 @@ const product_similar = new Swiper('.product_similar-swiper', {
         },
     },
 
-    
-    
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="product-swiper-next"]`,
@@ -240,7 +236,7 @@ const MKM = new Swiper('.master_classes__mobile-swiper', {
             spaceBetween: 30,
         },
     },
-    
+
     // Navigation arrows
     navigation: {
         nextEl: `[data-role="master_classes__mobile-swiper-next"]`,
@@ -268,16 +264,15 @@ const about_mc__gallery = new Swiper('.about_mc__gallery-swiper', {
         768: {
             slidesPerView: 2.6,
             spaceBetween: 30,
-
         },
         992: {
             slidesPerView: 3,
         },
         1200: {
             slidesPerView: 4,
-            spaceBetween: 30
+            spaceBetween: 30,
         },
-    }
+    },
 });
 const about_mc__gallery_d = new Swiper('.about_mc__gallery_desk-swiper', {
     loop: true,
@@ -295,7 +290,6 @@ const actors_swiper = new Swiper('.actors-swiper', {
         768: {
             slidesPerView: 2.6,
             spaceBetween: 30,
-
         },
         992: {
             slidesPerView: 3,
@@ -314,12 +308,9 @@ const actors_swiper = new Swiper('.actors-swiper', {
         nextEl: `[data-role="actors-swiper-next"]`,
         prevEl: `[data-role="actors-swiper-prev"]`,
     },
-
-
-
 });
 
-const detail_small = new Swiper(".detail_small-swiper", {
+const detail_small = new Swiper('.detail_small-swiper', {
     loop: true,
     spaceBetween: 10,
     slidesPerView: 3,
@@ -346,14 +337,42 @@ const detail_small = new Swiper(".detail_small-swiper", {
             spaceBetween: 40,
         },
     },
-
-  });
-  const detail = new Swiper(".detail-swiper", {
+});
+const detail = new Swiper('.detail-swiper', {
     loop: true,
     spaceBetween: 20,
     thumbs: {
-      swiper: detail_small,
+        swiper: detail_small,
     },
-  });
+});
 
+const description = new Swiper('.description-swiper', {
+    loop: true,
+    spaceBetween: 20,
+    slidesPerView: 1.8,
+    breakpoints: {
+        576: {
+            slidesPerView: 2.8,
+        },
+        768: {
+            slidesPerView: 3.2,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+        1900: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+    },
+    navigation: {
+        nextEl: `[data-role="description-swiper-next"]`,
+        prevEl: `[data-role="description-swiper-prev"]`,
+    }
+});
 
