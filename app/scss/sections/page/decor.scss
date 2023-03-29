@@ -18,6 +18,10 @@
   background: url(../../img/decor/card_xs.svg)no-repeat 50%/cover;
 }
 
+.decor--about {
+  background: url(../../img/decor/about_xs.svg)no-repeat 50%/cover;
+}
+
 @media(min-width: $sm) {
   .decor--top {
     background: url(../../img/decor/main_sm_top.svg)no-repeat 50%/cover;
@@ -34,6 +38,11 @@
   .decor--card {
     background: url(../../img/decor/card_sm.svg)no-repeat 50%/cover;
   }
+
+  .decor--about {
+    background: url(../../img/decor/about_sm.svg)no-repeat 50%/cover;
+  }
+  
 }
 
 @media(min-width: $md) {
@@ -52,6 +61,10 @@
   .decor--card {
     background: url(../../img/decor/card_md.svg)no-repeat 50%/cover;
   }
+  .decor--about {
+    background: url(../../img/decor/about_md.svg)no-repeat 50%/cover;
+  }
+  
 }
 
 @media(min-width: $lg) {
@@ -70,6 +83,10 @@
   .decor--card {
     background: url(../../img/decor/card_lg.svg)no-repeat 50%/cover;
   }
+  .decor--about {
+    background: url(../../img/decor/about_lg.svg)no-repeat 50%/cover;
+  }
+  
 }
 
 @media(min-width: $xl) {
@@ -88,4 +105,8 @@
   .decor--card {
     background: url(../../img/decor/card_xl.svg)no-repeat 50%/cover;
   }
+  .decor--about {
+    background: url(../../img/decor/about_xl.svg)no-repeat 50%/cover;
+  }
+  
 }
