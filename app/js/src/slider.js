@@ -373,6 +373,20 @@ const description = new Swiper('.description-swiper', {
     navigation: {
         nextEl: `[data-role="description-swiper-next"]`,
         prevEl: `[data-role="description-swiper-prev"]`,
-    }
+    },
 });
 
+const intro_article = new Swiper('.intro_article-swiper', {
+    spaceBetween: 20,
+    loop: true,
+    speed: 1000,
+    autoplay: {
+        delay: 3000,
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '[data-role="intro_article__slider-next"]',
+        prevEl: '[data-role="intro_article__slider-prev"]',
+    },
+    
+});
