@@ -66,18 +66,46 @@ body {
   }
 }
 
+.description {
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $dark;
+  }
+
+  p {
+    &:not(:last-child) {
+    margin-bottom: 30px;
+    }
+    color: $darkGray;
+  }
+}
+
 @media(min-width: $sm) {
   .container {
     max-width: 88.5%;
   }
+
+  .description {
+    h3 {
+      font-size: 30px;
+    }
+  }
+  
 
   
 }
 @media(min-width: $md) {
   .container {
     max-width: 89.9%;
-
   }
+
+  .description {
+    p {
+      font-size: 18px;
+    }
+}
+
 }
 
 @media(min-width: $lg) {
@@ -93,12 +121,25 @@ body {
       width: 150px;
     }  
   }
-  
+
+  .description {
+    h3 {
+      font-size: 40px;
+    }
+}
 }
 @media(min-width: $xl) {
   .container {
     max-width: 70%;
 
   }
+
+  .description {
+    h3 {
+      font-size: 44px;
+    }
+
+  }
+
 }
 
