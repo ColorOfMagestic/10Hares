@@ -57,9 +57,20 @@
   border: 2px solid $lineGray;
   border-radius: 10px;
   background-color: $white;
+  transition: $transition;
   .icon {
     margin-left: 8px;
     fill: $gray;
+  }
+
+  &:hover{
+    color: $white;
+    background-color: $beigeHover;
+    border-color: $beigeHover;
+
+    .icon {
+      fill: $white;
+    }
   }
 }
 

@@ -55,12 +55,12 @@
                             </svg>
                         </button>
                     </div>
-                    <button class="cart btn btn_red">
+                    <a href="cart.html" class="cart_link btn btn_red">
                         <svg class="icon">
-                            <use xlink:href="img/sprite.svg#cart"></use>
+                          <use xlink:href="img/sprite.svg#cart"></use>
                         </svg>
                         <span class="flex-cc">12</span>
-                    </button>
+                      </a>
                 </div>
             </div>
             <nav class="nav_desktop">
@@ -220,7 +220,154 @@
             <!-- ========== Start cart ========== -->
             <section class="cart">
               <div class="container">
-            
+                <div class="flex_wrapper">
+                    <h2 class="title-size--md">Корзина</h2>
+                    <button class="btn cart_clear">
+                        <svg class="icon"><use xlink:href="img/sprite.svg#close2"></use></svg>
+                        Очистить корзину
+                    </button>
+                </div>
+                <div class="grid_wrapper">
+                    <div class="cart_card__wrapper">
+                    <div class="cart_card">
+                        <img src="img/product/product_1.jpg" alt="Изображение"/>
+                        <div class="card_info">
+                            <div class="card_info__data">
+                                <p>Большой имбирный пряник "Заяц 2023"</p>
+                                <span>430 гр.</span>
+                            </div>
+                            <div class="card_info__counter_wrapper">
+                                <div class="counter">
+                                    <button class="btn">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="1">
+                                    <button class="btn">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="text">990 ₽</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_delete">
+                            <svg class="icon"><use xlink:href="img/sprite.svg#close2"></use></svg>
+                            <span>Удалить</span>
+                        </button>
+                    </div>
+                    <div class="cart_card">
+                        <img src="img/product/product_2.jpg" alt="Изображение"/>
+                        <div class="card_info">
+                            <div class="card_info__data">
+                                <p>Большой имбирный пряник "Заяц 2023"</p>
+                                <span>430 гр.</span>
+                            </div>
+                            <div class="card_info__counter_wrapper">
+                                <div class="counter">
+                                    <button class="btn">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="1">
+                                    <button class="btn">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="text">990 ₽</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_delete">
+                            <svg class="icon"><use xlink:href="img/sprite.svg#close2"></use></svg>
+                            <span>Удалить</span>
+                        </button>
+                    </div>
+                    <div class="cart_card">
+                        <img src="img/similar/img_1.jpg" alt="Изображение"/>
+                        <div class="card_info">
+                            <div class="card_info__data">
+                                <p>Большой имбирный пряник "Заяц 2023"</p>
+                                <span>430 гр.</span>
+                            </div>
+                            <div class="card_info__counter_wrapper">
+                                <div class="counter">
+                                    <button class="btn">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="1">
+                                    <button class="btn">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="text">990 ₽</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_delete">
+                            <svg class="icon"><use xlink:href="img/sprite.svg#close2"></use></svg>
+                            <span>Удалить</span>
+                        </button>
+                    </div>
+                    <div class="cart_card">
+                        <img src="img/similar/img_2.jpg" alt="Изображение"/>
+                        <div class="card_info">
+                            <div class="card_info__data">
+                                <p>Большой имбирный пряник "Заяц 2023"</p>
+                                <span>430 гр.</span>
+                            </div>
+                            <div class="card_info__counter_wrapper">
+                                <div class="counter">
+                                    <button class="btn">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="1">
+                                    <button class="btn">
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite.svg#plus"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="text">990 ₽</p>
+                            </div>
+                        </div>
+                        <button class="btn btn_delete">
+                            <svg class="icon"><use xlink:href="img/sprite.svg#close2"></use></svg>
+                            <span>Удалить</span>
+                        </button>
+                    </div>
+                    </div>
+                    <div class="order">
+                        <h3>Ваш заказ</h3>
+                        <div class="order_item">
+                            <p class="property">Товаров в корзине</p>
+                            <span class="line"></span>
+                            <p class="quantity">6 шт</p>
+                        </div>
+                        <div class="order_item">
+                            <p class="property">Вес товара</p>
+                            <span class="line"></span>
+                            <p class="quantity">1.5 кг</p>
+                        </div>
+                        <div class="order_item">
+                            <p class="property">Общая сумма</p>
+                            <span class="line"></span>
+                            <p class="quantity">2 990 ₽</p>
+                        </div>
+                        <button class="btn btn_red">
+                            Оформить заказ
+                        </button>
+                    </div>
+                </div>   
               </div>
             </section>
             <!-- ========== End cart ========== -->
