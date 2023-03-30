@@ -122,12 +122,13 @@
             }
         }
 
-        .cart {
+        .cart_link {
             position: relative;
             width: 44px;
             height: 44px;
             padding: 0;
             margin: 0 auto;
+            text-decoration: none;
 
             span {
                 position: absolute;
@@ -273,7 +274,7 @@
                 }
             }
 
-            .cart {
+            .cart_link {
                 width: 92px;
                 height: 44px;
 
@@ -364,7 +365,7 @@
                 }
             }
 
-            .cart {
+            .cart_link {
                 margin: 0;
                 margin-right: 50px;
             }
@@ -488,7 +489,7 @@
                 }
             }
 
-            .cart {
+            .cart_link {
                 width: 92px;
                 padding-top: 30px;
                 padding-bottom: 30px;
@@ -643,7 +644,7 @@
 
             }
 
-            .cart {
+            .cart_link {
                 margin-left: 40px;
             }
         }
