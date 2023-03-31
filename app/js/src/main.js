@@ -7,6 +7,7 @@ map_info = document.querySelector('.map_info'),
 add_file = document.querySelector('.add-file'),
 add_file_input = document.querySelector('.add-file__input');
 
+const ODInputs = document.querySelectorAll('.order_data-form .place');
 const toggleMenu =()=> {
   body.classList.toggle('body--hidden');
   btn_menu.classList.toggle('open');
@@ -38,12 +39,25 @@ const showMapInfo = () => {
   })
 };
 
+
+ODInputs.forEach(item => {
+  const sibling = item.nextElementSibling;
+  const hidden = () => {
+    sibling.classList.add('hide');
+    item.classList.remove('colored');
+    if(!item.value) {
+      sibling.classList.remove('hide');
+    }
+  }
+  const coloredBorder = () => {
+    item.classList.add('colored');
+  }
+
+  item.addEventListener('focusin', coloredBorder);
+  item.addEventListener('focusout', hidden);
+})
+
 add_file.addEventListener("click", () => add_file_input.click());
-add_file_input.addEventListener("change", loadImage);
-function loadImage() {
-  let file = add_file_input.files[0];
-  if (!file) return;
-  console.log(file);
-}
+
 showMapInfo();
 accordionSlide();

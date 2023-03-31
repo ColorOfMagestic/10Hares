@@ -1,0 +1,280 @@
+.order_data {
+  position: relative;
+  margin-top: 20px;
+  .flex_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    button {
+      width: 44px;
+      height: 26px;
+      margin-right: 20px;
+      .icon {
+        width: 100%;
+        height: 100%;
+        fill: $lightGray;
+      }
+    }
+  }
+
+  .order_data-form {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: $white;
+    border: 2px solid $lineGray;
+    border-radius: 20px;
+
+    h4 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .order_data-form__wrapper {
+      &:not(:first-child) {
+      margin-top: 20px;
+      }
+
+
+      label {
+        position: relative;
+        display: block;
+        width: 100%;
+      }
+
+      input, textarea  {
+        width: 100%;
+        padding: 20px 30px;
+        font-size: 18px;
+        font-family: "Circe",sans-serif;
+        border: 2px solid $lineGray;
+        border-radius: 10px; 
+        outline: none;
+
+        &::placeholder {
+          font-family: "Circe",sans-serif;
+          color: $darkGray;
+          font-size: inherit;
+        }
+      }
+
+      textarea {
+        height: 145px;
+        resize: none;
+      }
+      
+
+      .order_radio__grid_wrapper {
+        display: grid;
+        grid-template: 2fr/100%;
+        gap: 20px;
+
+        label {
+          padding: 20px 30px;
+          padding-left: 65px;
+          color: $darkGray;
+          border: 2px solid $lineGray;
+          border-radius: 10px;
+        }
+
+        .radio_button {
+          position: relative;
+          input[type="radio"] {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+          }
+          .radio-custom {
+              position: absolute;
+              top: 50%;
+              left: 30px;
+              transform: translateY(-50%);
+              width: 20px;
+              height: 20px;
+              border: 1px solid $lineGray;
+              border-radius: 50%;
+          }
+
+          input[type="radio"]:checked ~ .radio-custom {
+            border-color: $redHover;
+          }
+          input[type="radio"]:checked ~ .radio-custom::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color: red;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+          }
+
+          input[type="radio"]:checked ~ label {
+            color: $dark;
+            border-color: $beigeHover;
+          }
+        }
+      }
+
+      .order_user__grid_wrapper {
+        display: grid;
+        grid-template: auto/100%;
+        gap: 20px;
+      }
+
+      .order_adress__grid_wrapper {
+        display: grid;
+        grid-template-areas: 
+        "s s"
+        "h k";
+        gap: 20px 30px;
+
+        label {
+          &:nth-child(1) {
+            grid-area: s;
+          }
+          &:nth-child(2) {
+            grid-area: h;
+          }
+          &:nth-child(3) {
+            grid-area: k;
+          }
+        }
+      }
+
+
+
+      .custom_placeholder {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        color: rgba(88, 84, 82, 0.5);
+        font-size: 18px;
+        transition: $transition;
+
+        span {
+          color: $red;
+        }
+      }
+
+      .textarea__custom_placeholder {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+      }
+
+      .hide {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .colored {
+        color: $red;
+        border-color: $red;
+      }
+
+      input:focus + .custom_placeholder,textarea:focus + .custom_placeholder   {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+@media(min-width: $sm) {
+  .order_data {
+    margin-top: 30px;
+  
+    .order_data-form {
+      margin: 40px 0 50px;
+      padding: 30px;
+    }
+  }
+  
+}
+
+@media(min-width: $md) {
+  .order_data {  
+    .order_data-form {
+      margin: 40px 0 60px;
+
+      h4 {
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
+
+      .order_data-form__wrapper {
+        &:not(:first-child) {
+        margin-top: 30px;
+        }
+
+        .order_radio__grid_wrapper {
+          grid-template: 1fr/repeat(2, 1fr);
+          gap: 30px;
+        }
+        .order_user__grid_wrapper {
+          grid-template: auto/repeat(2, 1fr);
+          gap: 30px;
+        }
+
+        .order_adress__grid_wrapper {
+          grid-template: 1fr/ repeat(4, 1fr);
+          grid-template-areas: 
+          "s s h k";
+          gap: 30px;
+        }
+      }
+    }
+  }
+  
+}
+
+@media(min-width: $lg) {
+  .order_data {
+    margin-top: 50px;
+
+    .flex_wrapper {
+      justify-content: flex-start;
+    }
+  
+    .order_data-form {
+      margin: 60px 0 70px;
+      .order_data-form__wrapper {
+        .order_adress__grid_wrapper {
+          grid-template: 1fr/ repeat(5, 1fr);
+          grid-template-areas: 
+          "s s s h k";
+          gap: 30px;
+        }
+
+      }
+    }
+  }
+  
+}
+
+@media(min-width: $xxl) {
+  .order_data {
+    margin-top: 60px;
+    .order_data_grid_wrapper {
+      display: grid;
+      grid-template: 1fr/1000px 305px;
+      gap: 40px;
+    }
+
+    .order_data-form {
+      margin: 60px 0 140px;
+    }
+  }
+}
+
+
+
