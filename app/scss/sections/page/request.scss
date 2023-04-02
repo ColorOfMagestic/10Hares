@@ -5,7 +5,7 @@
     position: relative;
     padding: 40px 30px;
     padding-bottom: 0;
-    background: url(../../img/request/bg_xs.png) no-repeat 50%/cover;
+    background: url(../img/request/bg_xs.png) no-repeat 50%/cover;
     border-radius: 20px;
     display: flex;
     flex-flow: column;
@@ -85,7 +85,7 @@
     .request_wrapper {
       padding: 40px;
       padding-bottom: 0;
-      background: url(../../img/request/bg_sm.png) no-repeat 50%/cover;
+      background: url(../img/request/bg_sm.png) no-repeat 50%/cover;
 
     }
 
@@ -111,7 +111,7 @@
       display: grid;
       grid-template: auto/55% 45%;
       padding-bottom: 0;
-      background: url(../../img/request/bg_md.png) no-repeat 0% bottom/cover;
+      background: url(../img/request/bg_md.png) no-repeat 0% bottom/cover;
       border-radius: 20px;
 
 
@@ -184,7 +184,7 @@
       margin-top: 0;
   
       .request_wrapper {
-        background: url(../../img/request/bg_md_d.png) no-repeat 0% bottom/contain;
+        background: url(../img/request/bg_md_d.png) no-repeat 0% bottom/contain;
   
   
         .request-swiper_wrapper {  
@@ -211,7 +211,7 @@
       margin-left: auto;
       display: block;
       .request_wrapper {
-        background: url(../../img/request/bg_md_d_2.png) no-repeat 0% bottom/contain;
+        background: url(../img/request/bg_md_d_2.png) no-repeat 0% bottom/contain;
         }
 
     }
@@ -224,7 +224,7 @@
     .request_wrapper {
       grid-template: auto/50% 50%;
       padding-bottom: 0;
-      background: url(../../img/request/bg_lg.png) no-repeat 0% bottom/100%;
+      background: url(../img/request/bg_lg.png) no-repeat 0% bottom/100%;
 
       .request-swiper_wrapper {
         padding-bottom: 0;
@@ -253,7 +253,7 @@
     .request {
       width: 100%;
       .request_wrapper {
-        background: url(../../img/request/bg_lg.png) no-repeat 0% bottom/100%;
+        background: url(../img/request/bg_lg.png) no-repeat 0% bottom/100%;
       }
     }
     .request_double {
@@ -266,7 +266,7 @@
   .request {
     .request_wrapper {
       padding-left: 60px;
-      background: url(../../img/request/bg_xxl.png) no-repeat 0% bottom/100%;
+      background: url(../img/request/bg_xxl.png) no-repeat 0% bottom/100%;
 
       .request-swiper_wrapper {
         padding-bottom: 0;
@@ -302,7 +302,7 @@
       width: 49%;
       .request_wrapper {
         padding-left: 40px;
-        background: url(../../img/request/bg_md_d.png) no-repeat 0% bottom/contain;
+        background: url(../img/request/bg_md_d.png) no-repeat 0% bottom/contain;
         .request-swiper_wrapper {  
           .request-swiper, .request_double-swiper {
             margin-top: -30px;
@@ -329,7 +329,7 @@
     .request_double {
       display: block;
       .request_wrapper {
-        background: url(../../img/request/bg_md_d_2.png) no-repeat 0% bottom/contain;
+        background: url(../img/request/bg_md_d_2.png) no-repeat 0% bottom/contain;
 
       }
     }
