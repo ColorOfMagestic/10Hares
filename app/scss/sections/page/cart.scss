@@ -249,7 +249,15 @@
       justify-content: space-between;
       .cart_clear {
         margin-left: auto;
+        &:hover{
+          color: $redHover;
+          .icon {
+            fill:$redHover;
+          }
+          
+        }
       }
+
     }
   
     .cart_card__wrapper {
@@ -304,6 +312,15 @@
             width: 8px;
             height: 8px;
             fill: $gray;
+          }
+
+          &:hover{
+            span {
+              color: $redHover;
+            }
+            .icon {
+              fill: $redHover;
+            }
           }
         }
       }
