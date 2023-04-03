@@ -101,6 +101,15 @@
   }
 }
 
+.modal_thanks {
+  .modal__form {
+    a {
+      color: $white;
+      margin-top: 20px;
+    }
+  }
+}
+
 .modal_call {
 
   .grid_wrapper {
@@ -327,6 +336,15 @@
     }
   }
 
+  .modal_thanks {
+    .modal__form {
+      a {
+        margin-top: 40px;
+      }
+    }
+  }
+  
+
   .modal_connection {
 
     .grid_wrapper {
@@ -503,6 +521,15 @@
       }
     }
   }
+
+  .modal_thanks {
+    .modal__form {
+      a {
+        margin-top: 60px;
+      }
+    }
+  }
+
 
   .modal_call {
     .modal__wrapper {

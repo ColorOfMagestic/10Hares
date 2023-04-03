@@ -46,7 +46,7 @@
                     </a>
                     <div class="calls">
                         <a class="link" href="tel:+78129999999">+7 (812) 999-99-99</a>
-                        <button class="btn btn_default btn--call">
+                        <button data-role="call_me_header"  class="btn btn_default btn--call">
                             Перезвонить мне
                         </button>
                         <button class="btn btn_default btn--call--mobile">
@@ -66,7 +66,7 @@
             <nav class="nav_desktop">
                 <ul>
                     <li>
-                        <a class="link" href="javascript:void(0)">Мастер классы</a>
+                        <a class="link" href="master_class.html">Мастер классы</a>
                     </li>
                     <li>
                         <svg class="icon">
@@ -97,7 +97,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="link" href="catalog_item.html">КАТАЛОГ</a>
+                        <a class="link" href="catalog.html">КАТАЛОГ</a>
                     </li>
                     <li>
                         <svg class="icon">
@@ -126,7 +126,7 @@
                                 <a class="link" href="javascript:void(0)">карта</a>
                             </li>
                             <li>
-                                <a class="link" href="javascript:void(0)">Что то еще</a>
+                                <a class="link" href="order_data.html">Что то еще</a>
                             </li>
                         </ul>
                     </li>
@@ -436,7 +436,7 @@
                                             <use xlink:href="img/sprite.svg#arrow2"></use>
                                         </svg>
                                     </div>
-                                    <button type="submit" class="btn btn_default">Записаться</button>
+                                    <button data-role="sing_up_1" class="btn btn_default">Записаться</button>
                                 </form>
     
                             </div>
@@ -599,7 +599,7 @@
                                         </div>
                                         <p>Очень крутой мастер класс! Дети довольны, получили хороший опыт по
                                             изготовлению вкусных ...</p>
-                                        <button class="btn link_default">
+                                        <button data-role="feedback_full"  class="btn link_default">
                                             Раскрыть
                                         </button>
                                     </div>
@@ -838,7 +838,7 @@
                     </button>
                 </div>
 
-                <button class="btn btn_white feedback__btn">Оставить отзыв</button>
+                <button data-role="leave" class="btn btn_white feedback__btn">Оставить отзыв</button>
                 <!-- slider-request -->
             </div>
             <div class="request">
@@ -1414,7 +1414,7 @@
 
         </div>
     </footer>
-    <!-- ========== Start modal_mk ========== -->
+    <!-- ========== Start modal_mk ==========+ -->
     <div class="modal modal_mk">
         <div class="modal__overlay flex-sc">
             <div class="modal__wrapper flex-cc flex-col">
@@ -1470,13 +1470,13 @@
                             <p><span>Время:</span> с 10:00 до 12:00</p>
                         </div>
                     </div>
-                    <button class="btn btn_default" type="submit">Записаться на мастер класс</button>
+                    <button data-role="think_mk" class="btn btn_default">Записаться на мастер класс</button>
                 </form>
             </div>
         </div>
     </div>
     <!-- ========== End modal_mk ========== -->
-    <!-- ========== Start modal_feedback========== -->
+    <!-- ========== Start modal_feedback==========+ -->
     <div class="modal modal_feedback">
         <div class="modal__overlay flex-sc">
             <div class="modal__wrapper flex-cc flex-col">
@@ -1506,15 +1506,15 @@
                             <p>Добавить фото</p>
                             <input class="add-file__input" type="file" name="file" hidden>
                         </button>
-                        <button class="btn btn_default grid_button" type="submit">Оставить отзыв</button>
+                        <button data-role="leave_thanks" class="btn btn_default grid_button" type="submit">Оставить отзыв</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <!-- ========== End modal_feedback========== -->
-    <!-- ========== Start modal_call ========== -->
-    <div class="modal modal_call ">
+    <!-- ========== Start modal_call ==========+ -->
+    <div class="modal modal_call">
         <div class="modal__overlay flex-cc">
             <div class="modal__wrapper flex-cc flex-col">
                 <button class="modal__close btn">
@@ -1537,7 +1537,7 @@
                             Нажимая кнопку Вы даете согласие на обработку персональный данных
                           </label>
                     </div>
-                    <button class="btn btn_default grid_button" type="submit">Оставить отзыв</button>
+                    <button data-role="thanks_1" class="btn btn_default grid_button" >Перезвонить мне</button>
                 </form>
             </div>
         </div>
@@ -1588,7 +1588,7 @@
         </div>
     </div>
     <!-- ========== End modal_connection ========== -->
-    <!-- ========== Start modal_success ========== -->
+    <!-- ========== Start modal_success ==========+ -->
     <div class="modal modal_feedback_thanks  modal_success">
         <div class="modal__overlay flex-cc">
             <div class="modal__wrapper flex-cc flex-col">
@@ -1613,8 +1613,8 @@
         </div>
     </div>
     <!-- ========== End modal_success ========== -->
-    <!-- ========== Start modal_thanks ========== -->
-    <div class="modal modal_feedback_thanks  modal_thanks">
+    <!-- ========== Start modal_thanks ==========+ -->
+    <div class="modal modal_feedback_thanks modal_thanks">
         <div class="modal__overlay flex-cc">
             <div class="modal__wrapper flex-cc flex-col">
                 <button class="modal__close btn">
@@ -1625,14 +1625,14 @@
                 <form class="modal__form flex-cc flex-col">
                     <h3>Спасибо!</h3>
                     <p>Наши специалисты свяжутся с Вам в течении 30 минут.</p>
-                    <button class="btn btn_default" type="submit">В каталог пряников</button>
+                    <a class="link btn_default" href="catalog.html">В каталог пряников</a>
                 </form>
             </div>
         </div>
     </div>
     <!-- ========== End modal_thanks ========== -->
-    <!-- ========== Start modal_feedback_thanks ========== -->
-    <div class="modal modal_feedback_thanks">
+    <!-- ========== Start modal_feedback_thanks ==========+ -->
+    <div class="modal modal_feedback_thanks modal_leave_thanks">
         <div class="modal__overlay flex-cc">
             <div class="modal__wrapper flex-cc flex-col">
                 <button class="modal__close btn">
@@ -1649,7 +1649,7 @@
         </div>
     </div>
     <!-- ========== End modal_feedback_thanks ========== -->
-    <!-- ========== Start modal_feedback_full ========== -->
+    <!-- ========== Start modal_feedback_full ==========+ -->
     <div class="modal modal_feedback_full">
         <div class="modal__overlay flex-sc">
             <div class="modal__wrapper flex-sc flex-col">

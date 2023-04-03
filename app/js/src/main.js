@@ -15,6 +15,27 @@ const body = document.querySelector('.page-body'),
 
 const ODInputs = document.querySelectorAll('.order_data-form .place');
 
+// modals trigger btns
+const callMeHeaderBtns = document.querySelectorAll('[data-role="call_me_header"]'),
+thanks_1Btns = document.querySelectorAll('[data-role="thanks_1"]'),
+thanks_mk = document.querySelectorAll('[data-role="think_mk"]'),
+singUp1btn = document.querySelectorAll('[data-role="sing_up_1"]'),
+feedbackFullBtns = document.querySelectorAll('[data-role="feedback_full"]'),
+feedbackLeaveBtns = document.querySelectorAll('[data-role="leave"]'),
+leaveThanksBtns = document.querySelectorAll('[data-role="leave_thanks"]'),
+modalCloseBtns = document.querySelectorAll('.modal__close');
+
+// modals
+const modalsAll = document.querySelectorAll('.modal'),
+modalCall = document.querySelector('.modal_call'),
+modal_mk = document.querySelector('.modal_mk'),
+modalSuccess = document.querySelector('.modal_success'),
+modalFeedbackFull = document.querySelector('.modal_feedback_full'),
+modalLeave = document.querySelector('.modal_feedback'),
+modalLeaveThanks = document.querySelector('.modal_leave_thanks'),
+modalThanks = document.querySelector('.modal_thanks');
+
+
 const toggleMenu = () => {
     body.classList.toggle('body--hidden');
     btn_menu.classList.toggle('open');
@@ -167,5 +188,51 @@ if(template.classList.contains('catalog_page')) {
     changesLayuotCatalogCards();
     openCatalogFilters();
 }
+
+const modals = () => {
+
+    const openModal = (btnsList, modal) => {
+        btnsList.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                body.classList.add('body--hidden');
+                modal.classList.add('modal--active');
+            })
+        });
+    };
+    const openModalThank = (btnsList, modal, modal2) => {
+        btnsList.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                body.classList.add('body--hidden');
+                modal.classList.add('modal--active');
+                modal2.classList.remove('modal--active');
+            })
+        });
+    };
+
+    modalCloseBtns.forEach(btn => {
+        btn.addEventListener('click', ()=> {
+            body.classList.remove('body--hidden');
+            modalsAll.forEach(modal => {
+                modal.classList.remove('modal--active')
+            });
+        } );
+    })
+    
+
+    openModal(callMeHeaderBtns,modalCall);
+    openModal(singUp1btn,modal_mk);
+    openModal(feedbackFullBtns,modalFeedbackFull);
+    openModal(feedbackLeaveBtns,modalLeave);
+
+
+    openModalThank(thanks_1Btns,modalThanks, modalCall);
+    openModalThank(thanks_mk,modalSuccess, modal_mk);
+    openModalThank(leaveThanksBtns,modalLeaveThanks, modalLeave);
+
+};
+
+modals();
 
 
