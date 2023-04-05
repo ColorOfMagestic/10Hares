@@ -1,15 +1,22 @@
 .footer {
     position: relative;
-    margin-top: 50px;
-    padding-top: 60px;
+    margin-top: 73px;
 
     .decor_rails {
-        top: 0;
+        top: -17px;
+    }
+
+    .footer_contacts__wrapper {
+        padding: 40px 0 70px;
+        background-color: #888;
     }
 
     .footer_contacts {
         .contact {
             position: relative;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
             width: 90%;
             padding: 20px;
             padding-left: 60px;
@@ -65,7 +72,7 @@
 
     .footer_map {
         position: relative;
-        margin-top: 40px;
+        margin-top: -30px;
 
         picture {
             img {
@@ -175,6 +182,10 @@
                         font-size: 16px;
                         text-transform: none;
                         color: $white;
+                        transition: $transition;
+                        &:hover {
+                            color: #FADBB9;
+                        }
                     }
                 }
             }
@@ -224,8 +235,11 @@
 
 @media(min-width: $sm) {
     .footer {
-        margin-top: 30px;
-        padding-top: 70px;
+        margin-top: 50px;
+
+        .footer_contacts__wrapper {
+            padding: 50px 0 80px;
+        }
         
         .footer_contacts {
             .contact {
@@ -240,6 +254,7 @@
         }
     
         .footer_map {
+            margin-top: -40px;
             .map_info {
                 bottom: 60px;
             }
@@ -277,8 +292,7 @@
 }
 @media(min-width: $md) {
     .footer {
-        margin-top: 70px;
-        padding-top: 90px;
+        margin-top: 50px;
         
         .footer_contacts {
             
@@ -351,8 +365,11 @@
 @media(min-width: $lg) {
     .footer {
         position: relative;
-        margin-top: 100px;
-        padding-top: 95px;
+        margin-top: 120px;
+        
+        .footer_contacts__wrapper {
+            padding:80px 0 100px;
+        }
         
         .footer_contacts {
             grid-template: auto/repeat(3, 1fr);
@@ -374,12 +391,12 @@
             }
     
             .contact-time {
-                display: block;
+                display: flex;
                 }
         }
     
         .footer_map {
-            margin-top: 60px;
+            margin-top: -50px;
 
             button {
                 transform: translate(-50%, -75%);
@@ -425,6 +442,7 @@
                     align-items: center;
                     padding: 18px 34px;
                     font-size: 18px;
+                    font-weight: 700;
                     &::before {
                       content: none;
                     }
@@ -483,8 +501,10 @@
 }
 @media(min-width: $xxl) {
     .footer {
-        margin-top: 135px;
-        padding-top: 140px;
+        margin-top: 160px;
+        .footer_contacts__wrapper {
+            padding: 120px 0 140px;
+        }
 
         .footer_contacts {
             grid-template: auto/repeat(3, 1fr);
@@ -494,13 +514,16 @@
                 padding-left: 85px;
                 font-size: 18px;
                 &::before {
-                  top: 40%;
+                  top: 50%;
                   transform: translateY(-50%);
                   left: 40px;
                 }
             }
         }
         
+        .footer_map {
+            margin-top: -80px;
+        }
         .footer_info {
             margin-top: -130px;
             padding-top: 202px;

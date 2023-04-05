@@ -1,5 +1,4 @@
 .link {
-  font-family: inherit;
   text-decoration: none;
   color: inherit;
   width: max-content;
@@ -13,6 +12,7 @@
   font-size: 12px;
   font-weight: 800;
   background-color: $beige;
+  font-family: $circe;
   color:$white;
   border-radius: 10px;
   transition: $transition;
@@ -34,10 +34,13 @@
 .link_red {
   position: relative;
   display:flex;
+  justify-content: center;
+  align-items: center;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.1rem;
   background-color: $red;
+  font-family: $circe;
   color:$white;
   border-radius: 10px;
   transition: $transition;
@@ -56,11 +59,13 @@
   letter-spacing: 0.1em;
   border: 2px solid $lineGray;
   border-radius: 10px;
+  font-family: $circe;
   background-color: $white;
   transition: $transition;
   .icon {
     margin-left: 8px;
     fill: $gray;
+    transition: $transition;
   }
 
   &:hover{

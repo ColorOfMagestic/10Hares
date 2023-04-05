@@ -155,7 +155,7 @@
     z-index: -1;
     position: absolute;
     top: 43px;
-    right: -12px;
+    right: -50px;
     display: block;
     width: 60px;
     height: 70px;
@@ -317,7 +317,6 @@
 
 @media(min-width: $xl) {
   .features {
-    // margin-top: 140px;
 
     h2 {
       display: none;
@@ -346,13 +345,17 @@
         flex-flow: row nowrap;
         justify-content: flex-start;
         text-align: left;
+        p {
+          font-size: 20px;
+        }
 
       }
     }
 
     .features_sign_up {
       margin-top: 0;
-      padding: 20px 30px;
+      padding: 30px 60px;
+      padding-bottom: 60px;
 
       h3 {
         font-size: 24px;
@@ -377,3 +380,32 @@
   }
 
 }
+
+@media(min-width: $xxl) {
+  .features {
+    margin-top: 140px;
+
+    .features_wrapper {
+      grid-template: auto/ 700px 535px;
+
+      .features_sign_up {
+        h3 {
+          font-size: 34px;
+        }
+
+        .calendar {
+          margin-top: 25px;
+          .dates {
+            gap: 15px 0;
+          }
+        }
+        
+        .sign_up__form {
+          margin-top: 30px;
+          gap: 30px;
+        }
+      }
+    }
+  }
+}
+

@@ -6,9 +6,21 @@
         left: 0;
         display: flex;
         justify-content: center;
-        height: 130px;
-        background-color: $white;
+        height: 125px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        background-color: $darkWhite;
         z-index: 5;
+        &::before {
+          position: absolute;
+          top: -20px;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height:20px;
+          background-color: $white;
+        }
     }
 
     .top_block {
@@ -16,8 +28,8 @@
         z-index: 5;
         width: 89.5%;
         display: flex;
-        padding-top: 10px;
-        background-color: $white;
+        background-color: $darkWhite;
+
 
         .btn_menu {
             flex-direction: column;
@@ -147,10 +159,6 @@
         }
     }
 
-    .nav_desktop {
-        display: none;
-    }
-
     .nav_mobile {
         position: fixed;
         z-index: 2;
@@ -260,6 +268,16 @@
 
 @media(min-width: $sm) {
     .header {
+
+        .top_block__wrapper {
+            margin-top: 30px;
+            &::before {
+              top: -30px;
+              height:30px;
+            }
+    
+        }
+
         .top_block {
             width: 88.5%;
 
@@ -351,7 +369,15 @@
 @media(min-width: $lg) {
     .header {
         .top_block__wrapper{
-            height: 125px;
+            height: 120px;
+            margin-top: 30px;
+            padding-bottom: 20px;
+            background-color: $darkWhite;
+            z-index: 5;
+            &::before {
+              top: -30px;
+              height:30px;
+            }
         }
         .top_block {
             width: 91.5%;
@@ -391,6 +417,7 @@
                 position: relative;
                 display: block;
                 padding-left: 29px;
+                font-size: 18px;
 
                 &::before {
                     position: absolute;
@@ -420,6 +447,7 @@
                     border-radius: 10px;
                     color: $darkGray;
                     transition: $transition;
+                    text-transform: none;
 
                     span {
                         display: flex;
@@ -481,6 +509,7 @@
 
                 .btn--call {
                     display: block;
+                    font-family: inherit;
                 }
 
 
@@ -497,6 +526,11 @@
                 margin-left: auto;
                 margin-right: 0;
 
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                }
+
                 span {
                     position: relative;
                     top: auto;
@@ -507,97 +541,6 @@
             }
         }
 
-        .nav_desktop {
-            display: flex;
-            padding-top: 124px;
-
-            ul {
-                display: flex;
-                align-items: center;
-                width: 100%;
-
-                li {
-                    position: relative;
-                    font-size: 18px;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    transition: 0.3s;
-
-                    &:not(:first-child) {
-                        margin-left: auto;
-                    }
-
-                    .icon {
-                        width: 56px;
-                        height: 6px;
-                    }
-
-                    .arrow {
-                        position: relative;
-                        display: flex;
-                        transform: translateX(-10px);
-                        svg {
-                            position: absolute;
-                            width: 20px;
-                            height: 22px;
-                            right: -25px;
-                            fill:$lightGray;
-                            transition: 0.3s;
-                        }
-                    }
-
-                    .inner_list {
-                        position: absolute;
-                        display: flex;
-                        visibility: hidden;
-                        z-index: -2;
-                        align-items: flex-start;
-                        flex-flow: column nowrap;
-                        width: max-content;
-                        padding: 30px;
-                        background-color: $white;
-                        border-radius: 20px;
-                        box-shadow:0 0 10px rgba(0,0,0, 0.05), 0 30px 30px rgba(0,0,0, 0.1);
-                        li {
-                            font-size: 16px;
-                            text-transform: none;
-                            font-weight: 400;
-                            transition: none;
-
-                            &:not(:first-child) {
-                                margin-top: 15px;
-                                margin-left: 0;
-                            }
-
-                            &:hover {
-                                a {
-                                    color: $beigeHover;
-                                }
-                            }
-
-                        }
-                    }
-
-                    &:hover{
-                        color:$red;
-                        .arrow {
-                            svg {
-                                fill: $dark;
-                                transform: rotate(180deg);
-                            }
-                        }
-                    .inner_list {
-                        visibility: visible;
-                        z-index: 2;
-                        li {
-                            color: $dark;
-                        }
-                    } 
-                    }
-                }
-            }
-
-        }
 
         .nav_mobile {
             display: none;
@@ -607,13 +550,23 @@
 
 @media(min-width: $xxl) {
     .header {
+        .top_block__wrapper {
+            height: 104px;
+            margin-top: 0;
+            background-color: $darkWhite;
+        }
 
         .top_block {
+            background-color: $darkWhite;
             .btn_menu {
                 display: none;
             }
 
             .social {
+
+                a {
+                    text-transform: none;
+                }
 
                 .link-tg {
                     margin-right: 80px;
@@ -646,16 +599,13 @@
 
             .cart_link {
                 margin-left: 40px;
-            }
-        }
 
-        .nav_desktop {
-            ul {
-                li {
-                    font-size: 22px;
+
+                span {
+                   font-size: 10px;
                 }
-            }
 
+            }
         }
     }
 }

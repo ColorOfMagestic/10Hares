@@ -4,7 +4,9 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    font-family: inherit;
     border: none;
+    padding: 0;
 }
 
 .btn_default {
@@ -46,6 +48,7 @@
     border-radius: 10px;
     border: 2px solid $lineGray;
     text-transform: uppercase;
+    font-family: inherit;
     letter-spacing: 0.1em;
     transition: $transition;
     &:hover {
@@ -63,10 +66,11 @@
     transform: translate(-50%, -50%);
     width: 60px;
     height: 60px;
-
     padding: 0;
     border-radius: 50%;
     background-color: rgba(221, 188, 151, 0.5);
+    transition: $transition;
+
     &:hover {
         background-color: rgba(214, 55, 62, 0.5);
     }

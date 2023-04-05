@@ -71,10 +71,9 @@
       border: 2px solid $white;
       border-radius: 10px;
       background-color: transparent;
-
-      p {
-        margin-left: 10px;
-        color: $white;
+      color: $white;
+      .icon {
+        margin-right: 10px;
       }
     }
   }

@@ -169,7 +169,7 @@ const convertWoff2 = woff2;
 export const dev = parallel(allStyles, allScripts,libraries, browserReboot, allWatching, toDoSprite);
 
 // gulp build - Удаление и перезапись содержимого папки /dist
-export const createBuild = series(clean,processImg, build);
+export const createBuild = series(clean, build);
 // gulp fonts
 export  const convertFonts = parallel(convertWoff, convertWoff2);
 

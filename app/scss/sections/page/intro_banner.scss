@@ -2,6 +2,11 @@
   position: relative;
   margin-top: 160px;
 
+  .nav_desktop {
+    display: none;
+}
+
+
   .intro_banner__wrapper {
     position: relative;
     display: flex;
@@ -141,6 +146,8 @@
 // sm
 @media(min-width: $sm) {
   .intro_banner {
+    margin-top: 180px;
+
     .intro_banner__wrapper {
       height: 550px;
       padding: 40px;
@@ -363,6 +370,7 @@
 
 @media(min-width: 1200px) {
   .intro_banner {
+    margin-top: 210px;
     .intro_banner__wrapper {
       max-width: 1200px;
       height: 500px;
@@ -440,9 +448,113 @@
 
 // xl
 @media(min-width: $xl) {
+
+
   .intro_banner {
-    margin-top: 40px;
+    margin-top: 110px;
+
+    .nav_desktop {
+      display: flex;
+      padding-top: 50px;
+
+      ul {
+          display: flex;
+          align-items: center;
+          width: 100%;
+
+          li {
+              position: relative;
+              font-size: 18px;
+              font-weight: 700;
+              text-transform: uppercase;
+              transition: 0.3s;
+
+              &:not(:first-child) {
+                  margin-left: auto;
+              }
+
+              .icon {
+                  width: 56px;
+                  height: 10px;
+              }
+
+              .arrow {
+                  position: relative;
+                  display: flex;
+                  transform: translateX(-10px);
+                  svg {
+                      position: absolute;
+                      width: 20px;
+                      height: 22px;
+                      top: 50%;
+                      transform: translateY(-60%);
+                      right: -25px;
+                      fill:$lightGray;
+                      transition: 0.3s;
+                  }
+              }
+
+              .inner_list {
+                  position: absolute;
+                  left: -10px;
+                  display: flex;
+                  visibility: hidden;
+                  z-index: -2;
+                  align-items: flex-start;
+                  flex-flow: column nowrap;
+                  width: max-content;
+                  padding: 30px;
+                  background-color: $white;
+                  border-radius: 20px;
+                  box-shadow:0 0 10px rgba(0,0,0, 0.05), 0 30px 30px rgba(0,0,0, 0.1);
+                  li {
+                      font-size: 16px;
+                      text-transform: none;
+                      font-weight: 400;
+                      transition: none;
+
+                      a {
+                        text-transform: none;
+                      }
+
+                      &:not(:first-child) {
+                          margin-top: 15px;
+                          margin-left: 0;
+                      }
+
+                      &:hover {
+                          a {
+                              color: $beigeHover;
+                          }
+                      }
+
+                  }
+              }
+
+              &:hover{
+                  color:$red;
+                  .arrow {
+                      svg {
+                          fill: $dark;
+                          transform:translateY(-50%) rotate(180deg);
+                      }
+                  }
+              .inner_list {
+                  visibility: visible;
+                  z-index: 2;
+                  li {
+                      color: $dark;
+                  }
+              } 
+              }
+          }
+      }
+
+  }
+
+
     .intro_banner__wrapper {
+      margin-top: 60px;
       max-width: 1400px;
       height: 510px;
       padding: 60px;
@@ -515,12 +627,21 @@
 @media(min-width: $xxl) {
   .intro_banner {
     margin-top: 80px;
-  
+
+    .nav_desktop {
+      ul {
+          li {
+              font-size: 22px;
+          }
+      }
+
+  }
     .intro_banner__wrapper {
       max-width: 1500px;
       height: 590px;
-      padding: 80px;
+      padding: 100px;
       margin: 0 auto;
+      margin-top: 50px;
       background: url(../img/intro_banner/intro_1_xl_bg.png)no-repeat 50%/contain;
     }
   
@@ -536,6 +657,8 @@
           }
 
           a {
+            font-family: $circe;
+            font-weight: 700;
             margin-bottom: 20px;
           }
         }
@@ -545,7 +668,7 @@
     picture {
       img {
         right: 100px;
-        top: -140px;
+        top: -160px;
         transform: rotate(0);
       }
   }
@@ -579,6 +702,7 @@
           height: 100%;
           opacity: 1;
           fill: $lightGray;
+          transition: $transition;
         }
 
         &:hover {

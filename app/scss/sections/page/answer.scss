@@ -42,6 +42,7 @@
           color: $darkGray;
           border-radius: 10px;
           border: 2px solid $lineGray;
+          background-color: $white;
 
           p {
             &:not(:first-child) {
@@ -121,6 +122,11 @@
 @media(min-width: $lg) {
   .answer {
     margin-top: 200px;
+    
+    h2 {
+      text-align: left;
+      font-size: 54px;
+    }
   
     .accordion {
       margin-top: 70px;
@@ -133,6 +139,10 @@
           h3 {
             width: 95%;
             font-size: 20px;
+          }
+          &:hover {
+            border: 2px solid $beigeHover;
+            color: $redHover;
           }
   
         }
@@ -165,4 +175,23 @@
   }
   
 }
+
+@media(min-width: $xl) {
+  .answer {
+    .accordion {
+      .accordion_item {
+        .accordion_item-trigger {
+          padding: 28px 30px;
+          h3 {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+    
+  }
+  
+}
+
+
 

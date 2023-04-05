@@ -26,6 +26,7 @@
       padding: 20px;
       border-radius: 20px;
       border: 2px solid $lineGray;
+      background-color: $white;
       &:not(:first-child) {
       margin-top: 20px;
       }
@@ -40,9 +41,15 @@
       .card_info {
         margin-top: 20px;
         .card_info__data {
-          p {
+          .link_detail {
             font-size: 18px;
             font-weight: 700;
+            text-decoration: none;
+            color: inherit;
+            transition: $transition;
+            &:hover {
+              color: $redHover;
+            }
           }
 
           span {
@@ -190,7 +197,7 @@
         padding: 30px;
         .card_info {
           .card_info__data {
-            p {
+            .link_detail {
               font-size: 20px;
             }
             span {
@@ -268,8 +275,12 @@
           width: 100%;
           .card_info__data {
             max-width: 360px;
-            p {
+            .link_detail {
               font-size: 20px;
+              &:hover {
+                color: $redHover;
+              }
+  
             }
             span {
               font-size: 18px;

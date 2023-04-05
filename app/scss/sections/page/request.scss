@@ -151,12 +151,10 @@
       justify-content: center;
 
       button {
-        width: 2em;
-        height: 2em;
+        width: 2.3em;
+        height: 2.3em;
 
         .icon {
-          width: 100%;
-          height: 100%;
           fill: $lightGray;
           opacity: 0.5;
         }
@@ -264,6 +262,7 @@
 
 @media(min-width: $xxl) {
   .request {
+    margin-top: -70px;
     .request_wrapper {
       padding-left: 60px;
       background: url(../img/request/bg_xxl.png) no-repeat 0% bottom/100%;
@@ -272,7 +271,7 @@
         padding-bottom: 0;
 
         .request-swiper, .request_double-swiper {
-          margin-top: 100px;
+          margin-top: 140px;
           margin-bottom: 0;
           text-align: left;
 
