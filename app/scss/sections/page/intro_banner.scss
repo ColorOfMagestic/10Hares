@@ -31,11 +31,12 @@
         h3 {
           font-size: 22px;
           font-weight: 700;
+          line-height: 1.2;
           margin-bottom: 15px;
         }
 
         a {
-          padding: 22px 36px;
+          padding: 22px 36px 20px;
           font-size: 14px;
           margin-top: auto;
           letter-spacing: 0.1em;
@@ -305,9 +306,10 @@
       .swiper-slide {
         .swiper-slide__content {
           width: 55%;
-          height: 370px;
+          height: 350px;
           h3 {
             font-size: 34px;
+            padding-top: 20px;
           }
 
           a {
@@ -328,7 +330,16 @@
   
     .intro_banner_buttons {
       left: 280px;
-      bottom: 150px;
+      bottom: 165px;
+
+      button {
+        &:hover{
+          .icon {
+            transition: $transition;
+            fill: $redHover;
+          }
+        }
+      }
     }
   }
 
@@ -648,9 +659,11 @@
     .intro_banner-swiper {
       .swiper-slide {
         .swiper-slide__content {
-          height: 390px;
+          height: 330px;
           h3 {
+            margin-top: 25px;
             font-size: 44px;
+            line-height: 1.2;
           }
           p {
             font-size: 19px;
@@ -659,7 +672,8 @@
           a {
             font-family: $circe;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
+            padding: 24px 36px 20px;
           }
         }
       }
@@ -682,7 +696,7 @@
       width: 100%;
       height: 30px;
       left: 0;
-      top: 50%;
+      top: calc(50% - 20px) ;
       justify-content: space-between;
       transform: translateY(-50%);
       button {

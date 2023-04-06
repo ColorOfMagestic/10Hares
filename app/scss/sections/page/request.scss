@@ -157,6 +157,13 @@
         .icon {
           fill: $lightGray;
           opacity: 0.5;
+          transition: $transition;
+        }
+
+        &:hover {
+          .icon {
+            fill: $redHover;
+          }
         }
       }
 
@@ -271,7 +278,7 @@
         padding-bottom: 0;
 
         .request-swiper, .request_double-swiper {
-          margin-top: 140px;
+          margin-top: 110px;
           margin-bottom: 0;
           text-align: left;
 
@@ -279,18 +286,28 @@
             text-align: left;
             h3 {
               font-size: 36px;
+              line-height: 1.2;
             }
           }
         }
       }
 
       &>button {
-        bottom: 40px;
+        bottom: 55px;
         left: 60px;
       }
 
       .request-swiper_buttons {
         left: 280px;
+        bottom: 70px;
+        button {
+          transition:$transition ;
+          &:hover{
+            .icon {
+               fill: $redHover;
+            }
+          }
+        }
       }
     }
   }
@@ -322,6 +339,7 @@
       .request-swiper_buttons {
         left: 260px;
         bottom: 55px;
+        
       }
     }
 

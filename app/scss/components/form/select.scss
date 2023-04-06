@@ -60,10 +60,11 @@
       box-shadow: none;
       /* Personalize */
       flex: 1;
-      padding: 22px 30px 20px;
+      padding: 22px 30px;
       color: $gray;
       background-color: $white;
       background-image: none;
+      line-height: 1.4;
       font-size: 17px;
       cursor: pointer;
     }

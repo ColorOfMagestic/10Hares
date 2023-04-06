@@ -3,6 +3,7 @@
   margin-top: 50px;
 
   .container_full {
+    width: 100%;
     max-width: 100%;
     padding-left: 20px;
   }
@@ -29,6 +30,8 @@
         border: 2px solid $lineGray;
         border-radius: 20px;
         background-color: $white;
+        @extend %hover_card;
+
 
         img {
           border-radius: 20px;
@@ -58,7 +61,7 @@
           }
   
           .in_cart {
-            padding: 20px 30px;
+            padding: 20px 30px 18px;
             margin-top: 20px;
           }
         }
@@ -125,7 +128,6 @@
           padding: 30px;
 
           .in_cart {
-            padding: 20px 30px;
             margin-top: 15px;
           }
         }
@@ -209,10 +211,10 @@
 
     .product-swiper,
     .product_similar-swiper {
+      padding-bottom: 40px;
       .product_slide {
         .product_slide__content {
           padding: 30px;
-
           .price {
             font-size: 30px;
           }
@@ -229,8 +231,18 @@
       position: absolute;
       top: 0;
       right: 0;
-      margin-top: 0;
       width: 200px;
+      margin-top: 5px;
+      width: 200px;
+      max-height: 66px;
+      padding: 24px 0 22px;
+      font-size: 14px;
+      font-family: $circe;
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+
     }
 
     .product-swiper_buttons {
@@ -281,7 +293,8 @@
 @media(min-width: $xl) {
   .product {
     .container_full {
-      max-width: 70%;
+      width: 70%;
+      max-width: 1340px;
       padding-left: 0;
     }
   }
@@ -305,8 +318,11 @@
       position: absolute;
       top: 0;
       right: 0;
-      margin-top: 0;
+      margin-top: 5px;
       width: 200px;
+      max-height: 66px;
+      padding: 24px 0 22px;
+      font-size: 14px;
       font-family: $circe;
     }
 
@@ -326,6 +342,7 @@
           grid-template-areas:
             "s l l l s2"
           ;
+          padding-bottom: 40px;
 
           gap: 0 40px;
 
@@ -337,6 +354,10 @@
             border: 2px solid $lineGray;
             border-radius: 20px;
             background-color: $white;
+            transition: $transition;
+            &:hover {
+              box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.05);
+            }
 
             img {
               height: 225px;
@@ -373,7 +394,7 @@
             }
 
             .in_cart {
-              padding: 20px 30px;
+              padding: 20px 30px 18px;
               margin-top: 20px;
             }
           }
@@ -394,6 +415,7 @@
               }
 
               button {
+                padding: 20px 24px 18px;
                 margin-left: 30px;
               }
             }

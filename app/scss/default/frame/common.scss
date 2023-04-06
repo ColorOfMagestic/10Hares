@@ -115,4 +115,10 @@ $end:flex-end;
   height: 1.5em;
 }
 
+%hover_card {
+  &:hover {
+    box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.05);
+  }
+}
+
 

@@ -407,6 +407,7 @@
     .header {
         .top_block {
             width: 70%;
+            max-width: 1340px;
             padding: 22px 0;
 
             .btn_menu {
@@ -418,6 +419,7 @@
                 display: block;
                 padding-left: 29px;
                 font-size: 18px;
+                line-height: 1.2;
 
                 &::before {
                     position: absolute;
@@ -509,6 +511,8 @@
 
                 .btn--call {
                     display: block;
+                    padding: 18px 24px 15px;
+                    letter-spacing: 0.04em;
                     font-family: inherit;
                 }
 
@@ -520,8 +524,8 @@
 
             .cart_link {
                 width: 92px;
-                padding-top: 30px;
-                padding-bottom: 30px;
+                min-height: 50px;
+                padding: 15px 20px;
                 border-radius: 26px;
                 margin-left: auto;
                 margin-right: 0;
@@ -551,12 +555,14 @@
 @media(min-width: $xxl) {
     .header {
         .top_block__wrapper {
-            height: 104px;
+            height: 80px;
             margin-top: 0;
+            padding: 0;
             background-color: $darkWhite;
         }
 
         .top_block {
+            padding: 15px 0;
             background-color: $darkWhite;
             .btn_menu {
                 display: none;

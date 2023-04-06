@@ -114,6 +114,7 @@
           align-self: center;
           width: 30px;
           height: 30px;
+          padding: 0;
           font-size: 16px;
           color: $white;
           background: transparent;
@@ -124,7 +125,7 @@
           cursor: pointer;
 
           time {
-            font-family: "Circle", sans-serif;
+            font-family: "Circe", sans-serif;
             font-weight: 700;
           }
 
@@ -148,6 +149,10 @@
         margin-top: 20px;
         width: 100%;
       }
+
+      .btn_desk {
+        display: none;
+      }
     }
   }
 
@@ -155,7 +160,7 @@
     z-index: -1;
     position: absolute;
     top: 43px;
-    right: -50px;
+    right: -12px;
     display: block;
     width: 60px;
     height: 70px;
@@ -333,7 +338,7 @@
       margin-top: 0;
       display: grid;
       grid-template: 4fr/repeat(1, 1fr);
-      gap: 0;
+      gap: 30px 0;
 
       h2 {
         display: block;
@@ -345,6 +350,7 @@
         flex-flow: row nowrap;
         justify-content: flex-start;
         text-align: left;
+        gap: 10px;
         p {
           font-size: 20px;
         }
@@ -403,7 +409,19 @@
         .sign_up__form {
           margin-top: 30px;
           gap: 30px;
+
+          .btn_mob {
+            display: none;
+          }
+          .btn_desk {
+            display: flex;
+            padding: 26px 0 24px;
+            font-size: 16px;
+          }
         }
+      }
+      .decor {
+        right: -50px;
       }
     }
   }

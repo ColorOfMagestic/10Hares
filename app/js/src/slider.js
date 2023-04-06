@@ -195,7 +195,7 @@ const blog = new Swiper('.blog-swiper', {
     spaceBetween: 20,
     breakpoints: {
         375: {
-            slidesPerView: 1.3,
+            slidesPerView: 1.2,
         },
         576: {
             slidesPerView: 1.6,

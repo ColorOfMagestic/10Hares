@@ -33,7 +33,9 @@ body {
  
 
 .container {
-  max-width: 89.5%;
+  width: 89.5%;
+  max-width: 340px;
+
   margin: 0 auto;
 }
 
@@ -83,7 +85,8 @@ body {
 
 @media(min-width: $sm) {
   .container {
-    max-width: 88.5%;
+    width: 88.5%;
+    max-width: 510px;
   }
 
   .description {
@@ -97,7 +100,8 @@ body {
 }
 @media(min-width: $md) {
   .container {
-    max-width: 89.9%;
+    width: 89.9%;
+    max-width: 690px;
   }
 
   .description {
@@ -113,7 +117,9 @@ body {
     margin-right: 1rem;
   }
   .container {
-    max-width: 93.75%;
+    width: 93.75%;
+    max-width: 930px;
+
   }
 
   .decor_rails {
@@ -130,7 +136,8 @@ body {
 }
 @media(min-width: $xl) {
   .container {
-    max-width: 70%;
+    width: 70%;
+    max-width: 1340px;
 
   }
 
@@ -142,4 +149,6 @@ body {
   }
 
 }
+
+
 

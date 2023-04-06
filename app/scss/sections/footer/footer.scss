@@ -8,7 +8,7 @@
 
     .footer_contacts__wrapper {
         padding: 40px 0 70px;
-        background-color: #888;
+        background-color: $darkWhite;
     }
 
     .footer_contacts {
@@ -84,18 +84,39 @@
             position: absolute;
             top: 50%;
             left: 50%;
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            background-color: $red;
             transform: translate(-50%, -50%);
+            transition: $transition;
+            &::before {
+              position: absolute;
+              bottom: -5px;
+              left: 50%;
+              display: block;
+              content: '';
+              width: 14px;
+              height:14px;
+              background-color: $red;
+              border-radius: 3px;
+              transform: translateX(-50%) rotate(45deg);
+              transition: $transition;
+            }
 
             .icon {
-                width: 6rem;
-                height: 6rem;
-                fill: $red;
+                width: 32px;
+                height: 32px;
                 transition: $transition;
             }
 
             &:hover {
+                background-color: $redHover;
+                &::before {
+                    background-color: $redHover;
+                }
                 .icon {
-                    fill: $redHover;
+                    transform: translateY(5px);
                 }
             }
 
@@ -328,7 +349,7 @@
         .footer_info {
             margin-top: -70px;
             padding-top: 100px;
-            background: url(../img/footer/pattern.png);
+            background: url(../img/footer/pattern.png) no-repeat 50%/cover;
     
             .footer_info__links {    
                 ul {
@@ -523,6 +544,20 @@
         
         .footer_map {
             margin-top: -80px;
+
+            button {
+                top: 45%;
+            }
+            .map_info {
+                p {
+                    &::before {
+                        left: -32px;
+                        width: 20px;
+                        height:20px;
+                      }
+        
+                }
+            }
         }
         .footer_info {
             margin-top: -130px;
@@ -532,8 +567,8 @@
             justify-content: space-between;
             .footer_info__xxl_wrapper {
                 display: flex;
-                max-width: 70%;
-                width: 100%;
+                width: 70%;
+                max-width: 1340px;
                 margin: 0 auto;
                 & > .container {
                     max-width: 100%;
