@@ -665,10 +665,11 @@
 
   }
 
-  .feedback--inner {
+  .feedback__inner {
     .feedback_desktop-swiper_buttons {
-      top: 50%;
-      transform: translate(-50%, -70%);
+      top: auto;
+      bottom: calc(30%  - 5px);
+      transform: translate(-50%, -100%);
     }
   }
 

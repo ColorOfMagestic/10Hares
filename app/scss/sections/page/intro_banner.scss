@@ -63,7 +63,7 @@
     z-index: 2;
     width: 100%;
     left: 0;
-    bottom: 70px;
+    bottom: 30px;
     justify-content: space-between;
     .icon {
       width: 21px;
@@ -71,9 +71,14 @@
       fill: $lightGray;
       opacity: 0.5;
     }
+
+    button {
+      transform: translateY(-40px);
+    }
+    
     [data-role="intro_banner-next"] {
       right: 8%;
-      transform: rotate(180deg);
+      transform: rotate(180deg) translateY(40px);
 
     }
     [data-role="intro_banner-prev"] {
@@ -106,6 +111,10 @@
     bottom: 0;
   }
 
+  .intro_banner_buttons {
+    display: none;
+  }
+
 }
 
 .intro_banner--excursions {
@@ -134,11 +143,12 @@
 
     .intro_banner_buttons {
       [data-role="intro_banner-next"] {
-        right: 12%;
-  
+        right: 18%;
+        transform: rotate(180deg) translateY(0px);
       }
       [data-role="intro_banner-prev"] {
-        left: 12%;
+        left: 18%;
+        transform: translateY(0px);
       }
     }
   }
@@ -183,7 +193,7 @@
   }
 
   .intro_banner__inner {
-    margin-top: 20px;
+    margin-top: 30px;
   
     .intro_banner__wrapper {
       background: url(../img/intro_banner/intro_2_sm_bg.png)no-repeat 50%/contain;
@@ -246,13 +256,10 @@
   }
   
     .intro_banner_buttons {
-      width: auto;
+      width: 100px;
       left: 250px;
       bottom: 90px;
-      justify-content: center;
-      [data-role="intro_banner-next"] {
-        margin-left: 30px;
-      }
+      justify-content: space-between;
     }
   }
 
@@ -396,11 +403,11 @@
           width: 55%;
           height: 370px;
           h3 {
-            font-size: 34px;
+            font-size:28px;
           }
 
           a {
-            margin-bottom: 80px;
+            margin-bottom:65px;
           }
         }
       }
@@ -410,7 +417,7 @@
       img {
         position: absolute;
         right: 75px;
-        top: -120px;
+        top: -155px;
         margin: 0;
         transform: rotate(1deg);
       }
@@ -419,10 +426,18 @@
     .intro_banner_buttons {
       left: 280px;
       bottom: 150px;
+
+      [data-role="intro_banner-prev"] {
+        transform: translateY(17px);
+      }
+      [data-role="intro_banner-next"] {
+        transform: rotate(180deg)  translateY(-17px);
+      }
     }
   }
 
   .intro_banner__inner {
+    margin-top: 60px;
     .intro_banner__wrapper {
       max-width: 1200px;
       height: 500px;
@@ -445,9 +460,8 @@
   
     picture {
       img {
-        right: 140px;
-        top: -47px;
-        transform: rotate(1deg);
+        right: 0;
+        top: -90px;
       }
   }
   
@@ -634,6 +648,7 @@
 }
 
 }
+
 // xxl
 @media(min-width: $xxl) {
   .intro_banner {
@@ -745,11 +760,8 @@
     
   picture {
       img {
-        width: 60%;
-        right: 40px;
-        top: -125px;
-        transform: rotate(1deg);
-
+        right: 0;
+        top: -230px;
       }
   }
 
@@ -758,8 +770,8 @@
   .intro_banner--excursions {
     picture {
       img {
-        width: 48%;
-        top: -127px;
+        // width: 48%;
+        // top: -127px;
       }
   }
   }
