@@ -154,7 +154,9 @@
               -webkit-appearance: none;
               height: 20px;
               width: 20px;
-              background-color: $red;
+              background-color: $white;
+              border: 2px solid $beige;
+              transform: translateY(-6px);
               cursor: pointer;
               margin-top: 0;
               pointer-events: auto;
@@ -164,7 +166,8 @@
               -webkit-appearance: none;
               height: 20px;
               width: 20px;
-              background-color: $red;
+              background-color: $white;
+              border: 2px solid $beige;
               cursor: pointer;
               margin-top: 0;
               pointer-events: auto;
@@ -174,15 +177,16 @@
               appearance: none;
               height: 20px;
               width: 20px;
-              background-color: $red;
+              background-color: $white;
+              border: 2px solid $beige;
               cursor: pointer;
               margin-top: 0;
               pointer-events: auto;
               border-radius: 50%;
             }
             input[type="range"]:active::-webkit-slider-thumb {
-              background-color: #ffffff;
-              border: 1px solid #3264fe;
+              background-color: $beige;
+              border: 2px solid $redHover;
             }
           }
   
