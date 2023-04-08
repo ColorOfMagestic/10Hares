@@ -1,98 +1,96 @@
-.select {
+.custom_select {
   position: relative;
-  display: flex;
+  padding: 22px 30px;
   width: 100%;
+  font-size: 17px;
+  color: $dark;
+  background-color: $white;
   border-radius: 10px;
-  overflow: hidden;
-
-  select {
-    appearance: none;
-    outline: 0;
-    border: 0;
-    box-shadow: none;
-    /* Personalize */
-    flex: 1;
-    padding: 22px 30px 20px;
-    color: $gray;
-    background-color: $white;
-    background-image: none;
-    font-size: 17px;
-    cursor: pointer;
-  }
-
-  select::-ms-expand {
-    display: none;
-  }
-
-  select:focus {
-    color: $dark;
-  }
-
-  select:focus~.icon {
-    fill: $dark;
-    transform: translateY(-50%) rotate(-180deg);
-  }
-
-  .icon {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 30px;
-    width: 20px;
-    height: 22px;
-    fill: $gray;
-    pointer-events: none;
-    transition: $transition;
-  }
-}
-@media(min-width: $sm) {
-  .select {
-    position: relative;
+  border: 1px solid $lineGray;
+  &__value {
     display: flex;
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-
-    select {
-      appearance: none;
-      outline: 0;
-      border: 0;
-      box-shadow: none;
-      /* Personalize */
-      flex: 1;
-      padding: 22px 30px;
-      color: $gray;
-      background-color: $white;
-      background-image: none;
-      line-height: 1.4;
-      font-size: 17px;
-      cursor: pointer;
-    }
-
-    select::-ms-expand {
-      display: none;
-    }
-
-    select:focus {
-      color: $dark;
-    }
-
-    select:focus~.icon {
-      fill: $dark;
-      transform: translateY(-50%) rotate(-180deg);
-    }
-
+    justify-content: space-between;
+    align-items: center;
+    color: $gray;
+    transition: all $transition;
     .icon {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 30px;
       width: 20px;
       height: 22px;
       fill: $gray;
-      pointer-events: none;
-      transition: $transition;
+      transition: all $transition;
     }
   }
+  &__list {
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    left: -1px;
+    max-height: 0;
+    // max-height: 150px;
+    top: 57px;
+    width: calc(100% + 2px);
+    padding: 0 30px 0 30px;
+    background-color: $white;
+    border-radius: 0 0 10px 10px;
+    transition: all $transition;
+    .list_wrapper {
+      padding-top: 10px;
+      border-top: 1px solid $lineGray;
+      ul {
+        overflow-y: scroll;
+        height: 88px;
+        padding: 0 10px;
+        scrollbar-width: thin;
+        scrollbar-color: $red $lightGray;
+        &::-webkit-scrollbar {
+          width: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: $red;
+          border-radius: 2px;
+        }
+  
+        li {
+          color: $darkGray;
+          &:hover {
+          color: $redHover;
+          }
+        }
+  
+      }
+    }
+    
+  }
 
+  &:hover {
+    .custom_select__value {
+      color: $dark;
+      .icon {
+        fill: $redHover;
+        transform: rotate(180deg);
+        transform-origin: 50% 50%;
+      }
+    }
+    .custom_select__list {
+      max-height: 150px;
+      padding-bottom: 22px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05), 0px 10px 10px -5px rgba(0, 0, 0, 0.1);
+    }
+  }  
+}
+
+.active {
+  .custom_select__value {
+    color: $dark;
+    .icon {
+      fill: $redHover;
+      transform: rotate(180deg);
+      transform-origin: 50% 50%;
+    }
+  }
+  .custom_select__list {
+    max-height: 150px;
+    padding-bottom: 22px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05), 0px 10px 10px -5px rgba(0, 0, 0, 0.1);
+  }
 }

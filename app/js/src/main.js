@@ -201,8 +201,6 @@ accordionSlide();
 
 
 if(template.classList.contains('catalog_page')) {
-
-    
     openCatalogFilters();
     checkedInputs();
     inputsRange('slider-1_mob','slider-2_mob','min_mob','max_mob','.slider-track_mob');
@@ -257,3 +255,29 @@ const modals = () => {
 modals();
 
 
+const customSelectShow = () => {
+    const customSelects = document.querySelectorAll('.custom_select'),
+    customSelectlistItems =document.querySelectorAll('.list_wrapper ul li');
+
+    const windowInnerWidth = document.documentElement.clientWidth;
+
+    customSelects.forEach(cs=> {
+        cs.addEventListener('click',function() {
+            if(windowInnerWidth >= 992) {
+                return;
+            }
+            this.classList.toggle('active');
+        });
+    });
+    
+    customSelectlistItems.forEach(li => {
+        li.addEventListener('click', function() {
+            const globalParent = li.closest('.custom_select');
+            const customSelectValue = globalParent.querySelector('.custom_select__value span');
+            let text = this.textContent.trim();
+            customSelectValue.textContent = text;
+        })
+    });
+};
+
+customSelectShow();
