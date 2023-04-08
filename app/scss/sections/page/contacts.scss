@@ -131,25 +131,46 @@
       }
 
       button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        border-radius: 6px;
+        background-color: $red;
+        transform: translate(-50%, -90%);
+        transition: $transition;
+        &::before {
           position: absolute;
-          top: 50%;
+          bottom: -5px;
           left: 50%;
-          transform: translate(-50%, -50%);
+          display: block;
+          content: '';
+          width: 14px;
+          height:14px;
+          background-color: $red;
+          border-radius: 3px;
+          transform: translateX(-50%) rotate(45deg);
+          transition: $transition;
+        }
 
-          .icon {
-              width: 6rem;
-              height: 6rem;
-              fill: $red;
-              transition: $transition;
-          }
+        .icon {
+            width: 32px;
+            height: 32px;
+            transition: $transition;
+        }
 
-          &:hover {
-              .icon {
-                  fill: $redHover;
-              }
-          }
+        &:hover {
+            background-color: $redHover;
+            &::before {
+                background-color: $redHover;
+            }
+            .icon {
+                transform: translateY(5px);
+            }
+        }
 
-      }
+    }
 
       .map_info {
           position: absolute;
@@ -488,7 +509,7 @@
           margin-top: 60px;
 
           button {
-              transform: translate(-50%, -75%);
+              top: 45%;
               &:hover + .map_info {
                   visibility: visible;
                   opacity: 1;
@@ -609,6 +630,14 @@
         gap: 0 40px;
         padding-bottom: 40px;
       }
+
+      .footer_map {
+          button {
+            transform: translate(-50%, -75%);
+        }
+      }
+
+
 
       .requisites {
         margin-top: 70px;
