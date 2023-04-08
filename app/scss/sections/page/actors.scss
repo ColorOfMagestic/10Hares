@@ -1,6 +1,6 @@
 .actors {
   position: relative;
-  margin-top: 40px;
+  margin-top: 50px;
 
   .slider {
     margin-top: 40px;
@@ -156,6 +156,7 @@
 // xl
 @media(min-width: $xl) {
   .actors {
+    margin-top: 160px;
     .slider {
       width: 70%;
       max-width: 1340px;

@@ -467,7 +467,14 @@
   
   }
   
-
+  .intro_banner--excursions {
+    picture {
+      img {
+        right: 60px;
+        top: -110px;
+      }
+    }
+  }
 }
 
 
@@ -757,6 +764,20 @@
     .intro_banner__wrapper {
       background: url(../img/intro_banner/intro_2_xl_bg.png)no-repeat 50%/contain;
     }
+
+    .intro_banner-swiper {
+      .swiper-slide {
+        .swiper-slide__content {
+          h3 {
+            margin-top: 35px;
+          }
+          a {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
     
   picture {
       img {
@@ -768,12 +789,28 @@
   } 
   
   .intro_banner--excursions {
+    margin-top: 56px;
+
+    .intro_banner-swiper {
+      .swiper-slide {
+        .swiper-slide__content {
+          h3 {
+            margin-top: 40px;
+          }
+          a {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+
+
     picture {
       img {
-        // width: 48%;
-        // top: -127px;
+        right: 0;
+        top: -210px;
       }
-  }
+    }
   }
   
   

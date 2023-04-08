@@ -104,14 +104,14 @@ const changesLayuotCatalogCards = () => {
     });
 };
 
-const inputsRange = () => {
+const inputsRange = (sl1,sl2,min,max,sltr) => {
 
-    let sliderOne = document.getElementById('slider-1');
-    let sliderTwo = document.getElementById('slider-2');
-    let displayValOne = document.getElementById('min');
-    let displayValTwo = document.getElementById('max');
+    let sliderOne = document.getElementById(sl1);
+    let sliderTwo = document.getElementById(sl2);
+    let displayValOne = document.getElementById(min);
+    let displayValTwo = document.getElementById(max);
     let minGap = 0;
-    let sliderTrack = document.querySelector('.slider-track');
+    let sliderTrack = document.querySelector(sltr);
 
     let sliderMaxValue = sliderOne.max;
 
@@ -177,6 +177,23 @@ const openCatalogFilters = () => {
   })
 };
 
+const checkedInputs = () => {
+    const checkStyles = document.querySelectorAll('.check-style');
+    
+    checkStyles.forEach(check=>{
+        const checkBox = check.previousElementSibling;
+        check.addEventListener('click', ()=> {
+            if(checkBox.checked) {
+                checkBox.checked = false;
+            }
+            else {
+                checkBox.checked = true;
+            }
+        });
+    });
+
+}
+
 add_file.addEventListener('click', () => add_file_input.click());
 
 showMapInfo();
@@ -184,9 +201,13 @@ accordionSlide();
 
 
 if(template.classList.contains('catalog_page')) {
-    inputsRange();
-    changesLayuotCatalogCards();
+
+    
     openCatalogFilters();
+    checkedInputs();
+    inputsRange('slider-1_mob','slider-2_mob','min_mob','max_mob','.slider-track_mob');
+    inputsRange('slider-1','slider-2','min','max','.slider-track');
+    changesLayuotCatalogCards();
 }
 
 const modals = () => {

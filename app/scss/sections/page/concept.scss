@@ -55,6 +55,9 @@
         fill: $white;
       }
     }
+    .call--desk {
+      display: none;
+    }
   }
 }
 
@@ -137,6 +140,13 @@
 
       button {
         width: 250px;
+      }
+
+      .call--mob {
+        display: none;
+      }
+      .call--desk {
+        display: flex;
       }
     }
   }
