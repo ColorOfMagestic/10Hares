@@ -1,8 +1,9 @@
 import pkg from 'gulp';
 const { src, dest, watch, parallel, series } = pkg;
-import mainSass from 'sass'
-import gulpSass from 'gulp-sass'
-const sass = gulpSass(mainSass)
+import mainSass from 'sass';
+import gulpSass from 'gulp-sass';
+import sourceMap from 'gulp-sourcemaps';
+const sass = gulpSass(mainSass);
 import concat  from "gulp-concat";
 import sync  from "browser-sync";
 const browserSync = sync.create();
@@ -111,6 +112,7 @@ function js_libraries() {
 
 function styles() {
   return src("app/scss/style.scss")
+    .pipe(sourceMap.init())
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(concat("style.min.css"))
     .pipe(
@@ -119,6 +121,7 @@ function styles() {
         grid: true,
       })
     )
+    .pipe(sourceMap.write())
     .pipe(dest("app/css"))
     .pipe(browserSync.stream());
 }

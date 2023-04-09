@@ -26,5 +26,8 @@
     "node-sass": "^8.0.0",
     "sass": "^1.56.1",
     "swiper": "^8.4.5"
+  },
+  "dependencies": {
+    "gulp-sourcemaps": "^3.0.0"
   }
 }
