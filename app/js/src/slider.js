@@ -390,3 +390,20 @@ const intro_article = new Swiper('.intro_article-swiper', {
     },
     
 });
+const modalFeedbackFullSwiper = new Swiper('.feedback_content-swiper', {
+    spaceBetween: 20,
+    slidesPerView: 1.7,
+    breakpoints: {
+        576: {
+            slidesPerView: 2.4,
+        },
+        768: {
+            slidesPerView: 2.8,
+        },
+        992: {
+            slidesPerView: 3.7,
+            spaceBetween: 30,
+        },
+    },
+
+});
