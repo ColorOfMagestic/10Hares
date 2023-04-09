@@ -225,6 +225,14 @@
           margin-top: 20px;
           width: 100%;
         }
+
+        .btn_desk {
+          display: flex;
+        }
+        .btn_mob {
+          display: none;
+        }
+  
       }
     }
   
@@ -265,6 +273,14 @@
         button {
           margin-top: 0;
         }
+
+        .btn_desk {
+          display: none;
+        }
+        .btn_mob {
+          display: flex;
+        }
+
       }
     }
   }
@@ -322,6 +338,14 @@
         margin-top: 20px;
         grid-template: 2fr/repeat(1, 1fr);
         gap: 20px 0;
+
+        .btn_desk {
+          display: flex;
+        }
+        .btn_mob {
+          display: none;
+        }
+
       }
     }
   }
@@ -418,11 +442,7 @@
           margin-top: 30px;
           gap: 30px;
 
-          .btn_mob {
-            display: none;
-          }
           .btn_desk {
-            display: flex;
             padding: 26px 0 24px;
             font-size: 16px;
           }

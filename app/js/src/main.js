@@ -262,7 +262,36 @@ const customSelectShow = () => {
     const windowInnerWidth = document.documentElement.clientWidth;
 
     customSelects.forEach(cs=> {
+        
+        const signUp = cs.closest('.sign_up__form');
+        if(!signUp) {
+            return;
+        } else if(signUp) {
+            const textValue = signUp.querySelector('.custom_select__value span');
+            const text = {
+                short: "Выбрать время",
+                long: "Выбрать время мастер класса",
+            }
+            
+
+            switch (windowInnerWidth) {
+                case  375:
+                    textValue.textContent = text.short;
+                    break;
+                case 576:
+                    textValue.textContent = text.long;
+                    break;
+                case 768:
+                    textValue.textContent = text.short;
+                    break;
+                case 992:
+                    textValue.textContent = text.long;
+                    break;
+            }
+        }
+        
         cs.addEventListener('click',function() {
+
             if(windowInnerWidth >= 992) {
                 return;
             }
