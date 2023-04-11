@@ -20,7 +20,10 @@ const callMeHeaderBtns = document.querySelectorAll('[data-role="call_me_header"]
 thanks_1Btns = document.querySelectorAll('[data-role="thanks_1"]'),
 thanks_mk = document.querySelectorAll('[data-role="think_mk"]'),
 singUp1btn = document.querySelectorAll('[data-role="sing_up_1"]'),
+singUp2btn = document.querySelectorAll('[data-role="sing_up_2"]'),
+connectionBtns = document.querySelectorAll('[data-role="conection-thanks"]'),
 feedbackFullBtns = document.querySelectorAll('[data-role="feedback_full"]'),
+calendarBtns = document.querySelectorAll('[data-role="modal-calendar"]'),
 feedbackLeaveBtns = document.querySelectorAll('[data-role="leave"]'),
 leaveThanksBtns = document.querySelectorAll('[data-role="leave_thanks"]'),
 modalCloseBtns = document.querySelectorAll('.modal__close');
@@ -32,8 +35,10 @@ modal_mk = document.querySelector('.modal_mk'),
 modalSuccess = document.querySelector('.modal_success'),
 modalFeedbackFull = document.querySelector('.modal_feedback_full'),
 modalLeave = document.querySelector('.modal_feedback'),
+modalCalendar = document.querySelector('.modal_calendar'),
 modalLeaveThanks = document.querySelector('.modal_leave_thanks'),
-modalThanks = document.querySelector('.modal_thanks');
+modalThanks = document.querySelector('.modal_thanks'),
+modalConnection = document.querySelector('.modal_connection');
 
 
 const toggleMenu = () => {
@@ -230,13 +235,14 @@ const modals = () => {
             })
         });
     };
-    const openModalThank = (btnsList, modal, modal2) => {
+    const openModalThank = (btnsList, modalAdd, modalClose) => {
         btnsList.forEach(btn => {
             btn.addEventListener('click', (e) => {
+                console.log(e.target);
                 e.preventDefault();
                 body.classList.add('body--hidden');
-                modal.classList.add('modal--active');
-                modal2.classList.remove('modal--active');
+                modalAdd.classList.add('modal--active');
+                modalClose.classList.remove('modal--active');
             })
         });
     };
@@ -255,9 +261,14 @@ const modals = () => {
     openModal(singUp1btn,modal_mk);
     openModal(feedbackFullBtns,modalFeedbackFull);
     openModal(feedbackLeaveBtns,modalLeave);
+    openModal(calendarBtns,modalCalendar);
 
-
+// console.log(singUp2btn);
+// console.log(modalCalendar);
+// console.log(modalConnection);
     openModalThank(thanks_1Btns,modalThanks, modalCall);
+    openModalThank(connectionBtns,modalSuccess,modalConnection);
+    openModalThank(singUp2btn, modalConnection,modalCalendar);
     openModalThank(thanks_mk,modalSuccess, modal_mk);
     openModalThank(leaveThanksBtns,modalLeaveThanks, modalLeave);
 

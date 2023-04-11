@@ -937,7 +937,7 @@
                                 <source srcset="img/request/img_xs.png" media="(min-width: 375px) " type="image/png">
                                 <img src="img/request/img_xs.png" alt="">
                             </picture>
-                            <button class="btn btn_default">
+                            <button data-role="modal-calendar" class="btn btn_default">
                                 ЗАПИСАТЬСЯ
                             </button>
                         </div>
@@ -1707,13 +1707,182 @@
                             </svg>
                             Назад
                         </button>
-                        <button class="btn btn_default" type="submit">Записаться и<br> перезвонить мне</button>
+                        <button data-role="conection-thanks" class="btn btn_default">Записаться и<br> перезвонить мне</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <!-- ========== End modal_connection ========== -->
+    <!-- ========== Start modal_calendar ========== -->
+    <div class="modal modal_calendar">
+        <div class="modal__overlay flex-sc">
+            <div class="modal__wrapper flex-cc flex-col">
+                <button class="modal__close btn">
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <div class="modal_sign_up">
+                    <h3><span>Записаться на</span> мастер класс</h3>
+                    <div class="calendar">
+                        <div class="month">
+                            <button class="btn">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow2"></use>
+                                </svg>
+                            </button>
+                            <div>Декабрь <span class="year">2022</span></div>
+                            <button class="btn" disabled>
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow2"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="days">
+                            <span>пн</span>
+                            <span>вт</span>
+                            <span>ср</span>
+                            <span>чт</span>
+                            <span>пт</span>
+                            <span>сб</span>
+                            <span>вс</span>
+                        </div>
+                        <div class="dates">
+                            <button>
+                                <time>1</time>
+                            </button>
+                            <button>
+                                <time>2</time>
+                            </button>
+                            <button>
+                                <time>3</time>
+                            </button>
+                            <button>
+                                <time>4</time>
+                            </button>
+                            <button>
+                                <time>5</time>
+                            </button>
+                            <button>
+                                <time>6</time>
+                            </button>
+                            <button>
+                                <time>7</time>
+                            </button>
+                            <button>
+                                <time>8</time>
+                            </button>
+                            <button>
+                                <time>9</time>
+                            </button>
+                            <button>
+                                <time>10</time>
+                            </button>
+                            <button>
+                                <time>11</time>
+                            </button>
+                            <button>
+                                <time>12</time>
+                            </button>
+                            <button>
+                                <time>13</time>
+                            </button>
+                            <button>
+                                <time>14</time>
+                            </button>
+                            <button>
+                                <time>15</time>
+                            </button>
+                            <button>
+                                <time>16</time>
+                            </button>
+                            <button>
+                                <time>17</time>
+                            </button>
+                            <button class="today">
+                                <time>18</time>
+                            </button>
+                            <button>
+                                <time>19</time>
+                            </button>
+                            <button>
+                                <time>20</time>
+                            </button>
+                            <button>
+                                <time>21</time>
+                            </button>
+                            <button>
+                                <time>22</time>
+                            </button>
+                            <button>
+                                <time>23</time>
+                            </button>
+                            <button>
+                                <time>24</time>
+                            </button>
+                            <button>
+                                <time>25</time>
+                            </button>
+                            <button>
+                                <time>26</time>
+                            </button>
+                            <button>
+                                <time>27</time>
+                            </button>
+                            <button>
+                                <time>28</time>
+                            </button>
+                            <button>
+                                <time>29</time>
+                            </button>
+                            <button>
+                                <time>30</time>
+                            </button>
+                            <button>
+                                <time>31</time>
+                            </button>
+                        </div>
+                    </div>
+                    <form class="sign_up__form">
+                        <div class="custom_select select">
+                            <div class="custom_select__value">
+                                <span>Выбрать время мастер класса</span>
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite.svg#arrow2"></use>
+                                </svg>
+                            </div>
+                            <div class="custom_select__list">
+                                <div class="list_wrapper">
+                                    <ul>
+                                        <li>
+                                            <span data-value="с 8:00 до 10:00">с 8:00 до 10:00</span>
+                                        </li>
+                                        <li>
+                                            <span data-value="с 10:00 до 12:00">с 10:00 до 12:00</span>
+                                        </li>
+                                        <li>
+                                            <span data-value="с 12:30 до 14:30">с 12:30 до 14:30</span>
+                                        </li>
+                                        <li>
+                                            <span data-value="с 15:00 до 17:00">с 15:00 до 17:00</span>
+                                        </li>
+                                        <li>
+                                            <span data-value="с 18:00 до 20:00">с 18:00 до 20:00</span>
+                                        </li>
+                                    </ul>
+                                </div>    
+                            </div>
+                        </div>
+                        <button data-role="sing_up_2" class="btn btn_default btn_mob">Записаться</button>
+                        <button data-role="sing_up_2" class="btn btn_default btn_desk">Записаться на мастер класс</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ========== End modal_calendar ========== -->
     <!-- ========== Start modal_success ==========+ -->
     <div class="modal modal_feedback_thanks  modal_success">
         <div class="modal__overlay flex-cc">
