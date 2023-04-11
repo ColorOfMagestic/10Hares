@@ -1,13 +1,17 @@
 .success {
   position: relative;
   margin-top: 30px;
+  padding-bottom: 60px;
+  .success-container {
+    background: #FBFBFB;
+    border-radius: 20px;
+  }
   .success_content {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: $white;
     text-align: center;
     
     .content-text {
@@ -53,7 +57,8 @@
 
 @media(min-width: $sm) {
   .success {
-    margin: 60px 0;
+    margin-top: 60px;
+    padding-bottom: 80px;
     .success_content {
       padding: 30px;
       .content-text {
@@ -76,7 +81,8 @@
 
 @media(min-width: $md) {
   .success {
-    margin: 80px 0;
+    margin-top: 80px;
+    padding-bottom: 100px;
     .success_content {
       padding: 40px;
 
@@ -89,7 +95,8 @@
 
 @media(min-width: $lg) {
   .success {
-    margin: 122px 0  0;
+    margin-top: 122px;
+    padding-bottom: 50px;
     .success_content {
       padding: 60px;
 
@@ -122,6 +129,7 @@
 
   .page_success {
     .request_double_wrapper {
+      padding-bottom: 120px;
       display: flex;
     }
   }
@@ -159,6 +167,7 @@
 
 @media(min-width: $xxl) {
   .success {
+    padding-bottom: 81px;
     .success_content {
       width:55%;
       margin: 0 auto;
@@ -168,6 +177,12 @@
       } 
     }
   }
+  .page_success {
+    .request_double_wrapper {
+      padding-bottom: 157px;
+    }
+  }
+
 
 }
 

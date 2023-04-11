@@ -51,7 +51,17 @@ $transition: 0.5s;
           &--sm {
               font-size: 44px;
           }
-  }  
+  }
+  @media (min-width: $xxl) {
+    &--sm {
+        font-size: 34px;
+    }
+    &--md {
+      text-align: left;
+        font-size: 54px;
+    }
+}  
+
 }
 
 

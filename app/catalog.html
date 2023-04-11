@@ -253,17 +253,33 @@
                   </svg>
               </button>
             </div>
-            <div class="select catalog_controls_select">
-              <select>
-                <option value="">Сортировка</option>
-                <option value="По пулярности">По пулярности</option>
-                <option value="По цене">По цене</option>
-                <option value="По типу дерева">По типу дерева</option>
-                <option value="Акция">Акция</option>
-              </select>
-              <svg class="icon">
-                <use xlink:href="img/sprite.svg#arrow2"></use>
-              </svg>
+            <div class=" catalog_controls_select">
+              <div class="custom_select select">
+                <div class="custom_select__value">
+                    <span>Сортировка</span>
+                    <svg class="icon">
+                        <use xlink:href="img/sprite.svg#arrow2"></use>
+                    </svg>
+                </div>
+                <div class="custom_select__list">
+                    <div class="list_wrapper">
+                        <ul>
+                            <li>
+                                <span data-value="По пулярности">По пулярности</span>
+                            </li>
+                            <li>
+                                <span data-value="По цене">По цене</span>
+                            </li>
+                            <li>
+                                <span data-value="По типу дерева">По типу дерева</span>
+                            </li>
+                            <li>
+                                <span data-value="Акция">Акция</span>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+              </div>
             </div>
           </div>
           <div class="filters_mobile_wrapper">
@@ -383,18 +399,18 @@
                             <label for="min_mob">
                               <span>от</span>
                             </label>
-                            <input type="text" id="min_mob" value="700 ₽">
+                            <input type="text" id="min_mob" value="159 ₽">
                           </div>
                           <div class="custom_input">
                             <label for="max_mob"><span>до</span></label>
                             
-                            <input type="text" id="max_mob" value="3700 ₽">
+                            <input type="text" id="max_mob" value="5 900 ₽">
                           </div>
                         </div>
                         <div class="sl_range">
                             <div class="slider-track_mob"></div>
-                            <input type="range" min="0" max="10000" value="700" id="slider-1_mob">
-                            <input type="range" min="0" max="10000" value="3700" id="slider-2_mob">
+                            <input type="range" min="0" max="10000" value="159" id="slider-1_mob">
+                            <input type="range" min="0" max="10000" value="5 900" id="slider-2_mob">
                         </div>
                       </div>
                     </div>
@@ -530,18 +546,18 @@
                             <label for="min">
                               <span>от</span>
                             </label>
-                            <input type="text" id="min" value="700 ₽">
+                            <input type="text" id="min" value="159 ₽">
                           </div>
                           <div class="custom_input">
                             <label for="max"><span>до</span></label>
                             
-                            <input type="text" id="max" value="3700 ₽">
+                            <input type="text" id="max" value="5 900 ₽">
                           </div>
                         </div>
                         <div class="sl_range">
                             <div class="slider-track"></div>
-                            <input type="range" min="0" max="10000" value="700" id="slider-1">
-                            <input type="range" min="0" max="10000" value="3700" id="slider-2">
+                            <input type="range" min="0" max="10000" value="159" id="slider-1">
+                            <input type="range" min="0" max="10000" value="5900" id="slider-2">
                         </div>
                       </div>
                     </div>

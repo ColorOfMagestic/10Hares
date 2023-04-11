@@ -1,6 +1,6 @@
 .intro_article {
   position: relative;
-  margin-top: 20px;
+  margin-top: 30px;
 
   h2 {
     font-size: 24px;
@@ -13,7 +13,7 @@
     align-items: flex-end;
     min-height: 340px;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     color: $white;
     background: url(../img/article/intro_bg_xs.png)no-repeat 50%/cover;
     border-radius: 20px;
@@ -63,6 +63,10 @@
 
   .intro_article {
 
+    h2 {
+      text-align: left;
+    }
+
     .grid_wrapper {
       display: grid;
       grid-template: 1fr/2fr 1fr;
@@ -73,6 +77,7 @@
     .intro__banner {
       padding: 40px;
       margin-top: 0;
+      margin-bottom: 40px;
       font-size: 20px;
       background: url(../img/article/intro_bg_lg.png)no-repeat 50%/cover;
     }
@@ -81,6 +86,7 @@
       display: block;
       max-width: 290px;
       .intro_article-swiper {
+        padding-bottom: 40px;
         .intro_article_slide {
           .intro_article_slide__content {
             display: flex;
@@ -91,6 +97,10 @@
             border: 2px solid $lineGray;
             border-radius: 20px;
             background-color: $white;
+            &:hover {
+              box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.05);
+            }
+          
     
             img {
               border-radius: 20px;
@@ -162,7 +172,6 @@
     }
 
     .grid_wrapper {
-      padding-bottom: 40px;
       grid-template: 1fr/4fr 1fr;
       gap: 0 40px;
     }

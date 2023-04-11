@@ -1,6 +1,11 @@
 .order {
+  position: sticky;
+  top: 100px;
+  max-height: 254px;
   padding: 20px;
   margin-bottom: 40px;
+  background-color: $darkWhite;
+  border-radius: 20px;
 
   h3 {
     font-size: 24px;
@@ -13,7 +18,7 @@
     display: flex;
     align-items: center;
     color: $gray;
-    background-color: $white;
+    background-color: $darkWhite;
     &:not(:first-of-type) {
       margin-top: 6px;
     }
@@ -41,6 +46,7 @@
 
 @media(min-width: $sm) {
   .order {
+    max-height: 312px;
     padding: 30px;
     margin-bottom: 50px;
 
@@ -74,6 +80,7 @@
 
 @media(min-width: $xxl) {
   .order {
+    max-height: 347px;
     margin-top: 60px;
     margin-bottom: 0;
     padding: 40px;

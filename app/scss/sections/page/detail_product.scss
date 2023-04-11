@@ -7,6 +7,7 @@
   }
 
   .sliders_wrapper {
+    position: relative;
     margin-top: 30px;
 
     .detail-swiper {
@@ -53,8 +54,13 @@
           width: 100%;
           height:100%;
           background: linear-gradient(2.09deg, rgba(77, 65, 53, 0.86) 1.56%, rgba(80, 66, 52, 0.63) 21.41%, rgba(87, 69, 49, 0.48) 45.28%);
+          opacity: 1;
         }
       }
+    }
+
+    .detail-swiper_buttons {
+      display: none;
     }
   }
 
@@ -365,11 +371,41 @@
       .detail-swiper {
         .swiper-slide {
           max-height: 380px;
-          }
+        }  
       }
   
       .detail_small-swiper {
         margin-top: 30px;
+      }
+
+      .detail-swiper_buttons {
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          .icon {
+            width: 21px;
+            height: 26px;
+            fill: $beige;
+            transition: $transition;
+            &:hover {
+            fill: $redHover;
+            }
+          }
+        }
+
+        [data-role="detail-swiper-next"] {
+          right: 30px;
+          transform: translateY(-65px) rotate(180deg);
+        }
+
+        [data-role="detail-swiper-prev"] {
+          left: 30px;
+          transform: translateY(-65px);
+        }
       }
     }
   
@@ -468,7 +504,23 @@
       h3 {
         font-size: 36px;
       }
-  }
+    } 
+
+    .sliders_wrapper {
+      .detail-swiper_buttons {
+        
+        [data-role="detail-swiper-next"] {
+          right: 30px;
+          transform: translateY(-60px) rotate(180deg);
+        }
+
+        [data-role="detail-swiper-prev"] {
+          left: 30px;
+          transform: translateY(-60px);
+        }
+      }
+
+    }
   
   }
 }
@@ -492,6 +544,20 @@
       .detail_small-swiper {
         margin-top: 40px;
       }
+
+      .detail-swiper_buttons {
+        
+        [data-role="detail-swiper-next"] {
+          right: 30px;
+          transform: translateY(-85px) rotate(180deg);
+        }
+
+        [data-role="detail-swiper-prev"] {
+          left: 30px;
+          transform: translateY(-85px);
+        }
+      }
+
     }
   
     .detail_product__description {

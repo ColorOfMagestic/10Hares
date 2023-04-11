@@ -1,6 +1,5 @@
 .about_mc {
   position: relative;
-  margin-top: 60px;
   padding-top: 40px;
   padding-bottom: 50px;
   background: linear-gradient(180deg, #FBFBFB 0%, rgba(255, 255, 255, 0) 36.46%, rgba(255, 255, 255, 0) 68.23%, #FBFBFB 100%);
@@ -56,7 +55,6 @@
 // sm
 @media(min-width: $sm) {
   .about_mc {
-    margin-top: 50px;
     padding-top: 70px;
 
     .grid_wrapper {
@@ -82,7 +80,6 @@
 // md
 @media(min-width: $md) {
   .about_mc {
-    margin-top: 77px;
     padding-top: 60px;
     padding-bottom: 100px;
 
@@ -107,7 +104,6 @@
 // lg
 @media(min-width: $lg) {
   .about_mc {
-    margin-top: 117px;
     padding-top: 80px;
     padding-bottom: 120px;
     h2 {
@@ -230,7 +226,6 @@
 // xXl
 @media(min-width: $xxl) {
   .about_mc {
-    margin-top: 160px;
     padding-top: 120px;
     padding-bottom: 160px;
 

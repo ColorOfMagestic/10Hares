@@ -7,9 +7,9 @@
     justify-content: center;
     .cart_clear {
       margin-left: 20px;
-      font-family: "Manrope", sans-serif;
-      font-size: 13px;
+      font-size: 15px;
       color: $gray;
+      transition: $transition;
       .icon {
         width: 8px;
         height: 8px;
@@ -20,13 +20,15 @@
   }
 
   .cart_card__wrapper {
-    margin: 30px 0 40px;
+    margin-top: 30px;
     .cart_card {
       position: relative;
       padding: 20px;
       border-radius: 20px;
       border: 2px solid $lineGray;
       background-color: $white;
+      transition: $transition;
+      @extend %hover_card;
       &:not(:first-child) {
       margin-top: 20px;
       }
@@ -53,6 +55,8 @@
           }
 
           span {
+            display: block;
+            margin-top: 6px;
             font-size: 15px;
             color: $gray;
           }
@@ -126,6 +130,7 @@
         height: 26px;
         background-color: $white;
         border-radius: 50%;
+        transition: $transition;
         span {
           display: none;
         }
@@ -140,6 +145,18 @@
 
 }
 
+.page_cart {
+
+  .order {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .pagination_wrapeer {
+    padding: 40px 0 50px;
+  }
+}
+
+
 @media(min-width: $sm) {
   .cart {
     margin-top: 30px;
@@ -151,7 +168,7 @@
     }
   
     .cart_card__wrapper {
-      margin: 55px 0 50px;
+      margin-top: 55px;
       .cart_card {
         display: flex;
         align-items: center;
@@ -180,6 +197,13 @@
       }
     }
   }
+
+  .page_cart {
+    .pagination_wrapeer {
+      padding: 50px 0 43px;
+    }
+  }
+  
   
 }
 
@@ -192,7 +216,7 @@
     }
   
     .cart_card__wrapper {
-      margin: 40px 0 60px;
+      margin-top: 40px;
       .cart_card {
         padding: 30px;
         .card_info {
@@ -245,6 +269,13 @@
   
     }
   }
+
+  .page_cart {
+    .pagination_wrapeer {
+      padding: 60px 0;
+    }
+  }
+  
   
 }
 
@@ -268,8 +299,16 @@
     }
   
     .cart_card__wrapper {
-      margin: 60px 0 70px;
+      margin-top: 60px;
       .cart_card {
+        &:not(:first-child) {
+          margin-top: 30px;
+        }
+
+        img {
+          width: 110px;
+          height: 110px;
+        }
         .card_info {
           display: flex;
           width: 100%;
@@ -339,6 +378,12 @@
     }
   }
   
+  .page_cart {
+    .pagination_wrapeer {
+      padding: 70px 0;
+    }
+  }
+  
 }
 
 @media(min-width: $xxl) {
@@ -351,14 +396,17 @@
     }
 
     .grid_wrapper {
+      position: relative;
       display: grid;
       grid-template: auto/1000px 22.5%;
       gap: 40px;
     }
   
     .cart_card__wrapper {
-      margin: 60px 0 100px;
       .cart_card {
+        &:not(:first-child) {
+          margin-top: 40px;
+          }
         .card_info {
           .card_info__data {
             max-width: 600px;
@@ -370,10 +418,9 @@
 
   .page_cart {
     .pagination_wrapeer {
-      .pagination {
-        margin: 0;
-      }
+      padding: 100px 0;
     }
   }
+  
 }
 

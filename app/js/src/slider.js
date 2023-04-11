@@ -325,16 +325,16 @@ const detail_small = new Swiper('.detail_small-swiper', {
             spaceBetween: 20,
         },
         992: {
-            slidesPerView: 3.4,
+            slidesPerView: 3.6,
             spaceBetween: 20,
         },
-        1200: {
-            slidesPerView: 4.6,
-            spaceBetween: 30,
-        },
         1400: {
-            slidesPerView: 3.6,
-            spaceBetween: 40,
+            slidesPerView: 3.5,
+            spaceBetween: 20,
+        },
+        1900: {
+            slidesPerView: 3.7,
+            spaceBetween: 30,
         },
     },
 });
@@ -343,6 +343,10 @@ const detail = new Swiper('.detail-swiper', {
     spaceBetween: 20,
     thumbs: {
         swiper: detail_small,
+    },
+    navigation: {
+        nextEl: `[data-role="detail-swiper-next"]`,
+        prevEl: `[data-role="detail-swiper-prev"]`,
     },
 });
 

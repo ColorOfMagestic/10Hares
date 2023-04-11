@@ -34,6 +34,11 @@
       color: $white;
       background-color: #BE363C;
       border-radius: 10px;
+      @media(min-width: $lg) {
+        padding: 24px;
+      }
+      
+      
 
       span {
         color: $beige;
@@ -117,6 +122,10 @@
     gap: 20px 0;
     width: 100%;
     margin-top: 20px;
+
+    .check_label {
+      padding-left: 47px;
+    }
   }
 
 }

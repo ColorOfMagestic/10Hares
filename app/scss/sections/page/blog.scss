@@ -1,6 +1,5 @@
 .blog {
   position: relative;
-  margin-top: 50px;
   padding-top: 60px;
   background: linear-gradient(180deg, #FBFBFB 0%, rgba(255, 255, 255, 0) 36.46%, rgba(255, 255, 255, 0) 68.23%, #FBFBFB 100%);
   .decor_rails {
@@ -71,7 +70,7 @@
 
   .blog_link {
     width: calc(100% - 20px);
-    margin: 40px 0;
+    margin-bottom: 40px;
   }
 
   .blog-swiper_buttons {
@@ -82,7 +81,6 @@
 
 @media(min-width: $sm) {
   .blog {
-    margin-top: 50px;
     padding-top: 60px;  
     .container_full {
       padding-left: 30px;
@@ -109,7 +107,7 @@
 }
 @media(min-width: $md) {
   .blog {
-    margin-top: 50px;
+    
     padding-top: 70px;
   
     .container_full {
@@ -143,7 +141,6 @@
 
 @media(min-width: $lg) {
   .blog {
-    margin-top: 60px;
     padding-top: 80px;
   
     h2 {
@@ -231,7 +228,6 @@
 }
 @media(min-width: $xxl) {
   .blog {
-    margin-top: 120px;
     padding-top: 120px;
     .decor_rails {
       top: -17px;

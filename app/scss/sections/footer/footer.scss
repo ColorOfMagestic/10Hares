@@ -1,6 +1,5 @@
 .footer {
     position: relative;
-    margin-top: 73px;
 
     .decor_rails {
         top: -17px;
@@ -256,7 +255,6 @@
 
 @media(min-width: $sm) {
     .footer {
-        margin-top: 50px;
 
         .footer_contacts__wrapper {
             padding: 50px 0 80px;
@@ -313,7 +311,6 @@
 }
 @media(min-width: $md) {
     .footer {
-        margin-top: 50px;
         
         .footer_contacts {
             
@@ -386,7 +383,6 @@
 @media(min-width: $lg) {
     .footer {
         position: relative;
-        margin-top: 120px;
         
         .footer_contacts__wrapper {
             padding:80px 0 100px;
@@ -522,7 +518,7 @@
 }
 @media(min-width: $xxl) {
     .footer {
-        margin-top: 160px;
+        
         .footer_contacts__wrapper {
             padding: 120px 0 140px;
         }

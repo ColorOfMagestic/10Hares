@@ -1,6 +1,6 @@
 .gallery {
   position: relative;
-  margin-top: 73px;
+  
   background: linear-gradient(180deg, #FBFBFB 0%, rgba(255, 255, 255, 0) 36.46%, rgba(255, 255, 255, 0) 68.23%, #FBFBFB 100%);
   .decor_rails {
     top: -17px;
@@ -47,7 +47,6 @@
 
 @media(min-width: $sm) {
   .gallery {
-    margin-top: 70px;
 
     .gallery_mobile__wrapper {
       padding: 65px 0 80px;
@@ -71,8 +70,6 @@
 
 @media(min-width: $md) {
   .gallery {
-    margin-top: 97px;
-
     .gallery_mobile__wrapper {
       padding: 60px 0 120px;
       padding-left: 40px;
@@ -96,7 +93,6 @@
 
 @media(min-width: $lg) {
   .gallery {
-    margin-top: 120px;
 
     .gallery_mobile__wrapper {
       padding: 80px 30px 120px;
@@ -177,7 +173,6 @@
 
 @media(min-width: $xl) {
   .gallery {
-    margin-top: 160px;
 
     .gallery_mobile__wrapper {
       display: none;
@@ -333,7 +328,6 @@
 }
 @media(min-width: $xxl) {
   .gallery {
-    margin-top: 160px;
 
     .gallery_desktop__wrapper {
       padding-bottom: 160px;

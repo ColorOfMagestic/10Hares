@@ -1,7 +1,7 @@
 .answer {
   position: relative;
-  margin-top: 90px;
-
+  padding-top: 90px;
+  padding-bottom: 56px;
   h2 {
     text-align: center;
   }
@@ -69,7 +69,8 @@
 }
 @media(min-width: $sm) {
   .answer {
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
   
     .accordion {
       .accordion_item {
@@ -91,7 +92,8 @@
 }
 @media(min-width: $md) {
   .answer {
-    margin-top: 130px;
+    padding-top: 130px;
+    padding-bottom: 70px;
   
     .accordion {
       .accordion_item {
@@ -121,8 +123,8 @@
 }
 @media(min-width: $lg) {
   .answer {
-    margin-top: 200px;
-    
+    padding-top: 200px;
+    padding-bottom: 100px;
     h2 {
       text-align: left;
       font-size: 54px;
@@ -178,7 +180,8 @@
 
 @media(min-width: $xl) {
   .answer {
-    margin-top: 140px;
+    padding-top: 140px;
+    padding-bottom: 143px;
     .accordion {
       .accordion_item {
         .accordion_item-trigger {

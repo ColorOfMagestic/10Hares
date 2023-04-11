@@ -73,6 +73,10 @@
   .req_double {
     display: none;
   }
+
+  .pagination_wrapeer {
+    padding-bottom: 50px;
+  }
 }
 
 @media(min-width: $sm) {
@@ -244,7 +248,13 @@
     .req_double {
       display: block;
       margin-top: 20px;
+      padding-bottom: 80px;
     }
+
+    .pagination_wrapeer {
+      padding-bottom: 0;
+    }
+  
   }
 
 }
@@ -362,6 +372,7 @@
 
     .req_double {
       margin-top: 30px;
+      padding-bottom: 100px;
     }
   }
 
@@ -444,6 +455,7 @@
 
     .req_double {
       margin-top: 30px;
+      padding-bottom: 120px;
     }
   }
 
@@ -590,6 +602,7 @@
 
     .req_double {
       margin-top: 70px;
+      padding-bottom: 143px;
     }
   }
 

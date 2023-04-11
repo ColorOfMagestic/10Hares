@@ -115,9 +115,20 @@ const inputsRange = (sl1,sl2,min,max,sltr) => {
 
     let sliderMaxValue = sliderOne.max;
 
+    function format(str) {
+        const s = str.length;
+        const chars = str.split('');
+        const strWithSpaces = chars.reduceRight((acc, char, i) => {
+            const spaceOrNothing = ((((s - i) % 3) === 0) ? ' ' : '');
+            return (spaceOrNothing + char + acc);
+        }, '');
+    
+        return ((strWithSpaces[0] === ' ') ? strWithSpaces.slice(1) : strWithSpaces);
+    }
+
     window.addEventListener('DOMContentLoaded', function fillColor() {
-        displayValOne.value = `${sliderOne.value} ₽`;
-        displayValTwo.value = `${sliderTwo.value} ₽`;
+        displayValOne.value = `${format(`${sliderOne.value}`)} ₽`;
+        displayValTwo.value = `${format(`${sliderTwo.value}`)} ₽`;
 
         const percent1 = (sliderOne.value / sliderMaxValue) * 100;
         const percent2 = (sliderTwo.value / sliderMaxValue) * 100;
@@ -129,14 +140,14 @@ const inputsRange = (sl1,sl2,min,max,sltr) => {
         if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
             sliderOne.value = parseInt(sliderTwo.value) - minGap;
         }
-        displayValOne.value = `${sliderOne.value} ₽`;
+        displayValOne.value =`${format(`${sliderOne.value}`)} ₽` ;
         fillColor();
     });
     sliderTwo.addEventListener('input', function slideTwo() {
         if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
             sliderTwo.value = parseInt(sliderOne.value) + minGap;
         }
-        displayValTwo.value = `${sliderTwo.value} ₽`;
+        displayValTwo.value = `${format(`${sliderTwo.value}`)} ₽`;
         fillColor();
     });
 
@@ -264,6 +275,14 @@ const customSelectShow = () => {
     customSelects.forEach(cs=> {
         
         const signUp = cs.closest('.sign_up__form');
+        
+        cs.addEventListener('click',function() {
+            if(windowInnerWidth >= 992) {
+                return;
+            }
+            this.classList.toggle('active');
+        });
+
         if(!signUp) {
             return;
         } else if(signUp) {
@@ -272,8 +291,6 @@ const customSelectShow = () => {
                 short: "Выбрать время",
                 long: "Выбрать время мастер класса",
             }
-            
-
             switch (windowInnerWidth) {
                 case  375:
                     textValue.textContent = text.short;
@@ -289,14 +306,7 @@ const customSelectShow = () => {
                     break;
             }
         }
-        
-        cs.addEventListener('click',function() {
 
-            if(windowInnerWidth >= 992) {
-                return;
-            }
-            this.classList.toggle('active');
-        });
     });
     
     customSelectlistItems.forEach(li => {

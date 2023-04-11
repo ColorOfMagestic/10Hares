@@ -18,6 +18,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-size: 18px;
         font-weight: 700;
         .icon {
           fill: $lightGray;
@@ -214,6 +215,10 @@
     border-top: 2px solid $lineGray;
     button {
       width: 100%;
+      &:first-of-type {
+        font-size: 14px;
+        padding-top: 24px;
+      }
     }
     .filter_clear {
       width: auto;
@@ -222,12 +227,21 @@
       font-size: 15px;
       color: $gray;
       font-family: inherit;
+      transition: $transition;
+      &:hover {
+        color: $red;
+        .icon {
+          fill: $red;
+        }
+        }
 
       .icon {
         width: 8px;
         height: 8px;
         margin-right: 8px;
         fill: $gray;
+        transition: $transition;
+
       }
 
     }

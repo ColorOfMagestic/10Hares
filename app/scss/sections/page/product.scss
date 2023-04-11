@@ -1,6 +1,7 @@
 .product {
   position: relative;
   margin-top: 50px;
+  padding-bottom: 50px;
 
   .container_full {
     width: 100%;
@@ -30,6 +31,7 @@
         border: 2px solid $lineGray;
         border-radius: 20px;
         background-color: $white;
+        transition: $transition;
         @extend %hover_card;
 
 
@@ -120,6 +122,7 @@
         a {
           padding: 20px 30px 18px;
           margin-top: 20px;
+          font-size: 14px;
 
           &::before {
             content: none;
@@ -156,7 +159,7 @@
 }
 
 .product_similar {
-  margin-top: 50px;
+  margin-top: 0;
   padding-top: 60px;
   background: linear-gradient(180deg, #FBFBFB 0%, rgba(255, 255, 255, 0) 36.46%);
   .decor_rails {
@@ -235,7 +238,7 @@
   }
 
   .product_similar {
-    margin-top: 100px;
+    margin-top: 0;
     padding-top: 60px;
   } 
 
@@ -338,8 +341,8 @@
   }
 
   .product_similar {
-      margin-top: 80px;
       padding-top: 80px; 
+      margin-top: 0;
   
     .product-swiper_buttons {
       right: 0;
@@ -349,6 +352,7 @@
 
 @media(min-width: $xl) {
   .product {
+    padding-bottom: 60px;
     .container_full {
       width: 70%;
       max-width: 1340px;
@@ -357,10 +361,10 @@
   }
 }
 
-
 @media(min-width: $xxl) {
   .product {
     margin-top: 140px;
+    padding-bottom: 120px;
 
     h2 {
       font-size: 54px;
@@ -537,7 +541,7 @@
   }
 
   .product_similar {
-    margin-top: 100px;
+    margin-top: 0;
     padding-top: 120px;
   
     .product-swiper_buttons {

@@ -1,5 +1,6 @@
 .breadcrumbs {
-  margin-top: 150px;
+  position: relative;
+  z-index: 1;
   ul {
     display: flex;
     justify-content: center;

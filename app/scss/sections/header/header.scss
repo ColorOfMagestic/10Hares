@@ -6,9 +6,9 @@
         left: 0;
         display: flex;
         justify-content: center;
-        height: 125px;
+        height: 80px;
+        padding: 16px 0 20px;
         margin-top: 20px;
-        padding-bottom: 10px;
         background-color: $darkWhite;
         z-index: 5;
         &::before {
@@ -110,7 +110,17 @@
         }
 
         .logo {
+            position: relative;
+            width: 112px;
             margin: 0 auto;
+            img {
+                position: absolute;
+                width: 92px;
+                height: 95px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
 
         .calls {
@@ -342,6 +352,16 @@
                     margin-right: 20px;
                 }
             }
+
+            .logo {
+                width: 165px;
+                img {
+                    position: absolute;
+                    width: 105px;
+                    height: 108px;
+                }
+            }
+
         }
 
         .nav_mobile {
@@ -369,9 +389,7 @@
 @media(min-width: $lg) {
     .header {
         .top_block__wrapper{
-            height: 120px;
             margin-top: 30px;
-            padding-bottom: 20px;
             background-color: $darkWhite;
             z-index: 5;
             &::before {
@@ -405,6 +423,11 @@
 
 @media(min-width: $xl) {
     .header {
+        .top_block__wrapper {
+            margin-top: 0;
+            padding: 0;
+            height: 94px;
+        }
         .top_block {
             width: 70%;
             max-width: 1340px;
