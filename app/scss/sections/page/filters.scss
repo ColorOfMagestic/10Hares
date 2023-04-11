@@ -9,6 +9,9 @@
     font-size: 22px;
     font-weight: 700;
   }
+
+  
+  
   .filters_accordion {
     .accordion_item {
       padding: 30px 30px 16px;
@@ -210,6 +213,13 @@
       }
     }
   }
+
+  .filters_accordion_m {
+    .accordion_item {
+      padding: 30px;
+    }
+  }
+
 
   .filters_buttons {
     padding: 30px;

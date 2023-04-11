@@ -1,7 +1,7 @@
 .catalog_page {
   .catalog {
     position: relative;
-    margin-top: 40px;
+    margin-top: 20px;
 
     .flex_wrapper {
       button {
@@ -16,6 +16,8 @@
 
       button {
         width: 100%;
+        font-size: 14px;
+        font-weight: 700;
         .icon {
           width: 20px;
           height: 20px;
@@ -36,7 +38,7 @@
     .filters_mobile_wrapper {
       z-index: 1;
       position: absolute;
-      top: 230px;
+      top: 150px;
       left: 0;
       width: 100%;
       transform: translateX(-110%);

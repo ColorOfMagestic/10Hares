@@ -1,6 +1,7 @@
 .blog {
   position: relative;
   padding-top: 60px;
+  padding-bottom: 40px;
   background: linear-gradient(180deg, #FBFBFB 0%, rgba(255, 255, 255, 0) 36.46%, rgba(255, 255, 255, 0) 68.23%, #FBFBFB 100%);
   .decor_rails {
     top: -17px;
@@ -48,6 +49,7 @@
           margin-top: 10px;
           overflow: hidden;
           margin-bottom: 15px;
+          color: $darkGray;
         }
 
         a {
@@ -70,7 +72,6 @@
 
   .blog_link {
     width: calc(100% - 20px);
-    margin-bottom: 40px;
   }
 
   .blog-swiper_buttons {
