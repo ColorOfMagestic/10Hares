@@ -388,6 +388,17 @@
     }
 
     .product-swiper,
+    .product_similar-swiper {
+      .product_slide {
+        .product_slide__content {
+          padding: 40px;
+          height: calc(100% - 84px);
+        }
+      }
+    }
+
+
+    .product-swiper,
     .product-swiper_buttons {
       display: none;
     }

@@ -408,6 +408,10 @@ const modalFeedbackFullSwiper = new Swiper('.feedback_content-swiper', {
             slidesPerView: 3.7,
             spaceBetween: 30,
         },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 30
+        }
     },
 
 });

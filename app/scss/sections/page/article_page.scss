@@ -24,6 +24,12 @@
   }
 }
 
+.article_page {
+  .product_similar {
+    background: none;
+  }
+}
+
 @media(min-width: $sm) {
 
   .intro_article {
@@ -93,7 +99,7 @@
             flex-flow: column nowrap;
             justify-content: flex-start;
             height: calc(100% - 64px);
-            padding: 30px;
+            padding: 40px;
             border: 2px solid $lineGray;
             border-radius: 20px;
             background-color: $white;
@@ -221,6 +227,13 @@
   
     }
   }
-  
+
+  .article_page { 
+    .description {
+      &:last-of-type {
+        margin-top: -20px;
+      }
+    }
 }
 
+}

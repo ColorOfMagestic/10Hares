@@ -48,6 +48,7 @@
         position: relative;
         display: block;
         width: 100%;
+        font-size: 18px;
       }
 
       input, textarea  {
@@ -115,14 +116,14 @@
             content: "";
             width: 12px;
             height: 12px;
-            background-color: red;
+            background-color: $redHover;
             transform: translate(-50%,-50%);
             border-radius: 50%;
           }
 
           input[type="radio"]:checked ~ label {
             color: $dark;
-            border-color: $beigeHover;
+            border:2px solid $beigeHover;
           }
         }
       }
@@ -253,7 +254,7 @@
     }
   
     .order_data-form {
-      margintop: 60px;
+      margin-top: 60px;
       .order_data-form__wrapper {
         .order_adress__grid_wrapper {
           grid-template: 1fr/ repeat(5, 1fr);
@@ -280,6 +281,7 @@
 
     .order_data-form {
       margin-top: 60px;
+      padding: 40px;
     }
   }
 }

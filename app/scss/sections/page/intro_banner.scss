@@ -765,6 +765,7 @@
 
   .intro_banner__inner {
     .intro_banner__wrapper {
+      margin-top: -60px;
       background: url(../img/intro_banner/intro_2_xl_bg.png)no-repeat 50%/contain;
     }
 
@@ -793,6 +794,10 @@
   
   .intro_banner--excursions {
     margin-top: 56px;
+
+    .intro_banner__wrapper {
+      margin-top: -35px;
+    }
 
     .intro_banner-swiper {
       .swiper-slide {

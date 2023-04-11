@@ -350,7 +350,7 @@
     
             .footer_info__links {    
                 ul {
-                    grid-template: auto/repeat(3, 1fr);
+                    grid-template: 3fr/max-content max-content max-content;
                     gap: 16px 90px;
     
                     li {
@@ -391,8 +391,6 @@
         .footer_contacts {
             grid-template: auto/repeat(3, 1fr);
             gap: 0 20px;
-            .contact {
-            }
         
             .contact-tel {
                 p:nth-child(2) {
@@ -580,6 +578,7 @@
             .footer_info__other {
                 margin-left: 85px;
             }
+            
             .footer_info__social {
                 padding: 0;
                 margin-left: auto;

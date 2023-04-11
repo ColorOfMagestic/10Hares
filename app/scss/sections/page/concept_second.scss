@@ -52,6 +52,7 @@
           place-items: center;
           width: 30px;
           height: 30px;
+          padding-top: 2px;
           font-weight: 700;
           color: $white;
           background-color: $beige;
@@ -73,6 +74,7 @@
     padding: 20px;
     margin-top: 40px;
     background-color: $darkWhite;
+    border-radius: 20px;
 
     address {
       margin-top: 15px;
@@ -150,9 +152,6 @@
   
       .concept_second__numeration {
         margin-top: 70px;
-        .numeration_item {
-          font-size: 18px;
-        }
       }
     }
   

@@ -126,6 +126,12 @@
     .check_label {
       padding-left: 47px;
     }
+
+    .label {
+      input {
+        border: none;
+      }
+    }
   }
 
 }
@@ -833,10 +839,10 @@
     .row_md {
       gap: 40px;
       width: 100%;
-
-      &:not(:first-child) {
-        margin-top: 40px;
+      &:first-of-type {
+        margin-top: 0;
       }
+      margin-top: 40px;
     }
 
   }
@@ -1037,6 +1043,34 @@
 
 
   }
+
+  .modal_feedback_full {
+    .modal__wrapper {
+      width: 1054px;
+      padding-top: 43px;
+    }
+
+    .feedback_autor {
+      padding: 0 80px;
+    }
+
+    .feedback_content__wrapper {
+      margin-top: 43px;
+      padding: 60px 80px;
+      padding-right: 40px;
+
+    }
+  
+    .feedback_content {
+      padding-right: 35px;
+      .content_images {
+        margin-top: 50px;
+      }
+    }
+
+
+  }
+
 
 
 

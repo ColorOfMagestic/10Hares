@@ -148,7 +148,7 @@
 .page_cart {
 
   .order {
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 0;
   }
   .pagination_wrapeer {
@@ -348,15 +348,15 @@
         }
   
         .btn_delete {
-          top: 10px;
-          right: 20px;
+          top: 20px;
+          right: 30px;
           width: auto;
           border-radius: 0;
           span {
             display: block;
             margin-left: 8px;
-            font-family: "Manrope", sans-serif;
             color: $gray;
+            font-size: 15px;
           }
           .icon {
             width: 8px;
@@ -419,6 +419,9 @@
   .page_cart {
     .pagination_wrapeer {
       padding: 100px 0;
+      .pagination {
+        margin: 0;
+      }
     }
   }
   

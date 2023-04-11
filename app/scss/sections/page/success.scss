@@ -106,7 +106,7 @@
   
       .content_links {
         display: grid;
-        grid-template: auto/1fr 1fr;
+        grid-template: auto/max-content max-content;
         gap: 40px;
         margin-top: 40px;
   
@@ -114,9 +114,9 @@
           display: grid;
           place-items: center;
           width: 100%;
-          padding: 20px 0;
-          font-size: 13px;
-          font-weight: 400;
+          padding: 20px 30px 18px;
+          font-size: 14px;
+          font-weight: 700;
           &::before {
             content: none;
           }

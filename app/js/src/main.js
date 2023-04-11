@@ -58,11 +58,21 @@ const accordionSlide = () => {
         }
 
         item.addEventListener('click', function () {
+            const parent = this.parentNode;
             this.classList.toggle('active');
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
             } else {
                 panel.style.maxHeight = panel.scrollHeight + 'px';
+            }
+
+            if(template.classList.contains('catalog_page')) {
+                if (item.classList.contains('active')) {
+                    parent.style.paddingBottom = `16px`;
+                } else {
+                    parent.style.paddingBottom = `30px`;
+                }
+
             }
         });
     }

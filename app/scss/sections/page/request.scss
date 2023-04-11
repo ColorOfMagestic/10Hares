@@ -190,6 +190,7 @@
   .request_double_wrapper {
     margin-top: 50px;
     display: flex;
+    gap: 40px;
 
     .request {
       width: 49%;
@@ -329,7 +330,6 @@
   .request_double_wrapper {
     margin-top: 70px;
     .request {
-      width: 49%;
       .request_wrapper {
         padding-left: 40px;
         background: url(../img/request/bg_md_d.png) no-repeat 0% bottom/contain;
