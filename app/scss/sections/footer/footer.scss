@@ -252,7 +252,6 @@
         }
     }
 }
-
 @media(min-width: $sm) {
     .footer {
 
@@ -350,7 +349,9 @@
     
             .footer_info__links {    
                 ul {
-                    grid-template: 3fr/max-content max-content max-content;
+                    grid-auto-flow: column;
+                    grid-template-columns: repeat(3,max-content);
+                    grid-template-rows: repeat(3,1fr);
                     gap: 16px 90px;
     
                     li {

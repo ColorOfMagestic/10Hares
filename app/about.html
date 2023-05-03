@@ -260,23 +260,23 @@
               <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="image">
-                      <img src="img/about_mc/img_3.jpg" alt=""/>
+                      <img src="img/inner_slider/img_1.jpg" alt=""/>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="video">
-                      <img src="img/about_mc/img_2.jpg" alt=""/>
+                      <img src="img/inner_slider/img_2.jpg" alt=""/>
                       <button class="btn btn_video"></button>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="image">
-                      <img src="img/about_mc/img_1.jpg" alt=""/>
+                      <img src="img/inner_slider/img_3.jpg" alt=""/>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="image">
-                      <img src="img/about_mc/img_2.jpg" alt=""/>
+                      <img src="img/inner_slider/img_4.jpg" alt=""/>
                     </div>
                   </div>
               </div>
@@ -745,296 +745,500 @@
 
     </div>
 </footer>
-<!-- ========== Start modal_mk ========== -->
-  <div class="modal modal_mk">
-    <div class="modal__overlay flex-sc">
-      <div class="modal__wrapper flex-cc flex-col">
-        <button class="modal__close btn">
-          <svg class="icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <form class="modal__form flex-cc flex-col">
-          <h2>Записаться на мастер класс</h2>
-          <p>
-            «Мастер класс по изготовлению печатного пряника»
-          </p>
-          <div class="row_md">
-            <label class="label">
-              <input type="text" placeholder="Ваше имя и фамилия" />
-            </label>
-            <label class="label">
-              <input type="text" placeholder="Ваш телефон" />
-            </label>
+    <!-- ========== Start modal_mk ==========+ -->
+    <div class="modal modal_mk">
+      <div class="modal__overlay flex-sc">
+          <div class="modal__wrapper flex-cc flex-col">
+              <button class="modal__close btn">
+                  <svg class="icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+              </button>
+              <form class="modal__form flex-cc flex-col">
+                  <h2>Записаться на мастер класс</h2>
+                  <p>
+                      «Мастер класс по изготовлению печатного пряника»
+                  </p>
+                  <div class="row_md">
+                      <label class="label">
+                          <input type="text" placeholder="Ваше имя и фамилия" />
+                      </label>
+                      <label class="label">
+                          <input type="text" placeholder="Ваш телефон" />
+                      </label>
+                  </div>
+                  <div class="row_md">
+                      <div class="custom_select select">
+                          <div class="custom_select__value">
+                              <span>Количество взрослых</span>
+                              <svg class="icon">
+                                  <use xlink:href="img/sprite.svg#arrow2"></use>
+                              </svg>
+                          </div>
+                          <div class="custom_select__list">
+                              <div class="list_wrapper">
+                                  <ul>
+                                      <li>
+                                          <span data-value="1">1</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="2">2</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="3">3</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="4">4</span>
+                                      </li>
+                                  </ul>
+                              </div>    
+                          </div>
+                      </div>
+
+                      <div class="custom_select select">
+                          <div class="custom_select__value">
+                              <span>Количество детей</span>
+                              <svg class="icon">
+                                  <use xlink:href="img/sprite.svg#arrow2"></use>
+                              </svg>
+                          </div>
+                          <div class="custom_select__list">
+                              <div class="list_wrapper">
+                                  <ul>
+                                      <li>
+                                          <span data-value="1">1</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="2">2</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="3">3</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="4">4</span>
+                                      </li>
+                                  </ul>
+                              </div>    
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row_md">
+                      <div class="info">
+                          <p><span>Дата: </span>31 декабря</p>
+                      </div>
+                      <div class="info">
+                          <p><span>Время:</span> с 10:00 до 12:00</p>
+                      </div>
+                  </div>
+                  <button data-role="think_mk" class="btn btn_default">Записаться на мастер класс</button>
+              </form>
           </div>
-          <div class="row_md">
-            <div class="select">
-              <select>
-                <option value="">Количество взрослых</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <svg class="icon">
-                <use xlink:href="img/sprite.svg#arrow2"></use>
-              </svg>
-            </div>
-            <div class="select">
-              <select>
-                <option value="">Количество детей</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <svg class="icon">
-                <use xlink:href="img/sprite.svg#arrow2"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="row_md">
-            <div class="info">
-              <p><span>Дата: </span>31 декабря</p>
-            </div>
-            <div class="info">
-              <p><span>Время:</span> с 10:00 до 12:00</p>
-            </div>
-          </div>
-          <button data-role="think_mk" class="btn btn_default">Записаться на мастер класс</button>
-        </form>
       </div>
-    </div>
   </div>
   <!-- ========== End modal_mk ========== -->
-  <!-- ========== Start modal_feedback========== -->
+  <!-- ========== Start modal_feedback==========+ -->
   <div class="modal modal_feedback">
-    <div class="modal__overlay flex-sc">
-      <div class="modal__wrapper flex-cc flex-col">
-        <button class="modal__close btn">
-          <svg class="icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <form class="modal__form flex-cc flex-col">
-          <h2>Оставить отзыв</h2>
-          <div class="grid_wrapper">
-            <label class="label label_name">
-              <input type="text" placeholder="Ваше имя и фамилия" />
-            </label>
-            <label class="label label_tel">
-              <input type="text" placeholder="Ваш телефон" />
-            </label>
-            <label class="label label_feedback">
-              <textarea placeholder="Отзыв"></textarea>
-            </label>
+      <div class="modal__overlay flex-sc">
+          <div class="modal__wrapper flex-cc flex-col">
+              <button class="modal__close btn">
+                  <svg class="icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+              </button>
+              <form class="modal__form flex-cc flex-col">
+                  <h2>Оставить отзыв</h2>
+                  <div class="grid_wrapper">
+                      <label class="label label_name">
+                          <input type="text" placeholder="Ваше имя и фамилия" />
+                      </label>
+                      <label class="label label_tel">
+                          <input type="text" placeholder="Ваш телефон" />
+                      </label>
+                      <label class="label label_feedback">
+                          <textarea placeholder="Отзыв"></textarea>
+                      </label>
+                  </div>
+                  <div class="buttons">
+                      <button class="add-file flex-cc">
+                          <svg class="icon">
+                              <use xlink:href="img/sprite.svg#photo"></use>
+                          </svg>
+                          Добавить фото
+                          <input class="add-file__input" type="file" name="file" hidden>
+                      </button>
+                      <button data-role="leave_thanks" class="btn btn_default grid_button" type="submit">Оставить
+                          отзыв</button>
+                  </div>
+              </form>
           </div>
-          <div class="buttons">
-            <button class="add-file flex-cc">
-              <svg class="icon">
-                <use xlink:href="img/sprite.svg#photo"></use>
-              </svg>
-              <p>Добавить фото</p>
-              <input class="add-file__input" type="file" name="file" hidden>
-            </button>
-            <button data-role="leave_thanks" class="btn btn_default grid_button" type="submit">Оставить отзыв</button>
-          </div>
-        </form>
       </div>
-    </div>
   </div>
   <!-- ========== End modal_feedback========== -->
-  <!-- ========== Start modal_call ========== -->
-  <div class="modal modal_call ">
-    <div class="modal__overlay flex-cc">
-      <div class="modal__wrapper flex-cc flex-col">
-        <button class="modal__close btn">
-          <svg class="icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <form class="modal__form flex-cc flex-col">
-          <h2>Заказать звонок</h2>
-          <div class="grid_wrapper">
-            <label class="label">
-              <input type="text" placeholder="Ваше имя и фамилия" />
-            </label>
-            <label class="label">
-              <input type="text" placeholder="Ваш телефон" />
-            </label>
-            <label class="check_label">
-              <input class="check-box" type="checkbox">
-              <span class="check-style"></span>
-              Нажимая кнопку Вы даете согласие на обработку персональный данных
-            </label>
+  <!-- ========== Start modal_call ==========+ -->
+  <div class="modal modal_call">
+      <div class="modal__overlay flex-cc">
+          <div class="modal__wrapper flex-cc flex-col">
+              <button class="modal__close btn">
+                  <svg class="icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+              </button>
+              <form class="modal__form flex-cc flex-col">
+                  <h2>Заказать звонок</h2>
+                  <div class="grid_wrapper">
+                      <label class="label">
+                          <input type="text" placeholder="Ваше имя и фамилия" />
+                      </label>
+                      <label class="label">
+                          <input type="text" placeholder="Ваш телефон" />
+                      </label>
+                      <label class="check_label">
+                          <input class="check-box" type="checkbox">
+                          <span class="check-style"></span>
+                          Нажимая кнопку Вы даете согласие на обработку персональный данных
+                      </label>
+                  </div>
+                  <button data-role="thanks_1" class="btn btn_default grid_button">Перезвонить мне</button>
+              </form>
           </div>
-          <button class="btn btn_default grid_button" type="submit">Оставить отзыв</button>
-        </form>
       </div>
-    </div>
   </div>
   <!-- ========== End modal_call ========== -->
   <!-- ========== Start modal_connection ========== -->
   <div class="modal modal_connection">
-    <div class="modal__overlay flex-sc">
-      <div class="modal__wrapper flex-cc flex-col">
-        <button class="modal__close btn">
-          <svg class="icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <form class="modal__form flex-cc flex-col">
-          <h2>Заполните поля для связи</h2>
-          <div class="grid_wrapper">
-            <div class="grid_info">
-              <div class="info">
-                <p><span>Дата: </span>31 декабря</p>
-              </div>
-              <div class="info">
-                <p><span>Время:</span> с 10:00 до 12:00</p>
-              </div>
-            </div>
-            <label class="label">
-              <input type="text" placeholder="Ваше имя и фамилия" />
-            </label>
-            <label class="label">
-              <input type="text" placeholder="Ваш телефон" />
-            </label>
-            <label class="check_label">
-              <input class="check-box" type="checkbox">
-              <span class="check-style"></span>
-              Нажимая кнопку Вы даете согласие на обработку персональный данных
-            </label>
-          </div>
+      <div class="modal__overlay flex-sc">
+          <div class="modal__wrapper flex-cc flex-col">
+              <button class="modal__close btn">
+                  <svg class="icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+              </button>
+              <form class="modal__form flex-cc flex-col">
+                  <h2>Заполните поля для связи</h2>
+                  <div class="grid_wrapper">
+                      <div class="grid_info">
+                          <div class="info">
+                              <p><span>Дата: </span>31 декабря</p>
+                          </div>
+                          <div class="info">
+                              <p><span>Время:</span> с 10:00 до 12:00</p>
+                          </div>
+                      </div>
+                      <label class="label">
+                          <input type="text" placeholder="Ваше имя и фамилия" />
+                      </label>
+                      <label class="label">
+                          <input type="text" placeholder="Ваш телефон" />
+                      </label>
+                      <label class="check_label">
+                          <input class="check-box" type="checkbox">
+                          <span class="check-style"></span>
+                          Нажимая кнопку Вы даете согласие на обработку персональный данных
+                      </label>
+                  </div>
 
-          <div class="buttons">
-            <button class="btn btn_back">
-              <svg class="icon">
-                <use xlink:href="img/sprite.svg#arrowSlider"></use>
-              </svg>
-              Назад
-            </button>
-            <button class="btn btn_default" type="submit">Записаться и<br> перезвонить мне</button>
+                  <div class="buttons">
+                      <button class="btn btn_back">
+                          <svg class="icon">
+                              <use xlink:href="img/sprite.svg#arrowSlider"></use>
+                          </svg>
+                          Назад
+                      </button>
+                      <button data-role="conection-thanks" class="btn btn_default">Записаться и<br> перезвонить мне</button>
+                  </div>
+              </form>
           </div>
-        </form>
       </div>
-    </div>
   </div>
   <!-- ========== End modal_connection ========== -->
-  <!-- ========== Start modal_success ========== -->
-  <div class="modal modal_feedback_thanks  modal_success">
-    <div class="modal__overlay flex-cc">
-      <div class="modal__wrapper flex-cc flex-col">
-        <button class="modal__close btn">
-          <svg class="icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <div class="modal__form flex-cc flex-col">
-          <h3>Вы успешно записались на мастер класс!</h3>
-          <p>Наши специалисты свяжутся с Вами в течении 20 минут! Спасибо, что выбрали нас!</p>
-          <div class="grid_info">
-            <div class="info">
-              <p><span>Дата: </span>31 декабря</p>
-            </div>
-            <div class="info">
-              <p><span>Время:</span> с 10:00 до 12:00</p>
-            </div>
+  <!-- ========== Start modal_calendar ========== -->
+  <div class="modal modal_calendar">
+      <div class="modal__overlay flex-sc">
+          <div class="modal__wrapper flex-cc flex-col">
+              <button class="modal__close btn">
+                  <svg class="icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+              </button>
+              <div class="modal_sign_up">
+                  <h3><span>Записаться на</span> мастер класс</h3>
+                  <div class="calendar">
+                      <div class="month">
+                          <button class="btn">
+                              <svg class="icon">
+                                  <use xlink:href="img/sprite.svg#arrow2"></use>
+                              </svg>
+                          </button>
+                          <div>Декабрь <span class="year">2022</span></div>
+                          <button class="btn" disabled>
+                              <svg class="icon">
+                                  <use xlink:href="img/sprite.svg#arrow2"></use>
+                              </svg>
+                          </button>
+                      </div>
+                      <div class="days">
+                          <span>пн</span>
+                          <span>вт</span>
+                          <span>ср</span>
+                          <span>чт</span>
+                          <span>пт</span>
+                          <span>сб</span>
+                          <span>вс</span>
+                      </div>
+                      <div class="dates">
+                          <button>
+                              <time>1</time>
+                          </button>
+                          <button>
+                              <time>2</time>
+                          </button>
+                          <button>
+                              <time>3</time>
+                          </button>
+                          <button>
+                              <time>4</time>
+                          </button>
+                          <button>
+                              <time>5</time>
+                          </button>
+                          <button>
+                              <time>6</time>
+                          </button>
+                          <button>
+                              <time>7</time>
+                          </button>
+                          <button>
+                              <time>8</time>
+                          </button>
+                          <button>
+                              <time>9</time>
+                          </button>
+                          <button>
+                              <time>10</time>
+                          </button>
+                          <button>
+                              <time>11</time>
+                          </button>
+                          <button>
+                              <time>12</time>
+                          </button>
+                          <button>
+                              <time>13</time>
+                          </button>
+                          <button>
+                              <time>14</time>
+                          </button>
+                          <button>
+                              <time>15</time>
+                          </button>
+                          <button>
+                              <time>16</time>
+                          </button>
+                          <button>
+                              <time>17</time>
+                          </button>
+                          <button class="today">
+                              <time>18</time>
+                          </button>
+                          <button>
+                              <time>19</time>
+                          </button>
+                          <button>
+                              <time>20</time>
+                          </button>
+                          <button>
+                              <time>21</time>
+                          </button>
+                          <button>
+                              <time>22</time>
+                          </button>
+                          <button>
+                              <time>23</time>
+                          </button>
+                          <button>
+                              <time>24</time>
+                          </button>
+                          <button>
+                              <time>25</time>
+                          </button>
+                          <button>
+                              <time>26</time>
+                          </button>
+                          <button>
+                              <time>27</time>
+                          </button>
+                          <button>
+                              <time>28</time>
+                          </button>
+                          <button>
+                              <time>29</time>
+                          </button>
+                          <button>
+                              <time>30</time>
+                          </button>
+                          <button>
+                              <time>31</time>
+                          </button>
+                      </div>
+                  </div>
+                  <form class="sign_up__form">
+                      <div class="custom_select select">
+                          <div class="custom_select__value">
+                              <span>Выбрать время мастер класса</span>
+                              <svg class="icon">
+                                  <use xlink:href="img/sprite.svg#arrow2"></use>
+                              </svg>
+                          </div>
+                          <div class="custom_select__list">
+                              <div class="list_wrapper">
+                                  <ul>
+                                      <li>
+                                          <span data-value="с 8:00 до 10:00">с 8:00 до 10:00</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="с 10:00 до 12:00">с 10:00 до 12:00</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="с 12:30 до 14:30">с 12:30 до 14:30</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="с 15:00 до 17:00">с 15:00 до 17:00</span>
+                                      </li>
+                                      <li>
+                                          <span data-value="с 18:00 до 20:00">с 18:00 до 20:00</span>
+                                      </li>
+                                  </ul>
+                              </div>    
+                          </div>
+                      </div>
+                      <button data-role="sing_up_2" class="btn btn_default btn_mob">Записаться</button>
+                      <button data-role="sing_up_2" class="btn btn_default btn_desk">Записаться на мастер класс</button>
+                  </form>
+              </div>
+
           </div>
-        </div>
       </div>
-    </div>
+  </div>
+  <!-- ========== End modal_calendar ========== -->
+  <!-- ========== Start modal_success ==========+ -->
+  <div class="modal modal_feedback_thanks  modal_success">
+      <div class="modal__overlay flex-cc">
+          <div class="modal__wrapper flex-cc flex-col">
+              <button class="modal__close btn">
+                  <svg class="icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+              </button>
+              <div class="modal__form flex-cc flex-col">
+                  <h3>Вы успешно записались на мастер класс!</h3>
+                  <p>Наши специалисты свяжутся с Вами в течении 20 минут! Спасибо, что выбрали нас!</p>
+                  <div class="grid_info">
+                      <div class="info">
+                          <p><span>Дата: </span>31 декабря</p>
+                      </div>
+                      <div class="info">
+                          <p><span>Время:</span> с 10:00 до 12:00</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
   </div>
   <!-- ========== End modal_success ========== -->
-  <!-- ========== Start modal_thanks ========== -->
-  <div class="modal modal_feedback_thanks  modal_thanks">
-    <div class="modal__overlay flex-cc">
-      <div class="modal__wrapper flex-cc flex-col">
-        <button class="modal__close btn">
-          <svg class="icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <form class="modal__form flex-cc flex-col">
-          <h3>Спасибо!</h3>
-          <p>Наши специалисты свяжутся с Вам в течении 30 минут.</p>
-          <button class="btn btn_default" type="submit">В каталог пряников</button>
-        </form>
+  <!-- ========== Start modal_thanks ==========+ -->
+  <div class="modal modal_feedback_thanks modal_thanks">
+      <div class="modal__overlay flex-cc">
+          <div class="modal__wrapper flex-cc flex-col">
+              <button class="modal__close btn">
+                  <svg class="icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+              </button>
+              <form class="modal__form flex-cc flex-col">
+                  <h3>Спасибо!</h3>
+                  <p>Наши специалисты свяжутся с Вам в течении 30 минут.</p>
+                  <a class="link btn_default" href="catalog.html">В каталог пряников</a>
+              </form>
+          </div>
       </div>
-    </div>
   </div>
   <!-- ========== End modal_thanks ========== -->
-  <!-- ========== Start modal_feedback_thanks ========== -->
-  <div class="modal modal_feedback_thanks">
-    <div class="modal__overlay flex-cc">
-      <div class="modal__wrapper flex-cc flex-col">
-        <button class="modal__close btn">
-          <svg class="icon">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
-        <form class="modal__form flex-cc flex-col">
-          <h3>Спасибо за отзыв!</h3>
-          <p>Наши специалисты проверят отзыв и оповестят Вас о его добавлении на сайт!</p>
-          <button class="btn btn_default" type="submit">В каталог пряников</button>
-        </form>
+  <!-- ========== Start modal_feedback_thanks ==========+ -->
+  <div class="modal modal_feedback_thanks modal_leave_thanks">
+      <div class="modal__overlay flex-cc">
+          <div class="modal__wrapper flex-cc flex-col">
+              <button class="modal__close btn">
+                  <svg class="icon">
+                      <use xlink:href="img/sprite.svg#close"></use>
+                  </svg>
+              </button>
+              <form class="modal__form flex-cc flex-col">
+                  <h3>Спасибо за отзыв!</h3>
+                  <p>Наши специалисты проверят отзыв и оповестят Вас о его добавлении на сайт!</p>
+                  <button class="btn btn_default" type="submit">В каталог пряников</button>
+              </form>
+          </div>
       </div>
-    </div>
   </div>
   <!-- ========== End modal_feedback_thanks ========== -->
-  <!-- ========== Start modal_feedback_full ========== -->
+  <!-- ========== Start modal_feedback_full ==========+ -->
   <div class="modal modal_feedback_full">
-    <div class="modal__overlay flex-sc">
-      <div class="modal__wrapper flex-sc flex-col">
-        <div class="feedback_autor">
-          <button class="modal__close btn">
-            <svg class="icon">
-              <use xlink:href="img/sprite.svg#close"></use>
-            </svg>
-          </button>
+      <div class="modal__overlay flex-sc">
+          <div class="modal__wrapper flex-sc flex-col">
+              <div class="feedback_autor">
+                  <button class="modal__close btn">
+                      <svg class="icon">
+                          <use xlink:href="img/sprite.svg#close"></use>
+                      </svg>
+                  </button>
 
-          <img src="img/feedback/avatar_wom.png" alt="Автор отзыва">
-          <div class="autor-info">
-            <p>Настя Елова</p>
-            <p>30 дек. 2022</p>
+                  <img src="img/feedback/avatar_wom.png" alt="Автор отзыва">
+                  <div class="autor-info">
+                      <p>Настя Елова</p>
+                      <p>30 дек. 2022</p>
+                  </div>
+              </div>
+              <div class="feedback_content__wrapper">
+                  <div class="feedback_content">
+                      <p>Очень крутой мастер класс! Дети довольны, получили хороший опыт по изготовлению вкусных
+                          пряников с начинкой. Рекомендую!</p>
+                      <p>Изначально было несколько задумок, но мы сразу отказались от банальных вариантов вроде
+                          обычного общепита. Для нас «10 зайцев» – это дело для души. Идея интерактивной площадки
+                          родилась на стыке детской мечты и желания сделать что-то уникальное и интересное, куда люди
+                          будут приходить и получать положительные эмоции.</p>
+                      <p>Прежде всего, мы устроили вокзал с железной дорогой. Нас вдохновил пример одной сувенирной
+                          лавки, которую мы посетили как-то в Европе. Там была маленькая железная дорога с поездом, в
+                          вагончиках которого сидели пряничные зайчики. Звук игрушечного поезда, который ездил по
+                          кругу, запах имбирных пряников – эту атмосферу мы попытались повторить и переложить в нашем
+                          проекте. Кроме того, железная дорога всегда вызывает детскую радость, веселье и удивление у
+                          гостей.</p>
+                      <div class="content_images">
+                          <div class="feedback_content-swiper swiper ">
+                          
+                              <div class="swiper-wrapper">
+                                  <div class="swiper-slide"><img src="img/feedback_full/img_1.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="img/feedback_full/img_2.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="img/feedback_full/img_3.png" alt=""></div>
+                                  <div class="swiper-slide"><img src="img/feedback_full/img_2.png" alt=""></div>
+                              </div>
+                          </div>
+                      </div>
+                      <p>Потом мы вспомнили, что в Коломне неоправданно подзабыта история коломенского пряника, и
+                          решили сделать коллаборацию темы пряника и игрушечного поезда. К этой теме мы привязали
+                          историю строительства Московско-Рязанской железной дороги, возникновения станции Голутвин и
+                          Коломенского паровозостроительного завода. Так получился концепт первой комнаты «ВокЗала».
+                      </p>
+                      <p>В этом зале проходит интерактивная театрализованная программа с мастер-классом по
+                          приготовлению пряника. Мы планируем делать четыре сезона, как в театре. Следующий сезон,
+                          например, посвятим теме почтовых поездов. Дети и взрослые будут делать пряники, как и в
+                          первой нашей программе, но мы добавим мастер-класс по работе с почтовыми конвертами,
+                          сургучной печатью. Всех секретов раскрывать не буду, чтобы конкуренты этим не
+                          воспользовались, но уверен, что программа будет интересной. Мы готовы обновляться каждые три
+                          месяца для того, чтобы проект постоянно генерил туристический поток.</p>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="feedback_content__wrapper">
-          <div class="feedback_content">
-            <p>Очень крутой мастер класс! Дети довольны, получили хороший опыт по изготовлению вкусных
-              пряников с начинкой. Рекомендую!</p>
-            <p>Изначально было несколько задумок, но мы сразу отказались от банальных вариантов вроде
-              обычного общепита. Для нас «10 зайцев» – это дело для души. Идея интерактивной площадки
-              родилась на стыке детской мечты и желания сделать что-то уникальное и интересное, куда люди
-              будут приходить и получать положительные эмоции.</p>
-            <p>Прежде всего, мы устроили вокзал с железной дорогой. Нас вдохновил пример одной сувенирной
-              лавки, которую мы посетили как-то в Европе. Там была маленькая железная дорога с поездом, в
-              вагончиках которого сидели пряничные зайчики. Звук игрушечного поезда, который ездил по
-              кругу, запах имбирных пряников – эту атмосферу мы попытались повторить и переложить в нашем
-              проекте. Кроме того, железная дорога всегда вызывает детскую радость, веселье и удивление у
-              гостей.</p>
-            <div class="content_images">
-              <img src="img/feedback_full/img_1.png" alt="">
-              <img src="img/feedback_full/img_2.png" alt="">
-              <img src="img/feedback_full/img_3.png" alt="">
-              <img src="img/feedback_full/img_1.png" alt="">
-            </div>
-            <p>Потом мы вспомнили, что в Коломне неоправданно подзабыта история коломенского пряника, и
-              решили сделать коллаборацию темы пряника и игрушечного поезда. К этой теме мы привязали
-              историю строительства Московско-Рязанской железной дороги, возникновения станции Голутвин и
-              Коломенского паровозостроительного завода. Так получился концепт первой комнаты «ВокЗала».
-            </p>
-            <p>В этом зале проходит интерактивная театрализованная программа с мастер-классом по
-              приготовлению пряника. Мы планируем делать четыре сезона, как в театре. Следующий сезон,
-              например, посвятим теме почтовых поездов. Дети и взрослые будут делать пряники, как и в
-              первой нашей программе, но мы добавим мастер-класс по работе с почтовыми конвертами,
-              сургучной печатью. Всех секретов раскрывать не буду, чтобы конкуренты этим не
-              воспользовались, но уверен, что программа будет интересной. Мы готовы обновляться каждые три
-              месяца для того, чтобы проект постоянно генерил туристический поток.</p>
-          </div>
-        </div>
       </div>
-    </div>
   </div>
   <!-- ========== End modal_feedback_full ========== -->
   <script type="module" src="js/libraries.min.js"></script>

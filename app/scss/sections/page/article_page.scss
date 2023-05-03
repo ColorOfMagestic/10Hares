@@ -33,6 +33,7 @@
   .description {
     margin-top: 40px;
   }
+
 }
 
 @media(min-width: $sm) {
@@ -67,6 +68,14 @@
       background: url(../img/article/intro_bg_md.png)no-repeat 50%/cover;
     }
   }
+
+  .article_page {
+    .product_similar {
+      
+      padding-top: 60px;
+    }
+  }
+
   
 }
 
@@ -156,6 +165,14 @@
       }
     }
   }
+
+  .article_page {
+    .product_similar {
+      
+      padding-top: 80px;
+    }
+  }
+
   
 }
 
@@ -233,7 +250,11 @@
     }
   }
 
-  .article_page { 
+  .article_page {
+    .product_similar {
+      
+      padding-top: 120px;
+    }
     .description {
       &:last-of-type {
         margin-top: -20px;

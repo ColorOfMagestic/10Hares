@@ -16,6 +16,9 @@
       &:nth-child(2) {
         margin-top: 20px;
       }
+      input {
+        border: none;
+      }
     }
 
     .select,
@@ -45,6 +48,10 @@
       }
     }
 
+    .select {
+      border: none;
+    }
+
 
   }
 }
@@ -58,9 +65,15 @@
     width: 100%;
     margin-top: 20px;
 
+    input {
+      border: none;
+    }
+
+
     textarea {
       height: 140px;
       resize: none;
+      border: none;
     }
   }
 
@@ -145,6 +158,12 @@
     gap: 20px 0;
     width: 100%;
     margin-top: 20px;
+    
+    label {
+      input {
+        border: none;
+      }
+    }
     
     .check_label {
       padding-left: 47px;
